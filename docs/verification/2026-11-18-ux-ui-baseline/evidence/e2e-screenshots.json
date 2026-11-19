@@ -1,0 +1,262 @@
+[
+  {
+    "file": "e2e-screenshots/desktop-falta-tardia-marcaje-aceptado.png",
+    "source": "test-results/attendance-acepta-entrada--15097-ble-y-conserva-motivo-y-GPS-desktop/falta-tardia-marcaje-aceptado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-falta-tardia-marcaje-aceptado.png",
+    "source": "test-results/attendance-acepta-entrada--15097-ble-y-conserva-motivo-y-GPS-mobile/falta-tardia-marcaje-aceptado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-asistencia-presencial-aceptada.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-aceptada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-asistencia-presencial-rechazada.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-rechazada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-asistencia-presencial-salida.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-salida.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-incidencias-presencial.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/incidencias-presencial.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-asistencia-presencial-aceptada.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-aceptada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-asistencia-presencial-rechazada.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-rechazada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-asistencia-presencial-salida.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-salida.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-incidencias-presencial.png",
+    "source": "test-results/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/incidencias-presencial.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-asistencia-home-office.png",
+    "source": "test-results/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-desktop/asistencia-home-office.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-incidencias-home-office.png",
+    "source": "test-results/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-desktop/incidencias-home-office.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-asistencia-home-office.png",
+    "source": "test-results/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-mobile/asistencia-home-office.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-incidencias-home-office.png",
+    "source": "test-results/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-mobile/incidencias-home-office.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-base.png",
+    "source": "test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-desktop/base.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-base.png",
+    "source": "test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-mobile/base.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-404.png",
+    "source": "test-results/base-navega-entre-rutas-pe-ddb93-o-y-recupera-una-p\u00e1gina-404-desktop/404.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-404.png",
+    "source": "test-results/base-navega-entre-rutas-pe-ddb93-o-y-recupera-una-p\u00e1gina-404-mobile/404.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-attendance-policy.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/attendance-policy.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-configuration.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/configuration.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-dashboard-admin.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/dashboard-admin.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-attendance-policy.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/attendance-policy.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-configuration.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/configuration.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-dashboard-admin.png",
+    "source": "test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/dashboard-admin.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-dashboard-employee.png",
+    "source": "test-results/dashboard-empleado-y-HR-ve-aff5e-\u00fablica-permanece-disponible-desktop/dashboard-employee.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-dashboard-employee.png",
+    "source": "test-results/dashboard-empleado-y-HR-ve-aff5e-\u00fablica-permanece-disponible-mobile/dashboard-employee.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-departments.png",
+    "source": "test-results/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-desktop/departments.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-departments.png",
+    "source": "test-results/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-mobile/departments.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-responsables.png",
+    "source": "test-results/identity-employees-crea-em-d2557--conserva-ambos-al-recargar-desktop/responsables.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-responsables.png",
+    "source": "test-results/identity-employees-crea-em-d2557--conserva-ambos-al-recargar-mobile/responsables.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-cuenta.png",
+    "source": "test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-desktop/cuenta.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-cuenta.png",
+    "source": "test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/cuenta.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-solicitudes-cancelacion-jefatura-definitiva.png",
+    "source": "test-results/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-desktop/solicitudes-cancelacion-jefatura-definitiva.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-vacaciones-saldo-aprobado.png",
+    "source": "test-results/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-desktop/vacaciones-saldo-aprobado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-solicitudes-cancelacion-jefatura-definitiva.png",
+    "source": "test-results/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-mobile/solicitudes-cancelacion-jefatura-definitiva.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-vacaciones-saldo-aprobado.png",
+    "source": "test-results/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-mobile/vacaciones-saldo-aprobado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-permiso-evidencia-privada.png",
+    "source": "test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/permiso-evidencia-privada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-permiso-rechazo-conservado.png",
+    "source": "test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/permiso-rechazo-conservado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-permiso-evidencia-privada.png",
+    "source": "test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-mobile/permiso-evidencia-privada.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-permiso-rechazo-conservado.png",
+    "source": "test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-mobile/permiso-rechazo-conservado.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-permiso-horas-sin-comprobante.png",
+    "source": "test-results/requests-permiso-por-horas-f9409-onserva-condiciones-previas-desktop/permiso-horas-sin-comprobante.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-permiso-horas-sin-comprobante.png",
+    "source": "test-results/requests-permiso-por-horas-f9409-onserva-condiciones-previas-mobile/permiso-horas-sin-comprobante.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-ubicaciones.png",
+    "source": "test-results/steps10-12-comprueba-GPS-p-99deb-serva-rechazos-sin-marcajes-desktop/ubicaciones.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-ubicaciones.png",
+    "source": "test-results/steps10-12-comprueba-GPS-p-99deb-serva-rechazos-sin-marcajes-mobile/ubicaciones.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-auditoria.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/auditoria.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-avisos.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/avisos.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-calendario.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/calendario.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-auditoria.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/auditoria.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-avisos.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/avisos.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-calendario.png",
+    "source": "test-results/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/calendario.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/desktop-super-admin.png",
+    "source": "test-results/super-admin-superadministr-d7129-el-rol-en-cuenta-y-usuarios-desktop/super-admin.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  },
+  {
+    "file": "e2e-screenshots/mobile-super-admin.png",
+    "source": "test-results/super-admin-superadministr-d7129-el-rol-en-cuenta-y-usuarios-mobile/super-admin.png",
+    "origin": "pnpm test:e2e, Vite dev + API real + PostgreSQL _test"
+  }
+]

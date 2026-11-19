@@ -1,0 +1,98 @@
+[WebServer] (node:1175881) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1176090) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 2 workers
+
+(node:1176186) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1176185) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (10.2s)
+  ✘  2 [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (9.8s)
+(node:1176941) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1176948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (10.8s)
+  ✘  3 [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (10.9s)
+
+
+  1) [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: route.continue: Route is already handled!
+
+      165 |       await page.route('**/api/departments', async (route) => {
+      166 |         await gate;
+    > 167 |         await route.continue();
+          |                             ^
+      168 |       });
+      169 |       try {
+      170 |         await page.reload({ waitUntil: 'domcontentloaded' });
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:167:29
+
+    Error: page.screenshot: Test ended.
+    Call log:
+      - taking page screenshot
+      - waiting for fonts to load...
+      - fonts loaded
+
+
+      59 |           ),
+      60 |         ).toBe(true);
+    > 61 |         await page.screenshot({
+         |                    ^
+      62 |           path: testInfo.outputPath(`departments-${mode}-${width}.png`),
+      63 |           fullPage: true,
+      64 |         });
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:61:20
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: route.continue: Route is already handled!
+
+      165 |       await page.route('**/api/departments', async (route) => {
+      166 |         await gate;
+    > 167 |         await route.continue();
+          |                             ^
+      168 |       });
+      169 |       try {
+      170 |         await page.reload({ waitUntil: 'domcontentloaded' });
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:167:29
+
+    Error: page.evaluate: Test ended.
+
+      53 |         await search.fill(prefix);
+      54 |         await expect(page.getByText(names[0]!, { exact: true })).toBeVisible();
+    > 55 |         await page.evaluate(() => document.fonts.ready);
+         |                    ^
+      56 |         expect(
+      57 |           await page.evaluate(
+      58 |             () => document.documentElement.scrollWidth <= innerWidth,
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:55:20
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+    [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+  2 passed (30.1s)

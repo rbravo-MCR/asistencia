@@ -1,0 +1,38 @@
+{
+  "name": "@asistencia/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=../../.env --import tsx --watch src/main.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file=../../.env dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "node --env-file=../../.env node_modules/drizzle-kit/bin.cjs generate",
+    "db:migrate": "node --env-file=../../.env --import tsx src/infrastructure/database/migrate-cli.ts",
+    "holidays:sync": "node --env-file=../../.env --import tsx src/bootstrap/sync-holidays.ts",
+    "admin:create": "node --env-file=../../.env --import tsx src/bootstrap/create-admin.ts",
+    "admin:recovery": "node --env-file=../../.env --import tsx src/bootstrap/recover-admin.ts",
+    "db:backup": "node --env-file=../../.env --import tsx src/bootstrap/backup.ts"
+  },
+  "dependencies": {
+    "@asistencia/contracts": "workspace:*",
+    "@fastify/cookie": "11.1.5",
+    "@fastify/helmet": "13.2.0",
+    "@fastify/rate-limit": "11.2.2",
+    "@fastify/swagger": "9.9.3",
+    "@fastify/swagger-ui": "6.1.3",
+    "@fastify/type-provider-typebox": "6.3.0",
+    "@node-rs/argon2": "2.2.2",
+    "ajv-formats": "3.0.1",
+    "drizzle-orm": "0.45.4",
+    "fastify": "5.12.8",
+    "pg": "8.23.1",
+    "typebox": "1.4.6",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/pg": "8.23.1",
+    "drizzle-kit": "0.31.11"
+  }
+}

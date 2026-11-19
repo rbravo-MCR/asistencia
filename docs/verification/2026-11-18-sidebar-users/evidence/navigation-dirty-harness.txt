@@ -1,0 +1,82 @@
+[WebServer] (node:1041704) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1041872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 2 workers
+
+(node:1041938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1041939) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [mobile] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (30.5s)
+  ✘  2 [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (30.7s)
+
+
+  1) [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "net::ERR_ABORTED"
+    Received string:    "Error: page.reload: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for navigation until \"load\"
+    "
+
+      143 |     const unloadDecision = page.waitForEvent('dialog', { timeout: 1500 });
+      144 |     const reload = page.reload().catch((error) => {
+    > 145 |       expect(String(error)).toContain('net::ERR_ABORTED');
+          |                             ^
+      146 |     });
+      147 |     const unloadDialog = await unloadDecision;
+      148 |     expect(unloadDialog.type()).toBe('beforeunload');
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:145:29
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:150:5
+
+    Error Context: test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "net::ERR_ABORTED"
+    Received string:    "Error: page.reload: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for navigation until \"load\"
+    "
+
+      143 |     const unloadDecision = page.waitForEvent('dialog', { timeout: 1500 });
+      144 |     const reload = page.reload().catch((error) => {
+    > 145 |       expect(String(error)).toContain('net::ERR_ABORTED');
+          |                             ^
+      146 |     });
+      147 |     const unloadDialog = await unloadDecision;
+      148 |     expect(unloadDialog.type()).toBe('beforeunload');
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:145:29
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:150:5
+
+    Error Context: test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+    [mobile] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 

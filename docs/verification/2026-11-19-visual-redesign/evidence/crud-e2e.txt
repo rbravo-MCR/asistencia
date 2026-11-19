@@ -1,0 +1,25 @@
+[WebServer] (node:59315) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:59458) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 2 workers
+
+(node:59603) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:59602) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (9.3s)
+  ✓  1 [desktop] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (12.2s)
+  ✓  3 [desktop] › tests/e2e/identity-employees.spec.ts:221:1 › empleado no ve administración ni puede concederse roles mediante la API (3.2s)
+(node:60753) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [desktop] › tests/e2e/identity-employees.spec.ts:284:1 › edita y elimina empleados desde la web sin cambiar el número interno (8.6s)
+(node:61143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (10.7s)
+  ✓  7 [mobile] › tests/e2e/identity-employees.spec.ts:221:1 › empleado no ve administración ni puede concederse roles mediante la API (5.5s)
+  ✓  6 [mobile] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (18.1s)
+  ✓  8 [mobile] › tests/e2e/identity-employees.spec.ts:284:1 › edita y elimina empleados desde la web sin cambiar el número interno (12.7s)
+
+  8 passed (53.8s)

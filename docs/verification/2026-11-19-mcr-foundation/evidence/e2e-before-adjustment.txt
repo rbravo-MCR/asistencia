@@ -1,0 +1,151 @@
+[WebServer] (node:170395) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:170604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:170725) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 [desktop] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (2.3s)
+(node:171013) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [desktop] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (30.3s)
+(node:172675) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [desktop] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (5.1s)
+  ✓   4 [desktop] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (5.5s)
+  ✓   5 [desktop] › tests/e2e/identity-employees.spec.ts:222:1 › empleado no ve administración ni puede concederse roles mediante la API (2.4s)
+  ✓   6 [desktop] › tests/e2e/identity-employees.spec.ts:285:1 › edita y elimina empleados desde la web sin cambiar el número interno (6.0s)
+  ✓   7 [desktop] › tests/e2e/redesign-foundation.spec.ts:4:1 › acceso MCR permite visibilidad de clave, recuperación y temas sin desbordar (2.9s)
+  ✓   8 [desktop] › tests/e2e/redesign-foundation.spec.ts:56:1 › dashboard y búsqueda de secciones conservan datos, foco y reflow (4.2s)
+(node:174285) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [mobile] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (6.6s)
+  ✘  10 [mobile] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (30.2s)
+(node:176399) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (589ms)
+
+
+  1) [desktop] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: 'Política de asistencia', exact: true }) resolved to 2 elements:
+        1) <a href="/configuracion/asistencia" aria-label="Política de asistencia" class="flex min-h-11 items-center xl:min-h-10 gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white ">…</a> aka getByLabel('Política de asistencia')
+        2) <a href="/configuracion/asistencia" class="font-medium text-link underline underline-offset-4">Política de asistencia</a> aka locator('#contenido').getByRole('link', { name: 'Política de asistencia' })
+
+    Call log:
+      - waiting for getByRole('link', { name: 'Política de asistencia', exact: true })
+
+
+      48 |     await page
+      49 |       .getByRole('link', { name: 'Política de asistencia', exact: true })
+    > 50 |       .click();
+         |        ^
+      51 |     await expect(
+      52 |       page.getByRole('heading', {
+      53 |         name: 'Política de asistencia',
+        at /home/rafael/proyectos/asistencia/tests/e2e/dashboard.spec.ts:50:8
+
+    Error Context: test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Actualizar listado', exact: true })
+
+
+      220 |         await page
+      221 |           .getByRole('button', { name: 'Actualizar listado', exact: true })
+    > 222 |           .click();
+          |            ^
+      223 |         await expect(
+      224 |           page.getByText('Período 1: 12 días disponibles · 0 reservados'),
+      225 |         ).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/dashboard.spec.ts:222:12
+
+    Error Context: test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Actualizar listado', exact: true })
+
+
+      220 |         await page
+      221 |           .getByRole('button', { name: 'Actualizar resumen', exact: true })
+    > 222 |           .click();
+          |            ^
+      223 |         await expect(
+      224 |           page.getByText('Período 1: 12 días disponibles · 0 reservados'),
+      225 |         ).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/dashboard.spec.ts:222:12
+
+    Error Context: test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/dashboard-empleado-y-HR-ve-aff5e-ública-permanece-disponible-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar 
+
+    Test was interrupted.
+
+    Error: page.goto: Test ended.
+    Call log:
+      - navigating to "http://127.0.0.1:5183/ingresar", waiting until "load"
+
+
+      19 | }, testInfo) => {
+      20 |   await context.clearCookies();
+    > 21 |   await page.goto('/ingresar');
+         |              ^
+      22 |   await page
+      23 |     .getByLabel('Número de usuario o correo', { exact: true })
+      24 |     .fill(account.email);
+        at /home/rafael/proyectos/asistencia/tests/e2e/identity-employees.spec.ts:21:14
+
+    Error Context: test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [desktop] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones 
+    [desktop] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible 
+    [mobile] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible 
+  1 interrupted
+    [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar 
+  5 did not run
+  7 passed (1.8m)

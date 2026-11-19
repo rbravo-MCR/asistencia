@@ -1,0 +1,366 @@
+$ pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build
+$ eslint . && pnpm check:boundaries
+$ depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src
+
+✔ no dependency violations found (279 modules, 943 dependencies cruised)
+
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done
+$ pnpm --filter @asistencia/contracts build && vitest run
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ ❯ |web| apps/web/src/features/dashboard/dashboard.test.tsx (6 tests | 1 failed) 2820ms
+   × shows server day, no invented balance and exact unread count 1505ms
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/features/dashboard/dashboard.test.tsx > shows server day, no invented balance and exact unread count
+TestingLibraryElementError: Unable to find role="heading" and name "Mi jornada"
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<a[39m
+      [33mclass[39m=[32m"sr-only rounded-md bg-card p-3 text-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70]"[39m
+      [33mhref[39m=[32m"#contenido"[39m
+    [36m>[39m
+      [0mSaltar al contenido[0m
+    [36m</a>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"min-h-screen xl:pl-[var(--shell-sidebar)]"[39m
+      [33mstyle[39m=[32m"--shell-sidebar: 16rem;"[39m
+    [36m>[39m
+      [36m<aside[39m
+        [33maria-label[39m=[32m"Navegación de MCR"[39m
+        [33mclass[39m=[32m"fixed inset-y-0 left-0 z-30 hidden w-[var(--shell-sidebar)] flex-col bg-navigation text-navigation-foreground xl:flex"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"shrink-0 border-b border-white/10 px-5 py-5"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33maria-current[39m=[32m"page"[39m
+            [33maria-label[39m=[32m"Ir al inicio"[39m
+            [33mclass[39m=[32m"block rounded-md active"[39m
+            [33mdata-status[39m=[32m"active"[39m
+            [33mhref[39m=[32m"/"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"México Car Rental"[39m
+              [33mclass[39m=[32m"h-10 w-44 object-cover"[39m
+              [33mheight[39m=[32m"725"[39m
+              [33msrc[39m=[32m"/assets/logo-MCR%20(1).png"[39m
+              [33mwidth[39m=[32m"800"[39m
+            [36m/>[39m
+          [36m</a>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-[10px] font-semibold tracking-[0.2em] text-white/60"[39m
+          [36m>[39m
+            [0mGESTIÓN DE PERSONAL[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Principal"[39m
+          [33mclass[39m=[32m"mcr-sidebar-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mGeneral[0m
+            [36m</p>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"space-y-1"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-current[39m=[32m"page"[39m
+                  [33maria-label[39m=[32m"Inicio"[39m
+                  [33mclass[39m=[32m"flex min-h-11 items-center xl:min-h-10 gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white  bg-primary text-primary-foreground"[39m
+                  [33mdata-status[39m=[32m"active"[39m
+                  [33mhref[39m=[32m"/"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-layout-dashboard size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"12"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"16"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mInicio[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Avisos"[39m
+                  [33mclass[39m=[32m"flex min-h-11 items-center xl:min-h-10 gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/avisos"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-bell size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M10.268 21a2 2 0 0 0 3.464 0"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mAvisos[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div...
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<a[39m
+      [33mclass[39m=[32m"sr-only rounded-md bg-card p-3 text-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70]"[39m
+      [33mhref[39m=[32m"#contenido"[39m
+    [36m>[39m
+      [0mSaltar al contenido[0m
+    [36m</a>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"min-h-screen xl:pl-[var(--shell-sidebar)]"[39m
+      [33mstyle[39m=[32m"--shell-sidebar: 16rem;"[39m
+    [36m>[39m
+      [36m<aside[39m
+        [33maria-label[39m=[32m"Navegación de MCR"[39m
+        [33mclass[39m=[32m"fixed inset-y-0 left-0 z-30 hidden w-[var(--shell-sidebar)] flex-col bg-navigation text-navigation-foreground xl:flex"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"shrink-0 border-b border-white/10 px-5 py-5"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33maria-current[39m=[32m"page"[39m
+            [33maria-label[39m=[32m"Ir al inicio"[39m
+            [33mclass[39m=[32m"block rounded-md active"[39m
+            [33mdata-status[39m=[32m"active"[39m
+            [33mhref[39m=[32m"/"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"México Car Rental"[39m
+              [33mclass[39m=[32m"h-10 w-44 object-cover"[39m
+              [33mheight[39m=[32m"725"[39m
+              [33msrc[39m=[32m"/assets/logo-MCR%20(1).png"[39m
+              [33mwidth[39m=[32m"800"[39m
+            [36m/>[39m
+          [36m</a>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-[10px] font-semibold tracking-[0.2em] text-white/60"[39m
+          [36m>[39m
+            [0mGESTIÓN DE PERSONAL[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Principal"[39m
+          [33mclass[39m=[32m"mcr-sidebar-scroll min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mGeneral[0m
+            [36m</p>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"space-y-1"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-current[39m=[32m"page"[39m
+                  [33maria-label[39m=[32m"Inicio"[39m
+                  [33mclass[39m=[32m"flex min-h-11 items-center xl:min-h-10 gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white  bg-primary text-primary-foreground"[39m
+                  [33mdata-status[39m=[32m"active"[39m
+                  [33mhref[39m=[32m"/"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-layout-dashboard size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"12"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"16"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mInicio[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Avisos"[39m
+                  [33mclass[39m=[32m"flex min-h-11 items-center xl:min-h-10 gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/avisos"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-bell size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M10.268 21a2 2 0 0 0 3.464 0"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mAvisos[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div...
+ ❯ waitForWrapper node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+ ❯ apps/web/src/features/dashboard/dashboard.test.tsx:93:18
+     91|   mount();
+     92|   expect(
+     93|     await screen.findByRole('heading', { name: 'Mi jornada' }),
+       |                  ^
+     94|   ).toBeInTheDocument();
+     95|   expect(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 35 passed (36)
+      Tests  1 failed | 233 passed (234)
+   Start at  09:50:06
+   Duration  56.04s (tests 50%, import 22%, environment 20%, setup 5%, transform 3%)
+
+    Isolate  36 workers spawned · ~1.21s startup each (spawn + environment, per file)
+             at least ~13.29s faster with isolate: false — reuses workers across files instead of one per file
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.

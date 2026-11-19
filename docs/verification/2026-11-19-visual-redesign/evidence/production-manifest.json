@@ -1,0 +1,42 @@
+[
+  {
+    "file": "evidence/production/after-dark-1440.png",
+    "sha256": "53f14b2a3980d378b41bcd13d013a89344e077c1d1276e81c1854b6178ff8178"
+  },
+  {
+    "file": "evidence/production/after-dark-390.png",
+    "sha256": "90bf92ac9cb56fb5630113273aceaddef10ba6da2c767827e1644b2c35341895"
+  },
+  {
+    "file": "evidence/production/after-light-1440.png",
+    "sha256": "36625078bcd66bd1dc320e1c11900efc4c23e9b5be919b9d78cabf13dfa85b13"
+  },
+  {
+    "file": "evidence/production/after-light-390.png",
+    "sha256": "d5c95cc3361d4718ff58a73c1dcd8f3eacbbe54489ebc21f72cfc3e0c1e0aa2a"
+  },
+  {
+    "file": "evidence/production/before-dark-1440.png",
+    "sha256": "8da7076453da71d548f7ed8a8922c9a06b87b2b031e6ae79b196860c32b56a67"
+  },
+  {
+    "file": "evidence/production/before-dark-390.png",
+    "sha256": "5032d4c3c0f086268e31795e4db571b9cc60eaa550e346b5f313a7b7250b92d3"
+  },
+  {
+    "file": "evidence/production/before-light-1440.png",
+    "sha256": "8ab9caabe3f8a46434bca4b721c8e6dac5e0b07c4227db122af7631a44be46e5"
+  },
+  {
+    "file": "evidence/production/before-light-390.png",
+    "sha256": "83e2ebbaedf6290ade523164878bc2ebab4440239504a76f02fa46960adf6655"
+  },
+  {
+    "file": "evidence/production/measurements.json",
+    "sha256": "5becc6b56c4b6b2896a7518679462d070ebc53b5c95dbc2f06aa4aa698022126"
+  },
+  {
+    "file": "evidence/production/summary.json",
+    "sha256": "ce19faa57533d64780a4fc096c9bc2df4e02df111279dbcd48cfcdc26c6a58ff"
+  }
+]

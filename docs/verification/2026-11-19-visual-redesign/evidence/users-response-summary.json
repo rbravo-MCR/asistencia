@@ -1,0 +1,48 @@
+{
+  "note": "Extracto sanitizado de traza de fixtures eliminados. Sin credenciales, cookies, nombres, correos o IDs. No se conserva el ZIP de traza.",
+  "sourceTraceSha256": "fe76aa0b18b1a4e837788da6aa520fb27243c0452041ef70072d7ba69d35b643",
+  "responses": [
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 3,
+      "roles": [["ADMIN"], ["ADMIN"], ["EMPLOYEE"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], ["ADMIN"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], ["ADMIN"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], ["ADMIN"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], ["ADMIN"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], ["ADMIN"]]
+    },
+    {
+      "path": "/api/users",
+      "status": 200,
+      "userCount": 2,
+      "roles": [["ADMIN"], []]
+    }
+  ]
+}

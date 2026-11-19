@@ -1,0 +1,11 @@
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done
+tests/e2e/appearance.spec.ts(191,16): error TS7053: Element implicitly has an 'any' type because expression of type '"link" | "button" | "text" | "muted" | "success" | "warning" | "info" | "danger"' can't be used to index type '{ brand: string; button: number; link: number; text: number; inputBoundary: number; focus: number; muted: number; }'.
+  Property 'success' does not exist on type '{ brand: string; button: number; link: number; text: number; inputBoundary: number; focus: number; muted: number; }'.
+[ELIFECYCLE] Command failed with exit code 2.

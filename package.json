@@ -1,0 +1,48 @@
+{
+  "name": "asistencia",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=26.13.1 <27",
+    "pnpm": ">=12.18.0 <13"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @asistencia/contracts build && pnpm --parallel --filter @asistencia/api --filter @asistencia/web dev",
+    "build": "pnpm --filter @asistencia/contracts build && pnpm --filter @asistencia/api build && pnpm --filter @asistencia/web build",
+    "lint": "eslint . && pnpm check:boundaries",
+    "check:boundaries": "depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json",
+    "test": "pnpm --filter @asistencia/contracts build && vitest run",
+    "test:integration": "pnpm --filter @asistencia/contracts build && vitest run --config vitest.integration.config.ts",
+    "test:e2e": "pnpm --filter @asistencia/contracts build && playwright test",
+    "db:up": "docker compose --env-file .env -f infra/compose.yaml up -d --wait postgres",
+    "db:down": "docker compose --env-file .env -f infra/compose.yaml --profile test down",
+    "db:test:up": "docker compose --env-file .env -f infra/compose.yaml --profile test up -d --wait postgres-test",
+    "db:generate": "pnpm --filter @asistencia/api db:generate",
+    "db:migrate": "pnpm --filter @asistencia/api db:migrate",
+    "holidays:sync": "pnpm --filter @asistencia/api holidays:sync",
+    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build",
+    "admin:create": "pnpm --filter @asistencia/api admin:create",
+    "admin:recovery": "pnpm --filter @asistencia/api admin:recovery",
+    "db:backup": "pnpm --filter @asistencia/api db:backup"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "eslint": "10.14.0",
+    "@eslint/js": "10.0.1",
+    "typescript-eslint": "8.72.2",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.14.0",
+    "prettier": "3.10.1",
+    "vitest": "5.1.0",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.6",
+    "@playwright/test": "1.65.0",
+    "dependency-cruiser": "18.7.2"
+  }
+}

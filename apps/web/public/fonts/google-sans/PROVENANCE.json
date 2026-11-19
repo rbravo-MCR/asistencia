@@ -1,0 +1,53 @@
+{
+  "license": "SIL Open Font License 1.1",
+  "licenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/googlesans/OFL.txt",
+  "metadataSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/googlesans/METADATA.pb",
+  "checkedAt": "2026-11-18",
+  "files": [
+    {
+      "file": "google-sans-normal-latin-ext.woff2",
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhWdRPjwUvaYr.woff2",
+      "sha256": "c55117aef4e05fb991522c88b9e4291ad2ce937b376c9f9e4cf945adf34df1b3",
+      "bytes": 21348,
+      "style": "normal",
+      "weights": "400 700",
+      "subset": "latin-ext",
+      "cssSource": "https://fonts.googleapis.com/css2?family=Google+Sans:opsz,wght@17,400..700&display=swap",
+      "opticalSize": 17
+    },
+    {
+      "file": "google-sans-normal-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhWdRPjIUvQ.woff2",
+      "sha256": "c9503c934c3c95fbe85b214bca1d0a918bba68faf32c467fef306773696f110c",
+      "bytes": 35876,
+      "style": "normal",
+      "weights": "400 700",
+      "subset": "latin",
+      "cssSource": "https://fonts.googleapis.com/css2?family=Google+Sans:opsz,wght@17,400..700&display=swap",
+      "opticalSize": 17
+    },
+    {
+      "file": "google-sans-italic-latin-ext.woff2",
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4UairENHsxJlGDuGo1OIlL3L2JB874GPhFI9_IqmuRqGpjeaLi42kO8QpnQksb4vu-A.woff2",
+      "sha256": "f6f069859c53e20edfe44fa21e65572242c044447878b3193420975c71d6dc36",
+      "bytes": 22104,
+      "style": "italic",
+      "weights": "400 700",
+      "subset": "latin-ext",
+      "cssSource": "https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@1,17,400..700&display=swap",
+      "opticalSize": 17
+    },
+    {
+      "file": "google-sans-italic-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/googlesans/v76/4UairENHsxJlGDuGo1OIlL3L2JB874GPhFI9_IqmuRqGpjeaLi42kO8QpnQkv74v.woff2",
+      "sha256": "ad23e4db5501424d87dc195e7cf3baa2336153df0566baa148be0d8ec16dd148",
+      "bytes": 37876,
+      "style": "italic",
+      "weights": "400 700",
+      "subset": "latin",
+      "cssSource": "https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@1,17,400..700&display=swap",
+      "opticalSize": 17
+    }
+  ],
+  "note": "Peso variable 400–700, tamaño óptico 17 fijo para UI y menor transferencia; subconjuntos oficiales completos latin/latin-ext, sin recortar por texto de la aplicación."
+}

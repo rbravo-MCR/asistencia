@@ -1,0 +1,126 @@
+[WebServer] (node:1053054) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1053168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 68 tests using 3 workers
+
+(node:1053252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1053251) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1053258) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.4s)
+  ✓   2 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (3.1s)
+  ✓   5 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (534ms)
+  ✓   3 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (4.7s)
+  ✓   4 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (4.1s)
+  ✓   7 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.5s)
+  ✓   6 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (3.7s)
+  ✓   8 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (2.6s)
+  ✓   9 [desktop] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (2.5s)
+  ✓  10 [desktop] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (3.1s)
+  ✓  12 [desktop] › tests/e2e/appearance.spec.ts:316:1 › descarga el módulo de calendario solo al navegar hacia él (2.7s)
+  ✓  11 [desktop] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (3.6s)
+  ✓  13 [desktop] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (6.6s)
+  ✓  15 [desktop] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (5.5s)
+  ✓  16 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (2.8s)
+  ✓  17 [desktop] › tests/e2e/base.spec.ts:34:1 › navega entre rutas, permite acceso directo y recupera una página 404 (5.9s)
+  ✓  14 [desktop] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (12.5s)
+  ✓  18 [desktop] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (8.3s)
+  ✓  20 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (9.9s)
+  ✓  19 [desktop] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (11.2s)
+  ✓  21 [desktop] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (8.2s)
+  ✓  23 [desktop] › tests/e2e/identity-employees.spec.ts:213:1 › empleado no ve administración ni puede concederse roles mediante la API (3.2s)
+  ✓  25 [desktop] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (4.4s)
+  ✓  24 [desktop] › tests/e2e/identity-employees.spec.ts:276:1 › edita y elimina empleados desde la web sin cambiar el número interno (6.9s)
+  ✓  22 [desktop] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (8.5s)
+  ✓  26 [desktop] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (7.6s)
+  ✘  28 [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (8.7s)
+  ✘  29 [desktop] › tests/e2e/shell-users.spec.ts:10:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (1.3s)
+  ✘  27 [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (8.8s)
+
+
+  1) [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe 
+
+    Test was interrupted.
+
+    error: update or delete on table "users" violates foreign key constraint "organization_assignments_created_by_users_id_fk" on table "organization_assignments"
+
+       at fixtures.ts:18
+
+      16 |     // A parallel fixture must not delete a recipient between those two operations.
+      17 |     await client.query('select pg_advisory_xact_lock(81209002)');
+    > 18 |     await client.query('delete from users where id=any($1::uuid[])', [ids]);
+         |     ^
+      19 |     await client.query('commit');
+      20 |   } catch (error) {
+      21 |     await client.query('rollback');
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/pg@8.23.1/node_modules/pg/lib/client.js:694:17
+        at deleteTestUsers (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:18:5)
+        at Object.account (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:50:17)
+
+    Error: browserContext.close: Protocol error (Target.disposeBrowserContext): Failed to find context with id E858A3AD3101CCB6C0FE11E0BAEE1A7B
+
+      115 |   async function cleanup() {
+      116 |     try {
+    > 117 |       for (const context of contexts) await context.close();
+          |                                       ^
+      118 |       await lock.query('begin');
+      119 |       await lock.query('select pg_advisory_xact_lock(81209002)');
+      120 |       const allActors = [adminId, ...userIds];
+        at Object.cleanup (/home/rafael/proyectos/asistencia/tests/e2e/requests.spec.ts:117:39)
+        at /home/rafael/proyectos/asistencia/tests/e2e/requests.spec.ts:563:5
+
+    Error Context: test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/shell-users.spec.ts:10:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+
+    Test was interrupted.
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Usuarios', exact: true })
+    Expected: visible
+    Error: Test ended.
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Usuarios', exact: true }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Usuarios', exact: true })
+      - Test ended.
+
+
+      16 |   await expect(
+      17 |     page.getByRole('heading', { name: 'Usuarios', exact: true }),
+    > 18 |   ).toBeVisible();
+         |     ^
+      19 |   await page.screenshot({
+      20 |     path: testInfo.outputPath('before-shell-users.png'),
+      21 |     fullPage: true,
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:18:5
+
+    Error Context: test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 interrupted
+    [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe 
+    [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas 
+    [desktop] › tests/e2e/shell-users.spec.ts:10:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+  39 did not run
+  26 passed (58.3s)

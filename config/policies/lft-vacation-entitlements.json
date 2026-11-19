@@ -1,0 +1,104 @@
+{
+  "name": "Vacaciones LFT - escala de dias laborables",
+  "source": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+  "article": 76,
+  "verifiedOn": "2026-11-17",
+  "entitlements": [
+    {
+      "fromYear": 1,
+      "days": 12
+    },
+    {
+      "fromYear": 2,
+      "days": 14
+    },
+    {
+      "fromYear": 3,
+      "days": 16
+    },
+    {
+      "fromYear": 4,
+      "days": 18
+    },
+    {
+      "fromYear": 5,
+      "days": 20
+    },
+    {
+      "fromYear": 6,
+      "days": 22
+    },
+    {
+      "fromYear": 11,
+      "days": 24
+    },
+    {
+      "fromYear": 16,
+      "days": 26
+    },
+    {
+      "fromYear": 21,
+      "days": 28
+    },
+    {
+      "fromYear": 26,
+      "days": 30
+    },
+    {
+      "fromYear": 31,
+      "days": 32
+    },
+    {
+      "fromYear": 36,
+      "days": 34
+    },
+    {
+      "fromYear": 41,
+      "days": 36
+    },
+    {
+      "fromYear": 46,
+      "days": 38
+    },
+    {
+      "fromYear": 51,
+      "days": 40
+    },
+    {
+      "fromYear": 56,
+      "days": 42
+    },
+    {
+      "fromYear": 61,
+      "days": 44
+    },
+    {
+      "fromYear": 66,
+      "days": 46
+    },
+    {
+      "fromYear": 71,
+      "days": 48
+    },
+    {
+      "fromYear": 76,
+      "days": 50
+    },
+    {
+      "fromYear": 81,
+      "days": 52
+    },
+    {
+      "fromYear": 86,
+      "days": 54
+    },
+    {
+      "fromYear": 91,
+      "days": 56
+    },
+    {
+      "fromYear": 96,
+      "days": 58
+    }
+  ]
+}

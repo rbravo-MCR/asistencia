@@ -1,0 +1,19 @@
+[WebServer] (node:237910) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:238089) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:238196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/appearance.spec.ts:132:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (1.5s)
+  ✓  2 [desktop] › tests/e2e/appearance.spec.ts:132:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (1.5s)
+  ✓  3 [desktop] › tests/e2e/redesign-routes.spec.ts:115:1 › la ampliación de texto conserva controles del encabezado dentro de su superficie (1.5s)
+(node:238589) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [mobile] › tests/e2e/appearance.spec.ts:132:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (1.3s)
+  ✓  5 [mobile] › tests/e2e/appearance.spec.ts:132:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (1.4s)
+  ✓  6 [mobile] › tests/e2e/redesign-routes.spec.ts:115:1 › la ampliación de texto conserva controles del encabezado dentro de su superficie (1.6s)
+
+  6 passed (16.5s)

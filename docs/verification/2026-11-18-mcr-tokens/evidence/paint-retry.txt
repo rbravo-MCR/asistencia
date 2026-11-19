@@ -1,0 +1,2 @@
+measurement constrained /ingresar 2
+{"captures":32,"pageErrors":0,"runs":21,"browser":"158.0.8127.18"}

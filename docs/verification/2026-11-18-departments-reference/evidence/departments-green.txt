@@ -1,0 +1,23 @@
+[WebServer] (node:1183944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1184036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 2 workers
+
+(node:1184089) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1184090) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/e2e/departments-design.spec.ts:206:1 › consulta sin permisos conserva vacío real y no ofrece acciones de escritura (2.6s)
+  ✓  3 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (11.3s)
+(node:1185215) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/departments-design.spec.ts:6:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (16.7s)
+(node:1185429) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [mobile] › tests/e2e/departments-design.spec.ts:206:1 › consulta sin permisos conserva vacío real y no ofrece acciones de escritura (3.1s)
+  ✓  6 [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (9.9s)
+  ✓  4 [mobile] › tests/e2e/departments-design.spec.ts:6:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (16.8s)
+
+  6 passed (37.8s)

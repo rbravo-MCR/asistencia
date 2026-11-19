@@ -1,0 +1,17 @@
+[WebServer] (node:912394) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:912771) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:912840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/ux-clarity.spec.ts:3:1 › Inicio y navegación explican dónde asignar turnos y administrar o solicitar días (6.2s)
+  ✓  2 [desktop] › tests/e2e/ux-clarity.spec.ts:83:1 › conserva persona y fecha al abrir autorizaciones en otra pestaña (2.6s)
+(node:913462) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [mobile] › tests/e2e/ux-clarity.spec.ts:3:1 › Inicio y navegación explican dónde asignar turnos y administrar o solicitar días (5.8s)
+  ✓  4 [mobile] › tests/e2e/ux-clarity.spec.ts:83:1 › conserva persona y fecha al abrir autorizaciones en otra pestaña (2.4s)
+
+  4 passed (23.7s)

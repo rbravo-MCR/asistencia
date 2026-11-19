@@ -1,0 +1,13 @@
+node_modules
+dist
+pnpm-lock.yaml
+coverage
+playwright-report
+test-results
+assets
+docs/PROMPT MAESTRO PARA CODEX.md
+docs/arquitectura_y_ regla_de_negocio.md
+docs/POLÍTICA OBLIGATORIA DE VERSIONES TECNOLÓGICAS.md
+.funciones_asistenciamd
+
+docs/Fases de la implementacion de Sistema de vacaciones.md

@@ -1,0 +1,101 @@
+[WebServer] (node:1003845) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1003961) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 2 workers
+
+(node:1004086) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1004085) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (6.3s)
+  ✓   3 [desktop] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (1.7s)
+  ✓   4 [desktop] › tests/e2e/shell-users.spec.ts:58:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (4.1s)
+  ✓   5 [desktop] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (4.0s)
+(node:1005205) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   2 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (30.2s)
+(node:1006247) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [mobile] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (10.9s)
+[WebServer] 2:24:05 PM [vite] (client) [console.error] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+[WebServer] 
+[WebServer] Previous: [/, false]
+[WebServer] Incoming: [/, false, [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+[WebServer] 2:24:05 PM [vite] (client) [console.error] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+[WebServer] 
+[WebServer] Previous: [/usuarios, false]
+[WebServer] Incoming: [/usuarios, false, [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+[WebServer] 2:24:05 PM [vite] (client) [console.error] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+[WebServer] 
+[WebServer] Previous: [/usuarios, false]
+[WebServer] Incoming: [/usuarios, false, [object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+  ✓   8 [mobile] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (4.3s)
+  ✘   6 [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (30.3s)
+(node:1007434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [mobile] › tests/e2e/shell-users.spec.ts:58:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (14.7s)
+  ✓  10 [mobile] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (12.1s)
+
+
+  1) [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.evaluate: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('img', { name: 'MCR' })
+
+
+      15 |     await page
+      16 |       .getByRole('img', { name: 'MCR' })
+    > 17 |       .evaluate((image: HTMLImageElement) => image.naturalWidth),
+         |        ^
+      18 |   ).toBeGreaterThan(0);
+      19 |   expect(
+      20 |     await page.evaluate(
+        at /home/rafael/proyectos/asistencia/tests/e2e/base.spec.ts:17:8
+
+    Error Context: test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.evaluate: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('img', { name: 'MCR' })
+
+
+      15 |     await page
+      16 |       .getByRole('img', { name: 'MCR' })
+    > 17 |       .evaluate((image: HTMLImageElement) => image.naturalWidth),
+         |        ^
+      18 |   ).toBeGreaterThan(0);
+      19 |   expect(
+      20 |     await page.evaluate(
+        at /home/rafael/proyectos/asistencia/tests/e2e/base.spec.ts:17:8
+
+    Error Context: test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador 
+    [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador 
+  8 passed (1.2m)

@@ -1,0 +1,119 @@
+import { createRequire } from 'node:module';
+import { pathToFileURL } from 'node:url';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+import http from 'node:http';
+import { gzipSync } from 'node:zlib';
+import { randomUUID } from 'node:crypto';
+import { spawn } from 'node:child_process';
+import { loadEnvFile } from 'node:process';
+const root = process.cwd();
+loadEnvFile(path.join(root, '.env'));
+const require = createRequire(path.join(root, 'package.json'));
+const { chromium } = require('@playwright/test');
+const { createDatabase } = await import(pathToFileURL(path.join(root, 'apps/api/src/infrastructure/database/client.ts')));
+const { createIdentityService } = await import(pathToFileURL(path.join(root, 'apps/api/src/modules/identity/index.ts')));
+const url = process.env.TEST_DATABASE_URL;
+if (!url || !new URL(url).pathname.endsWith('_test')) throw Error('Only _test');
+const db = createDatabase(url);
+const out = path.join(root, 'docs/verification/2026-11-18-departments-reference/baseline-production');
+await mkdir(path.join(out, 'screenshots'), {recursive:true});
+const origin = 'http://127.0.0.1:5283';
+const routes = [...(await readFile(path.join(root, 'apps/web/src/app/router.ts'),'utf8')).matchAll(/path: '([^']+)'/g)].map(m=>m[1]);
+const users = [];
+const employees = [];
+let department;
+let api;
+let server;
+let browser;
+const retryKey=process.env.MCR_CAPTURE_RETRY;
+const previous=retryKey?JSON.parse(await readFile(path.join(out,'evidence/browser-baseline.json'),'utf8')):null;
+const results=previous?.results??[];
+const performanceResults=(previous?.performance??[]).filter(r=>`${r.profile}|${r.route}|${r.run}`!==retryKey);
+const failures = [];
+async function checkpoint() {await writeFile(path.join(out,'evidence/browser-baseline.json'),JSON.stringify({generatedAt:new Date().toISOString(),browser:browser?.version(),routes,results,failures,performance:performanceResults},null,2)+'\n');}
+const sessionStates = new Map();
+const wait = ms=>new Promise(r=>setTimeout(r,ms));
+try {
+  department = (await db.pool.query('insert into departments(name) values($1) returning id', ['Baseline UX '+randomUUID()])).rows[0].id;
+  for (const role of ['ADMIN','EMPLOYEE','HR','SUPER_ADMIN']) {
+    const password = randomUUID()+'!';
+    const user = await createIdentityService(db.db).createUser({email:`baseline-${randomUUID()}@example.test`,name:`Prueba UX ${role}`,password,roles:[role==='SUPER_ADMIN'?'ADMIN':role],active:true});
+    users.push({id:user.id,email:user.email,password,role});
+    // Same isolated fixture setup as tests/e2e/super-admin.spec.ts; never development.
+    if(role==='SUPER_ADMIN')await db.pool.query("update user_roles set role='SUPER_ADMIN' where user_id=$1 and role='ADMIN'",[user.id]);
+    if(role==='EMPLOYEE') employees.push((await db.pool.query("insert into employees(employee_number,full_name,department_id,position,joined_on,category,user_id) values($1,$2,$3,'Prueba UX','2024-01-01','OPERATIONAL',$4) returning id",[randomUUID().slice(0,20),'Empleado ficticio UX',department,user.id])).rows[0].id);
+  }
+  api = spawn(process.execPath,['--env-file=.env','--import','tsx','apps/api/src/main.ts'],{cwd:root,env:{...process.env,PORT:'3201',HOST:'127.0.0.1',APP_ORIGIN:origin,DATABASE_URL:url,NODE_ENV:'test',LOG_LEVEL:'silent',NOTIFICATION_WORKER_ENABLED:'false',ATTENDANCE_WORKER_ENABLED:'false'},stdio:['ignore','ignore','inherit']});
+  for(let i=0;i<100;i++) { try {if((await fetch('http://127.0.0.1:3201/api/health/ready')).ok) break;} catch {} if(i===99)throw Error('API not ready');await wait(100); }
+  server=http.createServer(async(req,res)=>{
+    if(req.url.startsWith('/api/')) {
+      const proxy=http.request({hostname:'127.0.0.1',port:3201,path:req.url,method:req.method,headers:req.headers},r=>{res.writeHead(r.statusCode,r.headers);r.pipe(res);});
+      proxy.on('error',()=>{res.writeHead(502);res.end();});req.pipe(proxy);return;
+    }
+    try {
+      const clean=decodeURIComponent(new URL(req.url,origin).pathname);
+      const dist = path.join(root, 'apps/web/dist');
+      const candidate = path.resolve(dist, '.' + clean);
+      let file = candidate.startsWith(dist + path.sep) ? candidate : path.join(dist, 'index.html');
+      try { if (!(await import('node:fs/promises')).stat || !(await (await import('node:fs/promises')).stat(file)).isFile()) file = path.join(dist,'index.html'); } catch { if (path.extname(clean)) {res.writeHead(404);res.end();return;} file=path.join(dist,'index.html'); }
+      const data=await readFile(file);
+      const mime = ({'.js':'text/javascript','.css':'text/css','.woff2':'font/woff2','.png':'image/png','.webp':'image/webp','.ico':'image/x-icon','.json':'application/json'})[path.extname(file)] ?? 'text/html';
+      res.writeHead(200,{'content-type':mime,'cache-control':'no-store','content-encoding':'gzip'});res.end(gzipSync(data));
+    } catch {res.writeHead(404);res.end();}
+  });
+  await new Promise((r,j)=>server.once('error',j).listen(5283,'127.0.0.1',r));
+  browser=await chromium.launch();
+  async function context(role,width=1440,dark=false) {
+    const ctx=await browser.newContext({baseURL:origin,viewport:{width,height:900},locale:'es-MX',timezoneId:'America/Merida',colorScheme:dark?'dark':'light',reducedMotion:'reduce'});
+    if(role!=='PUBLIC' && sessionStates.has(role)) await ctx.addCookies(sessionStates.get(role));
+    else if(role!=='PUBLIC') {
+      const user=users.find(u=>u.role===role);
+      const response=await ctx.request.post('/api/auth/login',{headers:{origin},data:{email:user.email,password:user.password}});
+      if(response.status()!==200)throw Error(`Login ${role}: ${response.status()}`);
+      sessionStates.set(role, await ctx.cookies());
+    }
+    return ctx;
+  }
+  async function capture(ctx,route,name) {
+    const page=await ctx.newPage();
+    page.on('pageerror',err=>failures.push({name,error:err.message}));
+    await page.goto(route,{waitUntil:'networkidle'});
+    await page.evaluate(()=>document.fonts.ready);
+    const state=await page.evaluate(()=>({url:location.pathname,h1:[...document.querySelectorAll('h1')].map(e=>e.textContent),alerts:[...document.querySelectorAll('[role=alert]')].map(e=>e.textContent),width:innerWidth,scrollWidth:document.documentElement.scrollWidth,headerHeight:document.querySelector('header')?.getBoundingClientRect().height,mainTop:document.querySelector('main')?.getBoundingClientRect().top,background:getComputedStyle(document.body).backgroundColor,font:getComputedStyle(document.body).fontFamily,googleSansLoaded:[...document.fonts].some(f=>f.family.includes('Google Sans')&&f.status==='loaded'),theme:document.documentElement.getAttribute('data-theme'),navLinks:document.querySelectorAll('nav a').length,smallTargets:[...document.querySelectorAll('button,a,input,select')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&(r.width<24||r.height<24)}).length}));
+    await page.screenshot({path:path.join(out,'screenshots',name+'.png'),fullPage:true,animations:'disabled'});
+    results.push({name,requestedRoute:route,...state});
+    await checkpoint();
+    await page.close();
+  }
+  // Four acceptance screens, both real themes, desktop and mobile.
+  if(false && !retryKey)for (const width of [320,390,768,1440]) for (const dark of [false,true]) {
+    const pub=await context('PUBLIC',width,dark), admin=await context('ADMIN',width,dark), employee=await context('EMPLOYEE',width,dark);
+    const prefix = `${dark?'dark':'light'}-${width}`;
+    await capture(admin,'/departamentos',prefix+'-departments');
+    await pub.close();await admin.close();await employee.close();
+  }
+  // Production assets, cold caches. Desktop and simulated constrained desktop viewport.
+  for(const profile of ['desktop','constrained'])for(const route of ['/departamentos'])for(let run=1;run<=3;run++) {
+    if(profile==='desktop-font-fallback'&&route!=='/ingresar')continue;
+    if(retryKey&&`${profile}|${route}|${run}`!==retryKey)continue;
+    const ctx=await context('ADMIN',profile==='constrained'?390:1440);
+    const page=await ctx.newPage();if(profile==='desktop-font-fallback')await page.route('**/*.woff2',r=>r.abort());const cdp=await ctx.newCDPSession(page);
+    await cdp.send('Network.enable');await cdp.send('Network.setCacheDisabled',{cacheDisabled:true});
+    if(profile==='constrained') {await cdp.send('Emulation.setCPUThrottlingRate',{rate:4});await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:150,downloadThroughput:200000,uploadThroughput:93750});}
+    await page.addInitScript(()=>{window.__baseline={lcp:null,shifts:[],longTasks:[],themeAppliedMs:null};window.addEventListener('mcr:theme-change',()=>{window.__baseline.themeAppliedMs=performance.now();});new PerformanceObserver(list=>{for(const e of list.getEntries())window.__baseline.lcp=e.startTime;}).observe({type:'largest-contentful-paint',buffered:true});new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.__baseline.shifts.push({start:e.startTime,value:e.value});}).observe({type:'layout-shift',buffered:true});new PerformanceObserver(list=>{for(const e of list.getEntries())window.__baseline.longTasks.push(e.duration);}).observe({type:'longtask',buffered:true});});
+    await page.goto(route,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);await page.bringToFront();await page.waitForFunction(()=>window.__baseline.lcp!==null,null,{timeout:10000});await page.waitForTimeout(500);
+    const metric=await page.evaluate(()=>{const n=performance.getEntriesByType('navigation')[0];const b=window.__baseline;let max=0,sum=0,start=0,last=0;for(const e of b.shifts){if(e.start-last>1000||e.start-start>5000){sum=e.value;start=e.start;}else sum+=e.value;last=e.start;max=Math.max(max,sum);}return {lcpMs:b.lcp,cls:max,themeBootstrapRequests:performance.getEntriesByType('resource').filter(r=>r.name.endsWith('/theme-init.js')).length,themeAppliedMs:b.themeAppliedMs,firstPaintMs:performance.getEntriesByType('paint').find(e=>e.name==='first-paint')?.startTime,firstContentfulPaintMs:performance.getEntriesByType('paint').find(e=>e.name==='first-contentful-paint')?.startTime,googleSansLoaded:[...document.fonts].some(f=>f.family.includes('Google Sans')&&f.status==='loaded'),domContentLoadedMs:n.domContentLoadedEventEnd,loadMs:n.loadEventEnd,transferBytes:performance.getEntriesByType('resource').reduce((s,e)=>s+e.transferSize,0),longTasks:b.longTasks.length,longTaskTotalMs:b.longTasks.reduce((s,d)=>s+d,0)}});
+    performanceResults.push({profile,route,run,...metric});await checkpoint();console.log(`measurement ${profile} ${route} ${run}`);await ctx.close();
+  }
+  await writeFile(path.join(out,'evidence/browser-baseline.json'),JSON.stringify({generatedAt:new Date().toISOString(),browser:browser.version(),routes,results,failures,performance:performanceResults},null,2)+'\n');
+  console.log(JSON.stringify({captures:results.length,pageErrors:failures.length,runs:performanceResults.length,browser:browser.version()}));
+} finally {
+  if(browser)await browser.close();
+  if(server)await new Promise(r=>server.close(r));
+  if(api){api.kill('SIGTERM');await new Promise(r=>api.once('exit',r));}
+  if(employees.length)await db.pool.query('delete from employees where id=any($1::uuid[])',[employees]);
+  if(department)await db.pool.query('delete from departments where id=$1',[department]);
+  if(users.length){await db.pool.query('delete from users where id=any($1::uuid[])',[users.map(u=>u.id)]);}
+  await db.pool.end();
+}

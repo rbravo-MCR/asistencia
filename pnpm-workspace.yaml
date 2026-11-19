@@ -1,0 +1,14 @@
+packages:
+  - apps/*
+  - packages/*
+
+saveExact: true
+strictPeerDependencies: true
+engineStrict: true
+allowBuilds:
+  esbuild: true
+  '@tailwindcss/oxide': true
+minimumReleaseAgeExclude:
+  - '@testing-library/user-event@14.6.10'
+  - prettier@3.10.1
+  - '@hookform/resolvers@7.0.6'

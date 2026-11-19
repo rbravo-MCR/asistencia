@@ -1,0 +1,48 @@
+{
+  "initialAssets": [
+    {
+      "file": "/assets/index-BcqRjHoX.js",
+      "bytes": 339451,
+      "gzip": 105110,
+      "brotli": 90912
+    },
+    {
+      "file": "/assets/rolldown-runtime-XKyaHtl9.js",
+      "bytes": 726,
+      "gzip": 429,
+      "brotli": 382
+    },
+    {
+      "file": "/assets/react-CDb74C0S.js",
+      "bytes": 431268,
+      "gzip": 128503,
+      "brotli": 104289
+    },
+    {
+      "file": "/assets/validation-sLBhemX9.js",
+      "bytes": 74729,
+      "gzip": 20831,
+      "brotli": 18383
+    },
+    {
+      "file": "/assets/index-Ovhp4Bh-.css",
+      "bytes": 34298,
+      "gzip": 7179,
+      "brotli": 6310
+    }
+  ],
+  "jsInitialGzip": 254873,
+  "cssInitialGzip": 7179,
+  "themeBootstrap": {
+    "bytes": 1336,
+    "gzip": 554,
+    "delivery": "external defer before module"
+  },
+  "totalInitialJsGzip": 255427,
+  "totalInitialJsGzipKiB": 249.4404296875,
+  "baselineInitialJsGzip": 285073,
+  "initialJsReductionPercent": 10.399441546551236,
+  "fontPreloadBytes": 35876,
+  "developmentSpecimenInBuild": false,
+  "compression": "Node zlib default gzip/brotli, same method as baseline"
+}

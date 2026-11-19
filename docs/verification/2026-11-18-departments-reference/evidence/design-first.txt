@@ -1,0 +1,88 @@
+[WebServer] (node:1172824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1173043) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 2 workers
+
+(node:1173091) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1173092) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (10.4s)
+  ✘  1 [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (11.1s)
+
+
+  1) [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' })
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' }) with timeout 5000ms
+      - waiting for getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' })
+        14 × locator resolved to <button type="button" data-slot="button" data-size="default" data-variant="ghost" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not…>Cancelar edición</button>
+           - unexpected value "inactive"
+
+
+      110 |       await expect(
+      111 |         drawer.getByRole('button', { name: 'Cancelar edición' }),
+    > 112 |       ).toBeFocused();
+          |         ^
+      113 |       await input.fill(names[0] + ' temporal');
+      114 |       page.once('dialog', (d) => d.dismiss());
+      115 |       await page.keyboard.press('Escape');
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:112:9
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' })
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' }) with timeout 5000ms
+      - waiting for getByRole('dialog', { name: 'Editar departamento', exact: true }).getByRole('button', { name: 'Cancelar edición' })
+        14 × locator resolved to <button type="button" data-slot="button" data-size="default" data-variant="ghost" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not…>Cancelar edición</button>
+           - unexpected value "inactive"
+
+
+      110 |       await expect(
+      111 |         drawer.getByRole('button', { name: 'Cancelar edición' }),
+    > 112 |       ).toBeFocused();
+          |         ^
+      113 |       await input.fill(names[0] + ' temporal');
+      114 |       page.once('dialog', (d) => d.dismiss());
+      115 |       await page.keyboard.press('Escape');
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:112:9
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+    [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 

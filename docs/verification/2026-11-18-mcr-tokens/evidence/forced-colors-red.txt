@@ -1,0 +1,40 @@
+[WebServer] (node:681014) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:681203) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:681289) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/appearance.spec.ts:265:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (2.0s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:265:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "double"
+    Received: "solid"
+
+      276 |     expect(
+      277 |       await days.first().evaluate((el) => getComputedStyle(el).borderStyle),
+    > 278 |     ).toBe('double');
+          |       ^
+      279 |     expect(
+      280 |       await days.nth(1).evaluate((el) => getComputedStyle(el).borderStyle),
+      281 |     ).toBe('solid');
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:278:7
+
+    Error Context: test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/appearance.spec.ts:265:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 

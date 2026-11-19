@@ -1,0 +1,248 @@
+{
+  "recordedAt": "2026-11-19T14:54:54.293Z",
+  "browser": "158.0.8127.18",
+  "node": "v26.13.1",
+  "method": "Compilaciones NODE_ENV=production; contextos nuevos; HTTP no-store; APIs simuladas con 120 ms; 12 empleados ficticios iguales; sin throttle de CPU/red, sin INP ni backend real; sin aislamiento de CPU del host; suite E2E terminada antes de esta medicion final. Orden emparejado before/after, tres corridas por viewport/tema. No equivale a rendimiento de campo ni valida reglas de negocio.",
+  "measurements": [
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 320,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 280,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "light",
+      "run": 2,
+      "lcp": 332,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "light",
+      "run": 2,
+      "lcp": 292,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "light",
+      "run": 3,
+      "lcp": 312,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "light",
+      "run": 3,
+      "lcp": 316,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "dark",
+      "run": 1,
+      "lcp": 300,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "dark",
+      "run": 1,
+      "lcp": 316,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "dark",
+      "run": 2,
+      "lcp": 300,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "dark",
+      "run": 2,
+      "lcp": 312,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "theme": "dark",
+      "run": 3,
+      "lcp": 300,
+      "cls": 0.6250470040055588,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "theme": "dark",
+      "run": 3,
+      "lcp": 328,
+      "cls": 0.0922075120753579,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "light",
+      "run": 1,
+      "lcp": 304,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "light",
+      "run": 1,
+      "lcp": 200,
+      "cls": 0.09001878480832054,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "light",
+      "run": 2,
+      "lcp": 296,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "light",
+      "run": 2,
+      "lcp": 200,
+      "cls": 0.09001878480832054,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "light",
+      "run": 3,
+      "lcp": 356,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "light",
+      "run": 3,
+      "lcp": 200,
+      "cls": 0.09001878480832054,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "dark",
+      "run": 1,
+      "lcp": 304,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "dark",
+      "run": 1,
+      "lcp": 324,
+      "cls": 0.09939774823779034,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "dark",
+      "run": 2,
+      "lcp": 360,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "dark",
+      "run": 2,
+      "lcp": 320,
+      "cls": 0.09001878480832054,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "theme": "dark",
+      "run": 3,
+      "lcp": 328,
+      "cls": 0.1142755656659582,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "theme": "dark",
+      "run": 3,
+      "lcp": 388,
+      "cls": 0.09001878480832054,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

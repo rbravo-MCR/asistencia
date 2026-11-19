@@ -1,0 +1,137 @@
+[
+  {
+    "file": "assignments-page-BeaOO89y.js",
+    "bytes": 10241,
+    "gzipBytes": 2972
+  },
+  {
+    "file": "attendance-pages-DuwzGJ4s.js",
+    "bytes": 16037,
+    "gzipBytes": 4805
+  },
+  {
+    "file": "attendance-policy-Dn_-0KBv.js",
+    "bytes": 3881,
+    "gzipBytes": 1459
+  },
+  {
+    "file": "audit-page-Bj7X24_H.js",
+    "bytes": 4194,
+    "gzipBytes": 1460
+  },
+  {
+    "file": "calendar-page-B-27FB2-.js",
+    "bytes": 14132,
+    "gzipBytes": 3979
+  },
+  {
+    "file": "check-5U1znarf.js",
+    "bytes": 154,
+    "gzipBytes": 160
+  },
+  {
+    "file": "configuration-page-DXZVflRd.js",
+    "bytes": 4972,
+    "gzipBytes": 1556
+  },
+  {
+    "file": "controls-D-nRtf_4.js",
+    "bytes": 1524,
+    "gzipBytes": 594
+  },
+  {
+    "file": "dashboard-8Ynyq96R.js",
+    "bytes": 14649,
+    "gzipBytes": 3513
+  },
+  {
+    "file": "departments-page-CEIqtiMh.js",
+    "bytes": 29334,
+    "gzipBytes": 7414
+  },
+  {
+    "file": "dist-DgH1dw1d.js",
+    "bytes": 52952,
+    "gzipBytes": 18170
+  },
+  {
+    "file": "employees-page-BZtacSKQ.js",
+    "bytes": 35597,
+    "gzipBytes": 8065
+  },
+  {
+    "file": "form-schema-DUJUo8yt.js",
+    "bytes": 2380,
+    "gzipBytes": 1149
+  },
+  {
+    "file": "index-CkJ7uysg.css",
+    "bytes": 55097,
+    "gzipBytes": 10264
+  },
+  {
+    "file": "index-GHIO06Ud.js",
+    "bytes": 393390,
+    "gzipBytes": 121395
+  },
+  {
+    "file": "locations-page-kJXrad2O.js",
+    "bytes": 12496,
+    "gzipBytes": 3259
+  },
+  {
+    "file": "notifications-page-C6ePZkbt.js",
+    "bytes": 3053,
+    "gzipBytes": 1092
+  },
+  {
+    "file": "query-feedback-XlNbqlfj.js",
+    "bytes": 1214,
+    "gzipBytes": 561
+  },
+  {
+    "file": "react-CDb74C0S.js",
+    "bytes": 431268,
+    "gzipBytes": 127959
+  },
+  {
+    "file": "requests-pages-Dj-6IueM.js",
+    "bytes": 42222,
+    "gzipBytes": 9908
+  },
+  {
+    "file": "rolldown-runtime-XKyaHtl9.js",
+    "bytes": 726,
+    "gzipBytes": 431
+  },
+  {
+    "file": "search-sF3bTK0D.js",
+    "bytes": 1997,
+    "gzipBytes": 930
+  },
+  {
+    "file": "shifts-page-vn0lSrZ1.js",
+    "bytes": 10403,
+    "gzipBytes": 2691
+  },
+  {
+    "file": "use-write-B_fWcO_k.js",
+    "bytes": 408,
+    "gzipBytes": 310
+  },
+  {
+    "file": "useMutation-CHjDoKNP.js",
+    "bytes": 2373,
+    "gzipBytes": 982
+  },
+  {
+    "file": "users-page-BWBTL9An.js",
+    "bytes": 23918,
+    "gzipBytes": 6153
+  },
+  {
+    "file": "validation-sLBhemX9.js",
+    "bytes": 74729,
+    "gzipBytes": 20687
+  }
+]

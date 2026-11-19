@@ -1,0 +1,53 @@
+# Documento de Arquitectura y Reglas de Negocio: Sistema de Asistencia
+
+Este documento centraliza todas las definiciones operativas, el stack tecnológico y la arquitectura de software (Clean Architecture) para el desarrollo del Sistema de Asistencia, diseñado para ser construido de forma modular con apoyo de Inteligencia Artificial.
+
+---
+
+## 1. Reglas de Negocio (Core del Sistema)
+
+1. **Horario Universal:** La jornada oficial es de 8:00 a.m. a 5:00 p.m. para todo el personal operativo y administrativo.
+2. **Tolerancia de Entrada:** Se otorga un margen de 10 minutos de gracia. El estatus de "Retardo" se dispara automáticamente a partir del minuto 11 respecto a la hora de entrada asignada.
+3. **Excepción Call Center (24/7):** Quedan exentos del horario universal y operan bajo turnos asignados. El sistema soporta registros de jornadas continuas que cruzan la medianoche (Overnight).
+4. **Asignación Fija (Presencial):** Los departamentos de Administración e Informática operan exclusivamente bajo el Rol Presencial de forma permanente.
+5. **Seguridad y Validación (IP y Biometría):** 
+   * **Presencial:** El check-in valida que la IP pública de la petición coincida con la IP (o DDNS) de la red Wi-Fi de la oficina. 
+   * **Home Office:** El personal remoto marca sin validación de red/geográfica.
+   * **General:** Todo registro requiere validación biométrica (rostro/huella) nativa del teléfono celular.
+6. **Hora Inalterable:** El sistema de asistencia se rige única y estrictamente por la hora del servidor central (AWS), ignorando por completo la hora local configurada en el dispositivo móvil del usuario para evitar fraudes.
+7. **Justificación Obligatoria:** Todo registro fuera del margen de tolerancia bloquea el flujo normal en la app móvil y exige al empleado ingresar un motivo o adjuntar evidencia para la aprobación de su supervisor.
+8. **Control de Salidas Anticipadas:** Registrar la salida antes de las 5:00 p.m. (o antes de finalizar el turno de Call Center) genera una excepción que requiere permiso o justificación.
+9. **Gestión Administrativa:** Las vacaciones, permisos de ausencia y guardias (sábados, domingos y festivos) se programan, descuentan y autorizan directamente desde el panel web de administración.
+
+---
+
+## 2. Stack Tecnológico
+
+El sistema se divide en tres piezas independientes que se comunican a través de APIs REST, manteniendo un ecosistema unificado en **TypeScript/JavaScript**.
+
+* **Base de Datos:** PostgreSQL alojada en Amazon RDS.
+* **Backend (API Central):** Node.js con Express o Fastify. Uso de Prisma ORM para el mapeo y tipado estricto de la base de datos.
+* **Frontend (Panel Admin RRHH):** React Web empaquetado con Vite. Uso de Tailwind CSS y shadcn/ui para el diseño. Desplegado en AWS S3 + CloudFront (SPA).
+* **Frontend (App Móvil Empleados):** React Native construido sobre Expo para generar los instalables de iOS y Android.
+* **Seguridad (Opcional/Recomendado):** AWS Cognito para gestión de identidades y JWT.
+
+---
+
+## 3. Arquitectura del Backend (Clean Architecture / SRP)
+
+El backend debe seguir el **Principio de Responsabilidad Única (SRP)**. El proyecto se organiza por dominios de negocio (`modules/`) y utilidades globales (`core/`). Cada módulo se divide estrictamente en 4 capas:
+
+### Estructura de Directorios
+```text
+src/
+├── core/                   # Utilidades globales puras
+│   ├── database/           # Instancia de PrismaClient
+│   ├── network/            # Validadores de IP
+│   └── time/               # Calculadoras de tolerancia, horas y fechas
+│
+├── modules/
+│   ├── asistencia/         
+│   │   ├── asistencia.routes.ts       # 1. Rutas: Define endpoints HTTP
+│   │   ├── asistencia.controller.ts   # 2. Controlador: Extrae req y envía res
+│   │   ├── asistencia.service.ts      # 3. Servicio: Reglas de negocio (El Cerebro)
+│   │   └── asistencia.repository.ts   # 4. Repositorio: Única capa que toca Prisma/BD

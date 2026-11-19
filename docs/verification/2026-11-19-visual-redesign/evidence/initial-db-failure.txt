@@ -1,0 +1,98 @@
+[WebServer] (node:37292) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:37547) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:37734) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia (1.1s)
+(node:38155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [mobile] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia (512ms)
+
+
+  1) [desktop] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia 
+
+    Error: Failed query: insert into "users" ("id", "email", "username", "name", "password_hash", "active", "created_at") values (default, $1, default, $2, $3, $4, default) returning "id", "email", "username", "name", "password_hash", "active", "created_at"
+    params: 2e35412c-953d-4a56-a95a-79c8d72f2031@example.test,Administración E2E chromium,$argon2id$v=19$m=19456,t=2,p=1$LKDiAFLPMw2X8v/P88PvEQ$Umzztd5lXW/MNCcZw3zXuSAo4+mPNzIvnhMdRcgf+Hs,true
+
+       at ../../apps/api/src/modules/identity/application/service.ts:233
+
+      231 |     username?: string,
+      232 |   ) {
+    > 233 |     const [row] = await tx
+          |                   ^
+      234 |       .insert(users)
+      235 |       .values({
+      236 |         email: normalizeEmail(input.email),
+        at NodePgPreparedQuery.queryWithCache (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/pg-core/session.ts:73:11)
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:154:19
+        at insertUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:233:19)
+        at NodePgSession.transaction (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:259:19)
+        at Object.createUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:263:16)
+        at Object.account (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:43:20)
+    [cause]: error: relation "users" does not exist
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/pg@8.23.1/node_modules/pg/lib/client.js:694:17
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:161:13
+        at NodePgPreparedQuery.queryWithCache (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/pg-core/session.ts:71:12)
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:154:19
+        at insertUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:233:19)
+        at NodePgSession.transaction (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:259:19)
+        at Object.createUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:263:16)
+        at Object.account (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:43:20)
+
+    Error Context: test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia 
+
+    Error: Failed query: insert into "users" ("id", "email", "username", "name", "password_hash", "active", "created_at") values (default, $1, default, $2, $3, $4, default) returning "id", "email", "username", "name", "password_hash", "active", "created_at"
+    params: 8bb759b1-02f4-4121-abfc-f06133570815@example.test,Administración E2E chromium,$argon2id$v=19$m=19456,t=2,p=1$uAUWPJPVjxA7z3iBGwrweg$DXB3Xf8QNEiPaAt5qjeaJOF5Ju5uB1nhigyQHb+UtH0,true
+
+       at ../../apps/api/src/modules/identity/application/service.ts:233
+
+      231 |     username?: string,
+      232 |   ) {
+    > 233 |     const [row] = await tx
+          |                   ^
+      234 |       .insert(users)
+      235 |       .values({
+      236 |         email: normalizeEmail(input.email),
+        at NodePgPreparedQuery.queryWithCache (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/pg-core/session.ts:73:11)
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:154:19
+        at insertUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:233:19)
+        at NodePgSession.transaction (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:259:19)
+        at Object.createUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:263:16)
+        at Object.account (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:43:20)
+    [cause]: error: relation "users" does not exist
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/pg@8.23.1/node_modules/pg/lib/client.js:694:17
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:161:13
+        at NodePgPreparedQuery.queryWithCache (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/pg-core/session.ts:71:12)
+        at /home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:154:19
+        at insertUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:233:19)
+        at NodePgSession.transaction (/home/rafael/proyectos/asistencia/node_modules/.pnpm/drizzle-orm@0.45.4_@types+pg@8.23.1_pg@8.23.1/node_modules/src/node-postgres/session.ts:259:19)
+        at Object.createUser (/home/rafael/proyectos/asistencia/apps/api/src/modules/identity/application/service.ts:263:16)
+        at Object.account (/home/rafael/proyectos/asistencia/tests/e2e/fixtures.ts:43:20)
+
+    Error Context: test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia 
+    [mobile] › tests/e2e/employees-design.spec.ts:2:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia 

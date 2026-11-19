@@ -1,0 +1,35 @@
+{
+  "changed": [
+    "apps/web/src/app/router.ts",
+    "apps/web/src/app/router.test.tsx",
+    "apps/web/src/components/layout/route-search.tsx",
+    "apps/web/src/components/layout/navigation.ts",
+    "apps/web/src/components/layout/route-search.test.tsx",
+    "apps/web/src/components/layout/app-shell.tsx",
+    "apps/web/src/features/dashboard/dashboard.tsx",
+    "apps/web/src/features/dashboard/dashboard.test.tsx",
+    "apps/web/src/features/planning/calendar-page.tsx",
+    "apps/web/src/features/planning/steps-pages.test.tsx",
+    "apps/web/src/features/planning/planning-editor.tsx",
+    "apps/web/src/features/planning/shifts-page.tsx",
+    "apps/web/src/features/requests/requests-pages.test.tsx",
+    "apps/web/src/features/requests/requests-pages.tsx",
+    "apps/web/src/features/requests/common.ts",
+    "apps/web/src/features/requests/controls.tsx",
+    "apps/web/src/features/requests/vacation-page.tsx",
+    "apps/web/src/features/requests/draft.ts",
+    "tests/e2e/steps10-12.spec.ts",
+    "tests/e2e/requests.spec.ts",
+    "tests/e2e/appearance.spec.ts"
+  ],
+  "added": [
+    "apps/web/src/lib/request-intent.test.ts",
+    "apps/web/src/lib/request-intent.ts",
+    "apps/web/src/features/requests/request-attachments.tsx",
+    "apps/web/src/features/requests/vacation-balance-card.tsx",
+    "apps/web/src/features/requests/create-request.tsx",
+    "apps/web/src/features/requests/request-review.tsx",
+    "tests/e2e/ux-clarity.spec.ts"
+  ],
+  "removed": []
+}

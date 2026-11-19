@@ -1,0 +1,45 @@
+[WebServer] (node:790434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:790673) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:790801) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/appearance.spec.ts:311:1 › descarga el módulo de calendario solo al navegar hacia él (2.0s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:311:1 › descarga el módulo de calendario solo al navegar hacia él 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "http://127.0.0.1:5183/src/features/planning/calendar-page.tsx",
+    + ]
+
+      321 |       page.getByRole('heading', { name: 'Mi cuenta', exact: true }),
+      322 |     ).toBeVisible();
+    > 323 |     expect(modules).toEqual([]);
+          |                     ^
+      324 |     await page.getByRole('link', { name: 'Calendario', exact: true }).click();
+      325 |     await expect(
+      326 |       page.getByRole('heading', { name: 'Calendario de turnos', exact: true }),
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:323:21
+
+    Error Context: test-results/appearance-descarga-el-mód-3c76a-io-solo-al-navegar-hacia-él-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-descarga-el-mód-3c76a-io-solo-al-navegar-hacia-él-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-descarga-el-mód-3c76a-io-solo-al-navegar-hacia-él-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/appearance.spec.ts:311:1 › descarga el módulo de calendario solo al navegar hacia él 

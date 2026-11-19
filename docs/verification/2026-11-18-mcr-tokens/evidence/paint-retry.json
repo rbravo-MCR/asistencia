@@ -1,0 +1,19 @@
+{
+  "reason": "Una corrida headless no entreg\u00f3 eventos de paint; se repite esa corrida sin tratar null como cero. Se espera paint con pesta\u00f1a activa en el recolector.",
+  "invalidRuns": [
+    {
+      "profile": "constrained",
+      "route": "/ingresar",
+      "run": 2,
+      "lcpMs": null,
+      "cls": 0,
+      "themeAppliedMs": 357.1000000014901,
+      "googleSansLoaded": true,
+      "domContentLoadedMs": 2762.60000000149,
+      "loadMs": 2763.5,
+      "transferBytes": 350619,
+      "longTasks": 3,
+      "longTaskTotalMs": 1184
+    }
+  ]
+}

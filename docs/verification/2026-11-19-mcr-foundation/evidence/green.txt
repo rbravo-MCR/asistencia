@@ -1,0 +1,9 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+
+ Test Files  2 passed (2)
+      Tests  4 passed (4)
+   Start at  09:04:04
+   Duration  2.59s (environment 36%, import 26%, tests 24%, setup 9%, transform 5%)
+

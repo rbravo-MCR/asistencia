@@ -1,0 +1,7 @@
+measurement desktop /departamentos 1
+measurement desktop /departamentos 2
+measurement desktop /departamentos 3
+measurement constrained /departamentos 1
+measurement constrained /departamentos 2
+measurement constrained /departamentos 3
+{"captures":8,"pageErrors":0,"runs":6,"browser":"158.0.8127.18"}

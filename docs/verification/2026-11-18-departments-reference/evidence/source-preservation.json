@@ -1,0 +1,19 @@
+{
+  "modifiedExistingWebFiles": [
+    "apps/web/src/styles.css",
+    "apps/web/src/components/layout/sidebar.tsx",
+    "apps/web/src/features/departments/department-form.tsx",
+    "apps/web/src/features/departments/departments-screen.test.tsx",
+    "apps/web/src/features/departments/departments-screen.tsx",
+    "apps/web/src/features/departments/department-list.tsx"
+  ],
+  "newWebFiles": [
+    "apps/web/src/features/departments/department-delete-dialog.tsx",
+    "apps/web/src/features/departments/department-actions.tsx"
+  ],
+  "backendContractsMigrationsEnvironmentPackagesLockfileUnchanged": true,
+  "otherWebModulesUnchanged": true,
+  "existingTokensAndFontsUnchanged": true,
+  "departmentApiAndValidationSchemaUnchanged": true,
+  "dependenciesAdded": false
+}

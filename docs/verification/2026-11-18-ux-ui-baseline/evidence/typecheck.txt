@@ -1,0 +1,8 @@
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done

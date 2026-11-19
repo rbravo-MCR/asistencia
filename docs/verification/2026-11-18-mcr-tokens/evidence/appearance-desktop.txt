@@ -1,0 +1,21 @@
+[WebServer] (node:660859) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:661118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 2 workers
+
+(node:661188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:661189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/e2e/appearance.spec.ts:25:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (5.4s)
+  ✓  1 [desktop] › tests/e2e/appearance.spec.ts:6:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (8.0s)
+  ✓  3 [desktop] › tests/e2e/appearance.spec.ts:39:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.1s)
+  ✓  5 [desktop] › tests/e2e/appearance.spec.ts:74:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (465ms)
+  ✓  4 [desktop] › tests/e2e/appearance.spec.ts:61:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (3.7s)
+  ✓  6 [desktop] › tests/e2e/appearance.spec.ts:84:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (4.0s)
+  ✓  7 [desktop] › tests/e2e/appearance.spec.ts:122:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (3.8s)
+  ✓  8 [desktop] › tests/e2e/appearance.spec.ts:122:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (4.2s)
+
+  8 passed (22.8s)

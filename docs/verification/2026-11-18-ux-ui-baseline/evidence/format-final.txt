@@ -1,0 +1,20 @@
+$ prettier --check .
+Checking formatting...
+[warn] MCR_UX_UI_Codex/docs/frontend/00_UX_UI_MASTER_GUIDELINES.md
+[warn] MCR_UX_UI_Codex/docs/frontend/01_DESIGN_SYSTEM.md
+[warn] MCR_UX_UI_Codex/docs/frontend/02_DESIGN_TOKENS.md
+[warn] MCR_UX_UI_Codex/docs/frontend/03_COMPONENT_LIBRARY.md
+[warn] MCR_UX_UI_Codex/docs/frontend/04_GLASSMORPHISM.md
+[warn] MCR_UX_UI_Codex/docs/frontend/05_SCREEN_BLUEPRINTS.md
+[warn] MCR_UX_UI_Codex/docs/frontend/06_USER_JOURNEYS.md
+[warn] MCR_UX_UI_Codex/docs/frontend/07_MICROINTERACTIONS.md
+[warn] MCR_UX_UI_Codex/docs/frontend/08_RESPONSIVE_DESIGN.md
+[warn] MCR_UX_UI_Codex/docs/frontend/09_ACCESSIBILITY.md
+[warn] MCR_UX_UI_Codex/docs/frontend/10_PERFORMANCE_BUDGET.md
+[warn] MCR_UX_UI_Codex/docs/frontend/11_FRONTEND_ARCHITECTURE.md
+[warn] MCR_UX_UI_Codex/docs/frontend/12_SECURITY_GOVERNANCE.md
+[warn] MCR_UX_UI_Codex/docs/frontend/13_TESTING_STRATEGY.md
+[warn] MCR_UX_UI_Codex/docs/frontend/14_DEFINITION_OF_DONE.md
+[warn] MCR_UX_UI_Codex/docs/frontend/MCR_UX_UI_Master.md
+[warn] Code style issues found in 16 files. Run Prettier with --write to fix.
+[ELIFECYCLE] Command failed with exit code 1.

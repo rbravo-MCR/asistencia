@@ -1,0 +1,5 @@
+$ eslint . && pnpm check:boundaries
+$ depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src
+
+✔ no dependency violations found (230 modules, 726 dependencies cruised)
+

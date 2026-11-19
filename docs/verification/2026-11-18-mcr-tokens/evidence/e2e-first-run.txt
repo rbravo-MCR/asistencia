@@ -1,0 +1,169 @@
+$ pnpm --filter @asistencia/contracts build && playwright test
+$ tsc -p tsconfig.json
+[WebServer] (node:692471) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:692666) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 60 tests using 2 workers
+
+(node:692751) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:692752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (3.4s)
+  ✓   2 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (6.0s)
+  ✓   3 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.9s)
+  ✓   5 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (650ms)
+  ✓   4 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (3.5s)
+  ✓   6 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (3.9s)
+  ✓   7 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.4s)
+  ✘   8 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (1.6s)
+(node:693875) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [desktop] › tests/e2e/appearance.spec.ts:204:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (1.3s)
+  ✘  10 [desktop] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (2.7s)
+  ✓  11 [desktop] › tests/e2e/appearance.spec.ts:238:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (1.8s)
+(node:694166) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [desktop] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (4.7s)
+  ✓  12 [desktop] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (9.8s)
+  ✓  14 [desktop] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (4.2s)
+  ✓  15 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (2.1s)
+  ✓  16 [desktop] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (5.2s)
+  ✓  17 [desktop] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (6.8s)
+  ✓  18 [desktop] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (8.5s)
+  ✓  19 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (10.0s)
+  ✓  20 [desktop] › tests/e2e/identity-employees.spec.ts:10:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (10.0s)
+  ✓  22 [desktop] › tests/e2e/identity-employees.spec.ts:207:1 › empleado no ve administración ni puede concederse roles mediante la API (3.5s)
+  ✓  21 [desktop] › tests/e2e/identity-employees.spec.ts:56:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (11.6s)
+  ✓  24 [desktop] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (3.9s)
+  ✓  23 [desktop] › tests/e2e/identity-employees.spec.ts:269:1 › edita y elimina empleados desde la web sin cambiar el número interno (8.8s)
+  ✓  25 [desktop] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (12.0s)
+  ✓  26 [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (20.5s)
+  ✓  27 [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (25.7s)
+  ✓  28 [desktop] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (18.3s)
+  ✓  29 [desktop] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (5.5s)
+(node:699105) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  30 [desktop] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (6.4s)
+(node:699421) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  31 [mobile] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (4.1s)
+  ✓  32 [mobile] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.4s)
+  ✓  33 [mobile] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.5s)
+  ✓  35 [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (554ms)
+  ✓  34 [mobile] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (4.4s)
+  ✓  36 [mobile] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (4.5s)
+  ✓  37 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (3.2s)
+  ✓  38 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (3.1s)
+  ✓  39 [mobile] › tests/e2e/appearance.spec.ts:204:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (3.0s)
+  ✓  40 [mobile] › tests/e2e/appearance.spec.ts:238:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (3.2s)
+  ✘  41 [mobile] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (5.1s)
+(node:700684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  42 [mobile] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (9.7s)
+  ✓  44 [mobile] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (7.5s)
+  ✓  45 [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (3.3s)
+  ✓  43 [mobile] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (17.1s)
+  ✓  46 [mobile] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (7.4s)
+  ✓  47 [mobile] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (10.2s)
+  ✓  48 [mobile] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (10.9s)
+  ✓  50 [mobile] › tests/e2e/identity-employees.spec.ts:10:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (8.7s)
+  ✓  49 [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (12.4s)
+  ✓  52 [mobile] › tests/e2e/identity-employees.spec.ts:207:1 › empleado no ve administración ni puede concederse roles mediante la API (3.5s)
+  ✓  51 [mobile] › tests/e2e/identity-employees.spec.ts:56:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (10.1s)
+  ✓  53 [mobile] › tests/e2e/identity-employees.spec.ts:269:1 › edita y elimina empleados desde la web sin cambiar el número interno (8.9s)
+  ✓  54 [mobile] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (4.4s)
+  ✓  55 [mobile] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (10.0s)
+  ✓  56 [mobile] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (16.3s)
+  ✓  57 [mobile] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (17.6s)
+  ✓  59 [mobile] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (4.4s)
+  ✓  58 [mobile] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (16.0s)
+  ✓  60 [mobile] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (4.7s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark 
+
+    Error: muted
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 4.5
+    Received:    2.035309338352056
+
+      182 |       expect(ratios.brand.toUpperCase()).toBe('#FADB25');
+      183 |       for (const key of ['button', 'link', 'text', 'muted'] as const)
+    > 184 |         expect(ratios[key], key).toBeGreaterThanOrEqual(4.5);
+          |                                  ^
+      185 |       for (const [state, contrast] of Object.entries(ratios.semantic))
+      186 |         expect(contrast, state).toBeGreaterThanOrEqual(4.5);
+      187 |       expect(ratios.inputBoundary).toBeGreaterThanOrEqual(3);
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:184:34
+
+    Error Context: test-results/appearance-identidad-y-pre-430eb-es-campos-y-estados-en-dark-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-identidad-y-pre-430eb-es-campos-y-estados-en-dark-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-identidad-y-pre-430eb-es-campos-y-estados-en-dark-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "3px"
+
+      296 |     expect(
+      297 |       await active.evaluate((el) => getComputedStyle(el).outlineWidth),
+    > 298 |     ).not.toBe(unfocused);
+          |           ^
+      299 |   },
+      300 | );
+      301 |
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:298:11
+
+    Error Context: test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 
+
+    Error: expect(received).not.toBe(expected) // Object.is equality
+
+    Expected: not "3px"
+
+      296 |     expect(
+      297 |       await active.evaluate((el) => getComputedStyle(el).outlineWidth),
+    > 298 |     ).not.toBe(unfocused);
+          |           ^
+      299 |   },
+      300 | );
+      301 |
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:298:11
+
+    Error Context: test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-el-calendario-y-e3186-el-foco-en-colores-forzados-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark 
+    [desktop] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 
+    [mobile] › tests/e2e/appearance.spec.ts:268:1 › el calendario y navegación conservan selección distinta del foco en colores forzados 
+  57 passed (3.8m)
+[ELIFECYCLE] Command failed with exit code 1.

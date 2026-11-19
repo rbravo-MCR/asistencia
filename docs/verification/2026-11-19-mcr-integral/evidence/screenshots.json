@@ -1,0 +1,2053 @@
+{
+  "count": 512,
+  "files": [
+    {
+      "path": "workflows/base-navega-entre-rutas-pe-ddb93-o-y-recupera-una-p\u00e1gina-404-desktop/404.png",
+      "sha256": "80b7fec792770b1c9d1998f8466d12315a5144941a32cf8a1228c39398c31ad2"
+    },
+    {
+      "path": "workflows/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-mobile/asistencia-home-office.png",
+      "sha256": "044a450b8c16a84598344152095437b82ccffb6b10b0cd757cc6c1ba8a6047dc"
+    },
+    {
+      "path": "workflows/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-mobile/incidencias-home-office.png",
+      "sha256": "87ae61e1bf648db0bf8e92f1722b253b1863d3898d60f53a865627995942fcc4"
+    },
+    {
+      "path": "workflows/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-mobile/before-shell-users.png",
+      "sha256": "e38324cd15ff53ad097aad1d4621965b987ca6da52150b3e054eb51711b76416"
+    },
+    {
+      "path": "workflows/base-navega-entre-rutas-pe-ddb93-o-y-recupera-una-p\u00e1gina-404-mobile/404.png",
+      "sha256": "cd72b49210fea4896a675bd143e7c43fadd7418b0f8c940091b0dd33a2831a18"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-360.png",
+      "sha256": "f4876598ac236a2616716a4ca707080f0ca10bed94457ade26bf62b613ea8093"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-768.png",
+      "sha256": "05107892d24f61fdbddb3ab3afff71b3dd228339bc871b13d966637f192bf177"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-1440.png",
+      "sha256": "2303f87e8ce2e465ae4a51a0b1d137ffa420b9a900652850d9f9fe66371aec57"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-768.png",
+      "sha256": "d2470e6c8a7d40a7fc12e2f0ae1f6af205f1eacd1d294b582ef2dc9604f06562"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-1024.png",
+      "sha256": "570efa44197ff7c29076bf265a4406b19247b4feea9f31471d544e0248f1d15f"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-390.png",
+      "sha256": "85f7db8467f3b0ac1522056ad87515bff8e1ed80cb423ceb657bb7d6b3c8e252"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-360.png",
+      "sha256": "98c9c9fa1d1ef49e641c93543f8b659ebaddde9ae49422a77af7736a98c907c7"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-390.png",
+      "sha256": "b2c552dac18e96b43be340d5c49abde4ee1e636b2d5ed27696d9b94f7509eff7"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-1440.png",
+      "sha256": "602a5d356ca389956de1c485638c360d2bf3d9a205b812bc2774e5a31616577f"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-320.png",
+      "sha256": "8fbc9bfb595bee80d42339f10e3dda1e055fceef577e1e633a82ce6ed7f9cded"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-1024.png",
+      "sha256": "383500853a92627bac0f91f322c748de6fadbd32ac0056955b4ba1dbd3565416"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-320.png",
+      "sha256": "0041a4448f81f49088e77cdea4be57bcd8ec71ab8ce122ee8196a9d5ad264296"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-light-1280.png",
+      "sha256": "ad96b9cabecc1d9d58829ecab8562845482517bd6e85ddff8c7955571a3fdf3a"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-desktop/directory-dark-1280.png",
+      "sha256": "a1bea166bef9009e4681cc42dd802326f665d1b05677c0aba188217c577410fb"
+    },
+    {
+      "path": "workflows/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-desktop/asistencia-home-office.png",
+      "sha256": "62307d1f0551b87922a8d9b82d097d503a747989287dff160afe946f818af290"
+    },
+    {
+      "path": "workflows/attendance-marca-home-offi-2d95d-cipada-con-motivo-pendiente-desktop/incidencias-home-office.png",
+      "sha256": "d7febeb7cca476f1e5caee81742d45a5ab243639c14ab7814684118b598fe03d"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/before-employees.png",
+      "sha256": "8f775df7918b21a4bec766f9d936b8a681abc4ba5b0325b8d37e6e6b134141be"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/employees-dark-desktop.png",
+      "sha256": "9d10ce2a7e00c2a414f629930c87d038d18614414be5490bae02adc66f4ec31b"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-desktop/employees-light-desktop.png",
+      "sha256": "c212cd1f1f24e07c2533bc9b6f7b672e6b22b780c36ca709342ba68fa4060e55"
+    },
+    {
+      "path": "workflows/dashboard-empleado-y-HR-ve-aff5e-\u00fablica-permanece-disponible-mobile/dashboard-employee.png",
+      "sha256": "f7b3e88666e6f6ceccacb49a30dbbcc92bc64cfabdf33c1a6353e6e31becc87f"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-light-320.png",
+      "sha256": "9357ed4765c85622fbf4152860976fb0cc6de2db4482b01915349d1787a8fe93"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-light-390.png",
+      "sha256": "5124072a602b190bed249b28bea810f265a2bf485752251bac0fb1f5febbe2c1"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/account.png",
+      "sha256": "bbe7eac1a0c44fcf60b141a7c8f02a257ae2a0ba06503659517f1a67fa7d4217"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-dark-1024.png",
+      "sha256": "09197fabfa54e06e7735b50bbe53799133eda02f35485f9dd1d1d9ff3889ee96"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-light-1024.png",
+      "sha256": "d8daa5a85d524b0a4e6a2b8989b7d8b7a7d682c68a26a0f458c3823c37178736"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-dark-320.png",
+      "sha256": "fb8be28b11fcc5bb9bd91a9b5933ba60090581ea4b434a1a3d1a2617f17414aa"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-dark-390.png",
+      "sha256": "543e30bb8ff79aa10f571764292d092a91f4122638ec774685f10b4096ba8aed"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-light-768.png",
+      "sha256": "2aaf943ca554751306830524d4d7254badbe17ec842423b48dd21d039e2b27f3"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-dark-1440.png",
+      "sha256": "5a0259155f30a33d519d8c1bf38b7713658a4cd998d91572555c007050d9d211"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-dark-768.png",
+      "sha256": "2bf0528cff3b34a6dc683138bd5f22d9b59ede49d641adf15d0c6c8f89efe644"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-desktop/dashboard-light-1440.png",
+      "sha256": "2d3663b90c4605325f22ac1baa276d2705a33b1af5da1ede08a43efd3b806449"
+    },
+    {
+      "path": "workflows/dashboard-empleado-y-HR-ve-aff5e-\u00fablica-permanece-disponible-desktop/dashboard-employee.png",
+      "sha256": "34a87cb244207ad38f820727ef58bc95d5b3b1bca8c719efc7cf4b11b5fa66c6"
+    },
+    {
+      "path": "workflows/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-mobile/vacaciones-saldo-aprobado.png",
+      "sha256": "8e146eb487696ab362eee1a888fbbdf64fb56e0b2d8d07c7a285189d2d09bac0"
+    },
+    {
+      "path": "workflows/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-mobile/solicitudes-cancelacion-jefatura-definitiva.png",
+      "sha256": "10977c780c6af79e5b173b70efd5e290f59366c878822d9f8c7d7a824ef128a5"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-mobile/dashboard-light-390.png",
+      "sha256": "5b346f575907954d51c11006e6e94fc1a6e379a73ef4318b7ba058119afdb5fd"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-mobile/account.png",
+      "sha256": "aef09786e4b96c42f226b7eafe534bbefae25bc8faca99ede573ec5e3ddd2c65"
+    },
+    {
+      "path": "workflows/redesign-foundation-dashbo-32d4e-nservan-datos-foco-y-reflow-mobile/dashboard-dark-390.png",
+      "sha256": "8bf06205205490cc15db131a8053c24b1c3389bdc9fa95673b10779fb36da192"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/sidebar-collapsed-light.png",
+      "sha256": "eee21b9869e05d9feb1f3d0daf3ffa29452c618d20179b543a29bd7e74eeb6a1"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-dark-768.png",
+      "sha256": "5db653f543abc0369591df26807f894ce3528f771b66493e79029dad09f95154"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-light-1440.png",
+      "sha256": "c1b7ac0c26b7f51ba25a73c9383e5064815aa9ca97309e918b541eece5c19359"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-dark-1440.png",
+      "sha256": "fc79216573fd4baf8e53307636028fc601390bab76b40d25ec9f5d3b3645c083"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/editor-light-desktop.png",
+      "sha256": "726743115fcb9eef0398dd169ee36d4cd545b7210f4abbd9cad18458c94c3f01"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-light-768.png",
+      "sha256": "d5cd6c361188f01477f260f6b27c778aeec635afce66657d7134be1091edc7e9"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/editor-dark-desktop.png",
+      "sha256": "41e30c36e945ac844d483e85cfdb58e27c9eb0da3169240aab91f63096861d26"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-dark-1280.png",
+      "sha256": "3fdd185c8c42e59673b33f3dbe64126b98ab724b0ee41df340ef94ddbd49f138"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-dark-1024.png",
+      "sha256": "98fbf6ec621acfac5d748bf394c8a26d92aef946ebd770e35310133931076ba0"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/sidebar-collapsed-dark.png",
+      "sha256": "887102da51e41cea7abf5675ea5846bc8d1306e4241122f580b6b547d4780b69"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-light-1280.png",
+      "sha256": "2cd68b4f3c1bc7520d7a98649dbd088acfb0d8d08d92a908d6fb04660c37ef0d"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/users-light-1024.png",
+      "sha256": "f32561d4bfe27d384d58f7b9d6fb964abc5a527ad285b167023dc1f3a629eac7"
+    },
+    {
+      "path": "workflows/steps10-12-comprueba-GPS-p-99deb-serva-rechazos-sin-marcajes-mobile/ubicaciones.png",
+      "sha256": "4600e4dc1e554acbdffc7d533dc07441391d8c5884caa4944cd0c031dac7619a"
+    },
+    {
+      "path": "workflows/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/before-shell-users.png",
+      "sha256": "61d89ae63d7cdb12db174afede8f6cc0e0d78713b27964322cf5f6a90e428880"
+    },
+    {
+      "path": "workflows/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-mobile/base.png",
+      "sha256": "762224838d009edb3c9f7d58e22dae8d9e004b8688bface3dd58e049c1513e83"
+    },
+    {
+      "path": "workflows/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/cuenta.png",
+      "sha256": "35fbc1cbec743f60d4fc1fe38f6d15a5827c54710ed9cf1873a9064fe9b282f0"
+    },
+    {
+      "path": "workflows/steps10-12-comprueba-GPS-p-99deb-serva-rechazos-sin-marcajes-desktop/ubicaciones.png",
+      "sha256": "deb0dd7677ef10815df71a015d539c70f3c2497e3aae3a5d4792dc8b6b19be2d"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/auditoria.png",
+      "sha256": "c1248bb2c1e794b505c68a5701932a13bd8173d4061753d85e3d922919e43019"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/calendario.png",
+      "sha256": "cd3e3e39e6b0056ad75d188f0b1a3232ea9d1d640e85b0ac8efc044111372c74"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-mobile/avisos.png",
+      "sha256": "a9de161305e190681435a1a5c5c50c2f8c30bc87c72a3ebd91d92349ed5fd9a7"
+    },
+    {
+      "path": "workflows/attendance-acepta-entrada--15097-ble-y-conserva-motivo-y-GPS-desktop/falta-tardia-marcaje-aceptado.png",
+      "sha256": "306483634906ff048dfca66111e5f2d4228f21fa06a2503a8a51d22b8a5a907e"
+    },
+    {
+      "path": "workflows/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/users-directory.png",
+      "sha256": "8b8587bc53d7a42f84fdbf2b01cd8227cfce24402652f235d4e566ae37d50697"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/auditoria.png",
+      "sha256": "4e1d37aee3e02690a409a68c19f573f11b172c0956a05cc49f248e9dd4622a0d"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/calendario.png",
+      "sha256": "19849a52c64479c6ccdecdd06a1cc59205662b41b38d67f738c78332df3c1897"
+    },
+    {
+      "path": "workflows/steps10-12-publica-turno-c-c49c2-t-y-entrega-aviso-auditable-desktop/avisos.png",
+      "sha256": "ae5cc85df2c151591af6f640fca4a992097afa3f571e8d8296b7df26f1e642c7"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/dashboard-admin.png",
+      "sha256": "20f5022e129cd742240bdda5bd91a64ca3d77f1ce0b10a7bc3ed1b3bd57950a6"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/attendance-policy.png",
+      "sha256": "fe8dbf20201a01ab8da05e1e0b3ca1847a945f9f1db17f8b081de947541ae578"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/configuration.png",
+      "sha256": "a34d5c4c9e14071e5e1525189f7d93c2690746caa316e973fab3da6c63e5e44b"
+    },
+    {
+      "path": "workflows/base-la-web-confirma-API-y-3221d-es-sin-errores-de-navegador-desktop/base.png",
+      "sha256": "51a394947862ffac626d7d67172fa473a91f11a51d42050c76818983b087305a"
+    },
+    {
+      "path": "workflows/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-mobile/departments.png",
+      "sha256": "8b996216fe49489fdcb4ce5b4c740196818160b3196db203ea022f384266f0dc"
+    },
+    {
+      "path": "workflows/attendance-acepta-entrada--15097-ble-y-conserva-motivo-y-GPS-mobile/falta-tardia-marcaje-aceptado.png",
+      "sha256": "4dc441847be881c4f486184816973e8eb55422732aec1013fe9269435c88bfea"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/drawer-dark-mobile.png",
+      "sha256": "1ff7d0283cb44e155df30a29336eb7099065c0fbe731a6abcaeb027d30f25c35"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/empty-dark-mobile.png",
+      "sha256": "4e690dd5bb3b96fe814f4c75fedd9e2e8798b3986e8efacff74b9c69f7716add"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/empty-light-mobile.png",
+      "sha256": "db0b068f120392782720dab28f4e019dfd936a5304ef7eece26342e6a214cd5e"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/delete-light-mobile.png",
+      "sha256": "b743aa605293fbbd73c1a2d2cfacbcb5bac7cb34a1ff92f35224dec6613fc32e"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/long-name-landscape-mobile.png",
+      "sha256": "18e22bf9c0de7b076f8810b61965b15844f61aa2224004c4f127832154fd5c18"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-dark-360.png",
+      "sha256": "3a5ad2006b87d0d60a43a68beacc54f6479f31e2085daa93f61e712b6c3ffc64"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/loading-dark-mobile.png",
+      "sha256": "8f5a716653291fc85dc2c6dc8cd88d54f7ee6482acf33154f6b1b440b1ffaef5"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-light-360.png",
+      "sha256": "f16c137dd78e9bca0b2c585deb5c610e9283ce8a8a7006744505cb6b87453402"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/drawer-light-mobile.png",
+      "sha256": "4b43c8ab40bbbac16b48f2ff9fc88d56a8ee5402d2adb7a6b368467f4d071f89"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-light-320.png",
+      "sha256": "f735df78cdd631385dc3ac7ba1ebbf405bf447e9421962bd3d64eeb6258f89b0"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/loading-light-mobile.png",
+      "sha256": "14402206cb440cb0487cbe7b5e077611aef551edf679de4dcb9dbcc119e991ec"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/before-departments.png",
+      "sha256": "f51fc28f4e63027643e9f6a9078d866e44e18d1785dcce4ee089339a729fbc50"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/error-dark-mobile.png",
+      "sha256": "ef1f1e083f2376c7018230504ca0ddf55fa82f4a5145f1581eab7873f5ce4d8c"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/menu-dark-mobile.png",
+      "sha256": "b373e33470243aad47b507542c2faaeaf44bb31be51a90e16e8ddbf36726ee0c"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/delete-dark-mobile.png",
+      "sha256": "9f4631ff5e327dd3e42c80508293504186b356cc3db7c668f04201247c315e04"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/error-light-mobile.png",
+      "sha256": "3610ad6f7b9549f90acbc050bf4679726084880a9cea0f689175f5137d9df89a"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-dark-390.png",
+      "sha256": "80bcd227b414d9b4f5b4e77a7d7a4f5ee94e2611f5d93c95250514bf55ccaabb"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-light-390.png",
+      "sha256": "95e6eb4fa4693e4406eac0215c0253d379a86b465da24ed31e896af7f210cc49"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/menu-light-mobile.png",
+      "sha256": "c4392a60d9a33208e5ccd502686525c3b8d814a6725c2a0089a5865cef4e3357"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/departments-dark-320.png",
+      "sha256": "410dbfcc96ddf0eaa8cc41264edcbbf9e286aad14f4fe2cdb475cca6bc5c2c68"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/dashboard-admin.png",
+      "sha256": "51a394947862ffac626d7d67172fa473a91f11a51d42050c76818983b087305a"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/attendance-policy.png",
+      "sha256": "5c0d7a74b70c3796ce32459c1af0dca0270486d75bd64b9c2123858a1de590a5"
+    },
+    {
+      "path": "workflows/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-desktop/configuration.png",
+      "sha256": "4e28e228ea77c4edf89af18eab44928353448aa9a09c1040974918264985f4b5"
+    },
+    {
+      "path": "auth-desktop/login-light-320.png",
+      "sha256": "f238a8edf48f3015ee6d10aa9c143975dcb907f59c43236f12b917b89de6cea3"
+    },
+    {
+      "path": "auth-desktop/recover-dark-390.png",
+      "sha256": "70e48664e7d8e983185ba1b69995f250dabc8d247e6db57942c04d3b0019742c"
+    },
+    {
+      "path": "auth-desktop/login-light-390.png",
+      "sha256": "5ec3d9babed3b108e35475e2bf88211e836cf95e17935814ad4ad8e9d6601a26"
+    },
+    {
+      "path": "auth-desktop/login-dark-1024.png",
+      "sha256": "c3340da4699450ebbf76190e4503f45e684d07a053b09932a15cf1e4c794cd01"
+    },
+    {
+      "path": "auth-desktop/login-light-1280.png",
+      "sha256": "bb9fc94805fb86f8c9b3ea94978de32fb1292cdaedf0ed7b0296a0ca0a96a8fc"
+    },
+    {
+      "path": "auth-desktop/recover-light-390.png",
+      "sha256": "9bb0e5b45f1ac0afd7ccbddab7314b06dd348715fc01f5958f3c47d0b61331cc"
+    },
+    {
+      "path": "auth-desktop/login-light-768.png",
+      "sha256": "aceef842e3aeb2be58bfefc708552bbf5f1af7ed1a7d88ea570084ca585c452c"
+    },
+    {
+      "path": "auth-desktop/login-dark-360.png",
+      "sha256": "73b3a83f04ff50b8413a09e3557382f2c2375728ec551e6b2a05d5db60786b72"
+    },
+    {
+      "path": "auth-desktop/recover-light-360.png",
+      "sha256": "3d7f39ac19861638ecb7372c8445572111c4b235707fb1ff9026b70cecc115cf"
+    },
+    {
+      "path": "auth-desktop/login-light-360.png",
+      "sha256": "23031d04ef93e6045f1d28ee1e1299fb813f33cb3b5987058500cf0ab4971a86"
+    },
+    {
+      "path": "auth-desktop/recover-light-1024.png",
+      "sha256": "16af2a1ec0c730c17b3255ad4b8e81ddb58d743af255cb23f8488b85b537cb02"
+    },
+    {
+      "path": "auth-desktop/login-dark-768.png",
+      "sha256": "730a4a84331c68074dd3f6a8e319e68638de3f6767d04f40a5c301a998663ce2"
+    },
+    {
+      "path": "auth-desktop/login-dark-320.png",
+      "sha256": "55c883c112b1e2e777bce05b4560dc61a8c439ea5ecbe73edf8e7439fe214662"
+    },
+    {
+      "path": "auth-desktop/login-light-1024.png",
+      "sha256": "b5f6331cae5603af3891b5db64fe3b057d9c4571f0813163e427584a48eaabe2"
+    },
+    {
+      "path": "auth-desktop/recover-dark-768.png",
+      "sha256": "4a7a3c915ce4617ce6757179027759f0091cd887b73420d682054fb79b669c18"
+    },
+    {
+      "path": "auth-desktop/recover-light-1440.png",
+      "sha256": "20b2490d1a35add73a5bf86cdc247be17f09a3b3e1798edb3dca1e50ee2b543b"
+    },
+    {
+      "path": "auth-desktop/recover-light-768.png",
+      "sha256": "716ca6901d6bf65e6da91ebb3d1e8dd5cb3d7dd26834607047548c0a718ba3f2"
+    },
+    {
+      "path": "auth-desktop/recover-dark-1024.png",
+      "sha256": "922ca73527ac596ded571c1bc7986b67b8bf382716adc768f4a434ac651815bf"
+    },
+    {
+      "path": "auth-desktop/recover-dark-320.png",
+      "sha256": "87d275bc251969934d3d0152b9cb5ac005a84156e2cc67f9b3827554481bcf62"
+    },
+    {
+      "path": "auth-desktop/login-light-1440.png",
+      "sha256": "5a0c342916535f2f2804754ec2b1dc71421e553e55c93c4f81b65966ad1970a9"
+    },
+    {
+      "path": "auth-desktop/login-dark-390.png",
+      "sha256": "b6b231aca10fc72991c941655fcae6c68acb6386f60dcf122553379dbbce3e75"
+    },
+    {
+      "path": "auth-desktop/login-dark-1440.png",
+      "sha256": "1da824b1cc1476082272d5acd9fe588f8399679a861c0ce3e9d4156d2dcd7bf0"
+    },
+    {
+      "path": "auth-desktop/recover-dark-360.png",
+      "sha256": "9e47b1614477ddddf972efdc8388034a136275e0160e94022a1a7ef279010fe5"
+    },
+    {
+      "path": "auth-desktop/recover-dark-1280.png",
+      "sha256": "e0b492f98f75f7cc67fd600a8a7cbb9118886aef30d9f0f55f647586936d162e"
+    },
+    {
+      "path": "auth-desktop/recover-light-320.png",
+      "sha256": "4c112edb2d38cf52d53d7eddb3ed5c9f5df5f1957eee172d699a1fbbbd36c816"
+    },
+    {
+      "path": "auth-desktop/recover-light-1280.png",
+      "sha256": "c1025249871c03ff2503565dbc86fe6821bec6e080f04f6f31ba93625d841570"
+    },
+    {
+      "path": "auth-desktop/recover-dark-1440.png",
+      "sha256": "69365427d60a9f5d1a7c36dd66d3eb4cc0957b3a277ba7bda0b80c0f1f61c36e"
+    },
+    {
+      "path": "auth-desktop/login-dark-1280.png",
+      "sha256": "deb05e2f33847fc8c48c0c3bfb3bf6edb5106f688cfa342a3119de6f62020e2c"
+    },
+    {
+      "path": "workflows/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/permiso-evidencia-privada.png",
+      "sha256": "4bd0d3c1a7d4285dc39f20ff41c9cb9ca9822b30ae927ae92e35947b8890713c"
+    },
+    {
+      "path": "workflows/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-desktop/permiso-rechazo-conservado.png",
+      "sha256": "6a9bc5cf5bf8af4e67102d7bc752281d3c69633e92f82f2524d95c4c7d27f202"
+    },
+    {
+      "path": "workflows/requests-permiso-por-horas-f9409-onserva-condiciones-previas-mobile/permiso-horas-sin-comprobante.png",
+      "sha256": "ca628ccf8d28e74dc0a18ab41370805b7ab80e2cdf2ecbdd3326fbf03add5328"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/incidencias-presencial.png",
+      "sha256": "a0597df7f4db4a36e44c55adec99df62b70cc4c561c038e793dc1f0cda64d1f9"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-aceptada.png",
+      "sha256": "a91c4e384fd30aee00399240dc7ba44169386ac7422b746cee1ac3d05c1d0abb"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-salida.png",
+      "sha256": "0b7c262236e86d6e1a7e53737b0328ada326967a27f2411a52d60a1ae48240ae"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-mobile/asistencia-presencial-rechazada.png",
+      "sha256": "0db61d0a1e36f2e2aa8287b4f000473059f546ebb803140f21aa39a3e17b9621"
+    },
+    {
+      "path": "workflows/super-admin-superadministr-d7129-el-rol-en-cuenta-y-usuarios-desktop/super-admin.png",
+      "sha256": "fad697867369cc57f17c8232a6ecc8ee69a084ab43460b1823a856ec3dbeb64c"
+    },
+    {
+      "path": "auth-mobile/recover-dark-390.png",
+      "sha256": "d4de786b9fc8be10d3f894761f8845688bc3fb1fc7501d98974578aad2f3fdc8"
+    },
+    {
+      "path": "auth-mobile/login-light-390.png",
+      "sha256": "0e1d8d7eeef990fc0ee053909f774b8335c04803413086798cf712d197e4ac25"
+    },
+    {
+      "path": "auth-mobile/recover-light-390.png",
+      "sha256": "75a80aafcb87346bac77ad102bcb9b198ba273acd5b9a1cb05378bd3027dcc4d"
+    },
+    {
+      "path": "auth-mobile/login-dark-390.png",
+      "sha256": "10bbf447070dc8a27a4969e2ee369b631ad87ac1c24fc75ffd83d54463487060"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-dark-1440.png",
+      "sha256": "d6cbf6c0edb31878723c193c735d7d4bb73122508520d8b0fa5555bf08e9cbbb"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/long-name-landscape-desktop.png",
+      "sha256": "c991ab5bb3b2813dc9fa8749c0809814f5ea6d5b1c7c96299c46e29685793494"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/delete-dark-desktop.png",
+      "sha256": "372772339e38a2510f3c6a6a9a2a1ad8e93e1743e8fd8a176b181ca79d390882"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/error-dark-desktop.png",
+      "sha256": "9525125804507d0803e1ef516dd6a07a92faa0caef97521f2694daefa8f85a8b"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/empty-dark-desktop.png",
+      "sha256": "7d16c4036e660bf6302f5a68e013dc832816cd17347f4e0b936e3f88a3500abd"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/delete-light-desktop.png",
+      "sha256": "f228fc0f1a870f13dfc194146b93001e12a46a8d60635a48d59fb8ebbf1b6e45"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-dark-1024.png",
+      "sha256": "1ed80e73092ed17080629672c3461d4677ea159eba794648d5b7645a73856147"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/drawer-light-desktop.png",
+      "sha256": "9308f04598bd787352124438006ce398fc5b73ea5baf12ea7acb29400c96bdf7"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-dark-1280.png",
+      "sha256": "66a0bbd9239439c4eb6aeb89271ba4bb0d0cc4ecbe34b52433964d6187ed261d"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-light-1024.png",
+      "sha256": "82e83d23af64f53d1e5fe78d4a80c2062b3e76cb884d8ca103d31755519a2364"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-light-1440.png",
+      "sha256": "0ca9759f7c469381f6a931dfc6a0c2491892c0d7f2c9c34007a8e1bdcd444295"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/error-light-desktop.png",
+      "sha256": "eeb1e55cfea3f0597e7e0ddf4311b4ebd53a1c3f2e1e3a74e0f78a7caf3c12f1"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/loading-dark-desktop.png",
+      "sha256": "cd6a2bba9cbe6d9b719c9903f730bfb97d8766f2fc6a9d19c7c081565c6b7be5"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-dark-768.png",
+      "sha256": "fef902dc1850c16cad19c3ddc71d8a4c61710828e0feb2a31fbddb695d82bf3a"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/menu-dark-desktop.png",
+      "sha256": "dead0f79479d602767a52c0b7fe67ee8c3d1a266ba169be8f15ac6105c0d4ca1"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-light-1280.png",
+      "sha256": "e92cf89725b33e75e6e92d6919b15d3fd3874b22cb618a49682eb307c734f62a"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/before-departments.png",
+      "sha256": "ddf737f1a11080899e05a6cb4d1036f24a84f99599040a050aaf9adc1749ac4c"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/menu-light-desktop.png",
+      "sha256": "2f2177cedcb6c5cad0a23fd6c5ca794679e788296834946065db70832db72b4f"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/departments-light-768.png",
+      "sha256": "e1537df20c1cc7f8a39d414ad7a0af33b5e57d4a34726fa9021ea9dbc20dd6e5"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/empty-light-desktop.png",
+      "sha256": "e9d99a398c096fe492b4c36cb54583b16c3f4ac465dbf2142ecf50d9019f849a"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/loading-light-desktop.png",
+      "sha256": "5d2129e20284b783baf2a1536a24e753c2210131545062068be14324dee932c9"
+    },
+    {
+      "path": "workflows/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/drawer-dark-desktop.png",
+      "sha256": "c77c41b67a54552debeb26ab6b80eb48d024884213a8c8788612c85b6ee234d7"
+    },
+    {
+      "path": "workflows/identity-employees-ingresa-962a0--acceso-privado-al-recargar-desktop/cuenta.png",
+      "sha256": "7bfd2634a62ce3bab0a4d72ecc9c21c9dc6d0dbf7ab3fcec1c3b64f254990ba9"
+    },
+    {
+      "path": "workflows/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/users-directory.png",
+      "sha256": "6af95770c5d34799b5a1ca38561ae8f157955c2a4fca32217b281592523c275e"
+    },
+    {
+      "path": "workflows/super-admin-superadministr-d7129-el-rol-en-cuenta-y-usuarios-mobile/super-admin.png",
+      "sha256": "0d9630bfb9c9a13a39014e4c657a1b36b342569f89075192162c9e45318de2cf"
+    },
+    {
+      "path": "workflows/identity-employees-crea-em-d2557--conserva-ambos-al-recargar-mobile/responsables.png",
+      "sha256": "966756f4f9a2b8c2752fc6e1bd3046e8d60efbb542d3dcacbb05b5a9d45f6f6b"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/before-employees.png",
+      "sha256": "93871b6e770016ace186ae9ab53f94290260a40de7f7b6a312c90473c649e3b7"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/employees-dark-mobile.png",
+      "sha256": "ef42a6995b50b06832df775a861fb465423a3c26df08f3e9e686b66f81498c02"
+    },
+    {
+      "path": "workflows/employees-design-Empleados-2d3d4-con-identidad-de-referencia-mobile/employees-light-mobile.png",
+      "sha256": "bb4350dac14dd05df171586181283756e19488c52463c73f722321ff3dde7351"
+    },
+    {
+      "path": "workflows/departments-design-consult-2b263-frece-acciones-de-escritura-mobile/empty-readonly-light-mobile.png",
+      "sha256": "017ed4662ec346df3c8cf05afc516686a48f7ea1ebceab0d8a04d7e0691c2471"
+    },
+    {
+      "path": "workflows/departments-design-consult-2b263-frece-acciones-de-escritura-mobile/empty-readonly-dark-mobile.png",
+      "sha256": "2e2c0c05fc32b91f3a132c96e6665e7177cfb5458fe32f27ff81804ed7efd81c"
+    },
+    {
+      "path": "workflows/departments-design-consult-2b263-frece-acciones-de-escritura-desktop/empty-readonly-light-desktop.png",
+      "sha256": "3fa5a4776b8e0d652cb76a817e3e74b6412234b56776eea9fc8e25c2b7d82580"
+    },
+    {
+      "path": "workflows/departments-design-consult-2b263-frece-acciones-de-escritura-desktop/empty-readonly-dark-desktop.png",
+      "sha256": "bf470c7bbf85cd0e24139f27a6dd38cd123a997179eaeab40d77233205023433"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-light-390.png",
+      "sha256": "6c6d2a954a2933ec359ebb05afad0fbe331fa859bae9bb7404db5100b3a4036f"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-dark-360.png",
+      "sha256": "3128011e0fc1640abb9c7733bad0694e76d23b73c837ae1d21f5b568e0334f65"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/sidebar-mobile-dark.png",
+      "sha256": "97e1865d61f562fc80d0276ebb5773d80f6b5bb9ba22a7d0437bac9a308cfb13"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/editor-dark-mobile.png",
+      "sha256": "2814a87ce66d4075c422c40a9df58428e02bfafc028233fe119ded09813464e7"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-dark-320.png",
+      "sha256": "06c087a5fcd115f4c2e0d7da43159bef19843baf4c32746f04a2d3c190adca32"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-dark-390.png",
+      "sha256": "316768645559b65bcad74eea2693d59bc964bf8e82fd776673ecfa090bb4f8d4"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/editor-light-mobile.png",
+      "sha256": "9e757019d2a64cccabdfab62b904f446be01b54fb647eb96f76259a3fbfb8991"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-light-320.png",
+      "sha256": "0111f77153e42f2195c5dedddae8503f89efecbbb97a00138cd0fcd766a6a4ab"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/users-light-360.png",
+      "sha256": "acd8656d1982a0afdfc130d03967fd75f7e77106b042b27e48dd0fd4273a6f2e"
+    },
+    {
+      "path": "workflows/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/sidebar-mobile-light.png",
+      "sha256": "fc90e536cf5c7bb158b495326f5155a54c54d4ccc7505b2b91bc707f0be0565a"
+    },
+    {
+      "path": "routes-desktop/responsables-light-768.png",
+      "sha256": "8b428fe6feeb4fde42f5dbed98492ebb86be8a65adb93a2105de9b5c1d97f24b"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-390.png",
+      "sha256": "709dfc88f1ebb58eed9515a7820f16874581d405764a2e71d3feb5347e4bd448"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-1280.png",
+      "sha256": "cbf5399ebc0b05187c82feb61708ae19798833e765767b52d01ace4b23b16ee2"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-1280.png",
+      "sha256": "8389e628c8e1a35746d6b5271f9fd821d0fd8af03e5ff4063fd4819429c4641b"
+    },
+    {
+      "path": "routes-desktop/responsables-light-320.png",
+      "sha256": "f0a0eccd4650956405b7c95ebdb224d86fe5532edd6c3d36945f3a9f1ee6858e"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-390.png",
+      "sha256": "b2d9559087099c80a9edcf34a440fea722e9f5cb21a0f9a3d95ea9cf4278f6a9"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-320.png",
+      "sha256": "b0328c5a57820bbbce6dfcf468daa658d098249ce4a9e48f712d002f4e979942"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-1280.png",
+      "sha256": "315ac0ff258f07eafc2ecf43c228f4994cf51ac22a62c8e6fbf1fadb075243b8"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-320.png",
+      "sha256": "45017e76df73082673bacf81470a87ae2c0eefca560683cff8da17476e1a63c9"
+    },
+    {
+      "path": "routes-desktop/estado-light-1024.png",
+      "sha256": "451d7ba94afcdcad396de755de89dda00ecd39c9c944216030913e63572396b2"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-1440.png",
+      "sha256": "def7ed7ed078a6785aff95470aa8239684cdb537b1a4d680461fb037902919ab"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-1280.png",
+      "sha256": "4285807b3cfebab113fd5c7acf654c86f2447a67154cd30fa195460190db84bd"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-360.png",
+      "sha256": "a86698082ac194dc6b680811ec1a5270a9d083e0f44b3c1542621bd7ced7b145"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-1440.png",
+      "sha256": "a04769f093e3ee908fd82da952daadd0fd59a5c83f71592002c8d5d795d27dd2"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-1024.png",
+      "sha256": "55bc79d70fbc2ff4ec1797372869577449b613117e10392aab977e2200b3d305"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-1024.png",
+      "sha256": "8a246ca35aa026ea724f3f34ac64eb245f5a48859684cae2c8a6992663b4671c"
+    },
+    {
+      "path": "routes-desktop/responsables-light-1024.png",
+      "sha256": "0d03d07739e437cbe014532b67fadc9a045a0f2037d0b1a8b00fefa129e44ad0"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-360.png",
+      "sha256": "28ad7341232b08c40e45d609d5fd26d04014587daf3fbd8d14cf84b0b68f159c"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-1024.png",
+      "sha256": "045f6be6d4794323cde4b75191b22fd270f82241b1fbd48ffc87fbedc3baf0ad"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-768.png",
+      "sha256": "08eb23b9447d3440219195e650a7a6637bff89ca1dce4a545e886f946c53eb35"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-1440.png",
+      "sha256": "e3292c7ec14b8b6397ade6bb70d4e7641d624320109242217044fb5dfdbb9f65"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-320.png",
+      "sha256": "e5462eb265a2fd8c981805f922ec28df309157711d9c67611858aa7fc9e2bdd5"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-390.png",
+      "sha256": "c158d0dcc984c5e2b4cf904b1228329127946957ff0f5d742e67c5da5cb438eb"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-1280.png",
+      "sha256": "b5514e1d8496e04cfbcbb5741b5c2f4a779ba91c9eb51520de74814ec00a57de"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-768.png",
+      "sha256": "cf4f023e543a397f4bf75b8b0c178e07d5c79268248f98c399ab9ae2ffc4fca6"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-360.png",
+      "sha256": "bca9e600c70fcea5ebd137b3f4ace883d58cad0b79b5f67f2adf5fb771135a4d"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-1440.png",
+      "sha256": "2a8022558f362f5d7790888f23b9d9d6a67557418e7111bc2dfbfe89846f3799"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-320.png",
+      "sha256": "86361615014336a5a23996b3eb4e78829b96ffee8ce4d2bc057b2a00bb0edfc7"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-1024.png",
+      "sha256": "a823cc3e659f48ff857d4762356f1bb3f671f4e9154b7b36048c5f43df5520f7"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-1440.png",
+      "sha256": "35de46c82e1286b584406809e777260bb2e5ace5f7dffadc57b9b91f6e3fd751"
+    },
+    {
+      "path": "routes-desktop/responsables-light-1440.png",
+      "sha256": "b02845c20b05ddb53f4548574fa51950df3539772d1f44046682f7fb0f724064"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-1024.png",
+      "sha256": "bf8e9b90fb7c23fc10ff46fda8e95397928a91f788a1498021c12906ed3b37f0"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-360.png",
+      "sha256": "c8d6d177b5e6661abe75185f93bfbbbad0767f253539ede332e39356139a8a56"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-768.png",
+      "sha256": "9bf019dcc553f12dc66081a72984d6d31b4b4d4ef56aa4592b9480cd561a7c95"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-320.png",
+      "sha256": "33fce52ce341ad4a3d1bb4f68a1a3fc5a3aa5e19a15e33fc03c63dba08642fc6"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-390.png",
+      "sha256": "129da787721654a6dc358eb21ca1b357f96dafc4a520943c083089413e57b7c0"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-1440.png",
+      "sha256": "bbbe055e49740bfc4b3c3f7112bd4cf67ca3e4c6009ba6707e02dd4a5c46d01e"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-1024.png",
+      "sha256": "35886583ef7ef6348f56576b8983ea675c93f8019b082f918f5da1a1d7344666"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-1440.png",
+      "sha256": "c3f4daa3f5da81a8e7b5b22120c01ac57921ab354f53f012eae00e4f15a8bd62"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-768.png",
+      "sha256": "81fca175a8ddc997ee66e67448202f59cd12aa7ed26c2a61e96e42903082feb2"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-768.png",
+      "sha256": "9fff0fbe5ff16473f86af9989e8dcc9113e31987c97e38dee60c9d500478e035"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-390.png",
+      "sha256": "ff08486e213848c70c7ac48d0e373bf4888839f86e9073a7cea1216041f0f3de"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-320.png",
+      "sha256": "626a67e24d04bcad73d04f578d516988a7f582a778c3b2b8425eebaeb4507e05"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-1280.png",
+      "sha256": "7edc8506d04ee18df8012d35fbc68fb8a8080795e1f435a57a5627cdc39a1088"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-1280.png",
+      "sha256": "bacb55aeebbf615758f85f89f03cd6a20dc024c5ddb55b8a221f1982140cc69d"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-390.png",
+      "sha256": "0f3cbc94eddfd015f5487a360dfb2df9f872553137e5a1af0d84f5f888800743"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-390.png",
+      "sha256": "82f7e94813ead3a19d5dadef1f93fcc82b825be9d690cb0d9601964b659eea02"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-768.png",
+      "sha256": "cfd56f64546eece057ac0783993c2b3d74b01cdf023e89cd7a6e658f91356ea6"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-768.png",
+      "sha256": "754ac2c71e1166f99dbd3ba07a4a425c2d8b059ac3f4d209380c9e3ab2027952"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-1440.png",
+      "sha256": "0fa07a55066340315acd5775e417766d70dc748abb9d5ba7abbb5c342cae249f"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-360.png",
+      "sha256": "8644fd8ac3a9fa0ee67effe5bd3b83cdf89a574c28b971d46d780762d72a07e5"
+    },
+    {
+      "path": "routes-desktop/avisos-light-320.png",
+      "sha256": "a28ba04bf01ef44e32442c84704067a75b703196db08f3222c0c191b528edd32"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-768.png",
+      "sha256": "322580dc66ac5062b97484b058257e4921a409259a5e98d7d4f17eb59bc117d6"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-1440.png",
+      "sha256": "2c1847ebe884f43fd889b7a80eda16439aaeb73581bbbd47bcbf5627cab6d79c"
+    },
+    {
+      "path": "routes-desktop/empleados-light-1440.png",
+      "sha256": "bca44f681a024c594c211f82aca45f60c80a7d9cbe330c65b76bb609106a1545"
+    },
+    {
+      "path": "routes-desktop/estado-light-1440.png",
+      "sha256": "38489668c23dfb90759bd90291a046d074d06d77338bb03b753c8324f56475b2"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-320.png",
+      "sha256": "b40d5e2ed8beb95450a5b09218f7f766711c89fee4a3ef038f2e99d2ed062615"
+    },
+    {
+      "path": "routes-desktop/turnos-light-360.png",
+      "sha256": "53671802f58d32bbbd225d8d17d21c81ec0025f6c2b6f991a3f3d4ddaf95291a"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-768.png",
+      "sha256": "3aa48bd7299993c721182f7e75b4dda59b08f01e8cfb4aaebc1039a95c71d7b6"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-320.png",
+      "sha256": "55ebdd00cc1b5800b9afc33126aa5c40d06a391083813253cade8e5f406c945c"
+    },
+    {
+      "path": "routes-desktop/turnos-light-1280.png",
+      "sha256": "82df47e1cd54e8eb69d85c420122688d6d4b1899a1812f52ea689580d3d250a5"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-1024.png",
+      "sha256": "3e3e621334976929e5491185aeef4563ce35410c7de7ab9f1fd4b81a318c5221"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-360.png",
+      "sha256": "1b39510836ced4996eeb060adb8907dfa06bd6ddc7a8bca444fda845a899b827"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-1024.png",
+      "sha256": "939b6487e8596226be5f52828bf27831088564ee5c78dbc610971b04a87ec96d"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-1440.png",
+      "sha256": "12a6447bed8c0e66abb5f90e40974491cde0a1afe9dca6676a344867770e2a50"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-1024.png",
+      "sha256": "059a0a96817553efb5e390295a37f387a0850b0451f30962afb518840d99b2ab"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-1280.png",
+      "sha256": "3c7e1ccce6a12fb00276eeed07e5e3d43181fe3e6f423cb64011353bc768ee9c"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-360.png",
+      "sha256": "669ccb9c41dda671e7449794878e74e2728051a89fe79d8dd8c6f9a7984bba9b"
+    },
+    {
+      "path": "routes-desktop/estado-dark-1440.png",
+      "sha256": "4d59f3f539d0b24ea5100627a2140a0ca741ad10c51262cbd9856a1d625d9612"
+    },
+    {
+      "path": "routes-desktop/inicio-light-360.png",
+      "sha256": "508ec62b6efcdd2be18f1398cb8c50af105d00a070f58bc0d69a1c8c3477d6ed"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-360.png",
+      "sha256": "0f2ed4730ff9d45384da81bd2244d1903c44528875de773adc5591caabcb5287"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-320.png",
+      "sha256": "9710694fbc8c471eb2fb395866fcaf475aa09cff86f7c85e027def94cd7bdf3a"
+    },
+    {
+      "path": "routes-desktop/inicio-light-390.png",
+      "sha256": "b9151042116d2537bb483f2d62db2ea37f1e845e4d38ddb0badd7240637669fb"
+    },
+    {
+      "path": "routes-desktop/avisos-light-360.png",
+      "sha256": "0d22ce7c5f39728bf4e2d27e6f630420815f819f5213297212909beebf050691"
+    },
+    {
+      "path": "routes-desktop/inicio-light-768.png",
+      "sha256": "107bef908dd9ff2882a433fc973c02a54ccd9d802dfb454a39b42fef1deb37fe"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-1440.png",
+      "sha256": "b3921ecf8a2242f454f12327538c870962492185dc62f83b3b3158f475bd0d4a"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-1440.png",
+      "sha256": "1c2fd930d9b31dff3a259b951cf4aa839029b7da227758ba1151a4970ad2ad93"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-1440.png",
+      "sha256": "dc67b622b5d62a6240597f3acfdc78c8ea287825cbbeb0363adb81539da7164d"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-1440.png",
+      "sha256": "c27687db7e92404f8f3e4388f8e45dfbdc3e9c633a2fb504b1f860230dcbbf6e"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-1280.png",
+      "sha256": "4fcff211608fbd803164140296efe21e38e5cd501af0a20acd985b7557ba1a25"
+    },
+    {
+      "path": "routes-desktop/estado-dark-1024.png",
+      "sha256": "d4ba009e3a26bdd763e2653cf368ff22ca4fce62901cfd4bafc478c003238d28"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-320.png",
+      "sha256": "7bb75f7ac4236028b029c49cf8509a5191de2c4738c98fb846a14f6e066e8a8f"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-320.png",
+      "sha256": "345ca019ac62b7c452a5ae5ce33902af9f0300212a36ce7423140c840679e85f"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-1440.png",
+      "sha256": "09c26fe5152894cb5ac8e9a2ff7c2e5df19b3d1d39b1be3ed78939ff9eb89b01"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-1440.png",
+      "sha256": "9039aab8f56661a7863f2c1021504ab78c0477a47a5f1f32eb0a104320ea69dc"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-1440.png",
+      "sha256": "2fee82c9238d26fe92ae241dc7604edc3842bf0b063ad4a4a5cbfd7f6ff2c87c"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-1024.png",
+      "sha256": "21ddf402d3feb5effab6448d9e09cfba93c65f7695abf331a7094fff7a6793dd"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-1024.png",
+      "sha256": "7729ac84862e9a0db5b899f1df9f9bdb2433f9c554c7067ff183e51e32779ec5"
+    },
+    {
+      "path": "routes-desktop/calendario-light-1024.png",
+      "sha256": "a2ab206a2ed7fcb5c95374396ea8e9b4213d60501d15456b1df3dba38624ef62"
+    },
+    {
+      "path": "routes-desktop/empleados-light-768.png",
+      "sha256": "08012aa0bfef7c0e131c80e7b825ee58684465c4c6d197abde2706c4f7e6b25c"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-1280.png",
+      "sha256": "d9ee0f9cf4ca7e123255903f8e34b3ccb48b0c3eb3e27e023de81625d42d95c8"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-768.png",
+      "sha256": "142f8cebdc31da4215c14244bbac59f8ad3a8a3d71575170b2a30a68a4ac490c"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-390.png",
+      "sha256": "9119e0964b1d1f4920da0a27c884fa01557ac411bec6cf8598af55fefb6d6807"
+    },
+    {
+      "path": "routes-desktop/avisos-light-390.png",
+      "sha256": "89fe668daec4f9847efb3670a21aab2c05abf6d46dc970e68701c0ba8f5de4a2"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-360.png",
+      "sha256": "5480faf28eb63bca133a3d3c37c1dddd67b0f301ac373a3d2dae48634c46d5d0"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-1280.png",
+      "sha256": "85923e1350656914ca127c852898bd19adaf0207088db78f3ed8081e4b0fb598"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-320.png",
+      "sha256": "026b7ff173691a126bf096816c4ba4bc8de1472145834ef46c2182984835a08c"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-1280.png",
+      "sha256": "9eff5936451d73ef7d7facf6cc1d4dbb87295d0a90abad4337c757443362af9b"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-768.png",
+      "sha256": "c49f1851902a7604c89cb278f37c0543ff6ce45e845e4c6abbe46e71730b368c"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-320.png",
+      "sha256": "00750b9fd25d259daf9c8d24f24a92033336333a882f648cc71eeaea6e2501d6"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-390.png",
+      "sha256": "c2b636293d83a6795c9e0858aacfe3af189ec33cdf286d611acd2ee2d3eefa7c"
+    },
+    {
+      "path": "routes-desktop/estado-light-768.png",
+      "sha256": "08db885ebb30b06bec098d4578d653441a000843900e9345312f0cf28e2bbbf8"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-1280.png",
+      "sha256": "d4666af8d636ea65ecb7da6466e49d5e3b97bb85717bcfb15b24c9e1b9724067"
+    },
+    {
+      "path": "routes-desktop/empleados-light-390.png",
+      "sha256": "5ee75f1699c1469856e5eaacf9fa16a2067094346d0834e7fb4469397aa6de55"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-768.png",
+      "sha256": "71e84210d33d144ce6222599423c3cf518726ccb7c13889910fc4f76b664cd59"
+    },
+    {
+      "path": "routes-desktop/avisos-light-1440.png",
+      "sha256": "cc04f32691c7187eb9205dc82a0dfae3dcae63fe2b4559d0d9878f5a9c0a2d52"
+    },
+    {
+      "path": "routes-desktop/inicio-light-1280.png",
+      "sha256": "88cc4efbaf112c936300497574f301e7f1ec3eb877fe6feb12166b8881010701"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-360.png",
+      "sha256": "b7ad2e6f426ec72faa00449674fdc25b76a6d9d872e39cff890c6c95a8a464be"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-768.png",
+      "sha256": "1143779eccbf4e39cc18fc6041a05a28b438f3882c3a88e1e07387f3cd4976d1"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-360.png",
+      "sha256": "8daef6907dd141c430d6138f0118f0e6b1d0226af609c1dcaf36cde35661de9f"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-390.png",
+      "sha256": "160865edd28137df78869fac9226f64431e3bfd30578fdf2e56fb0446d00199c"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-1024.png",
+      "sha256": "b066ca71f6703ef76ccd614719edfbfac5acb09702c14c9e686d5dd50c3f6985"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-1280.png",
+      "sha256": "2c8483012e42495a8aabb1cb692712f1723a7fc7d5fbb39170415e076470c348"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-1440.png",
+      "sha256": "52b85deb1935e2f21d23d1db94e07bea3a115bdf82ee2c49d965af2d875fbc9c"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-1440.png",
+      "sha256": "7fe393e178ea9a6c9c0c8abe6443f9631a51c7d14f71ce78423141cd6d6d44fa"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-360.png",
+      "sha256": "76bd1ccb35840a59b92ac1b5607de15be7a115a8489fafe6408f95b6f022a264"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-320.png",
+      "sha256": "30e5f7f43c9b11816da0634bd618db96ac9c3ee46fff24808103bc80d9796a5c"
+    },
+    {
+      "path": "routes-desktop/empleados-light-320.png",
+      "sha256": "fc67311ebc2058957fc5dda337e042afce3b763d3e70099c20abe164275c992f"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-390.png",
+      "sha256": "ec2738fca5ea6eb093aee82fa0a7c930de2e09bcfe882f5abeadfc939352b343"
+    },
+    {
+      "path": "routes-desktop/inicio-light-1024.png",
+      "sha256": "87a5848a7532b834af3660fc430905b99d6ca1db93087f6e2a2e28e050751781"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-320.png",
+      "sha256": "96ff3ba28560decc0f81cabe06e16d38b668711bd5c5b8e3a584d82b14704751"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-1024.png",
+      "sha256": "30cea0faad0dd6a97e0c4fe9494c2103f231baa05b85fff039b6864f79ab01a0"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-768.png",
+      "sha256": "be50c15c3cb865a53b9b9a7cdb50cd979ebd9595d40d9c57cc2466aa9aa4a875"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-1024.png",
+      "sha256": "2756cbac97987678c43597a4fd90cb980293851ee223b38be4054aa07df3f9a0"
+    },
+    {
+      "path": "routes-desktop/turnos-light-1024.png",
+      "sha256": "4457cdb3ed38a34233ba6f04f01ccf84c67958ac46153e2f0b05abca7beb2e55"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-320.png",
+      "sha256": "f81c5656dc540067d26f4467f4c6963765c6a6a31852e2100c8213617dc0b973"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-768.png",
+      "sha256": "9e5af3fbb5059cdaf11c0c2a4e6c5ad3002f78efc16f063edfc0012b672f24f4"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-1280.png",
+      "sha256": "a28c4cf67173951c3bce3c5621c8f167358891a1108d22565137ea520d809b6c"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-320.png",
+      "sha256": "f7fb65e0410b6d9874d23bb0ab1af78bb0ee9a4d5a64bb1ee77a354024bc8201"
+    },
+    {
+      "path": "routes-desktop/estado-light-1280.png",
+      "sha256": "ee1d1063bc2f5c1c028ba456ee01c98e3e9f61b1a5135134c71a4d384914dbce"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-1440.png",
+      "sha256": "0317ca7619fe6a44e825d102e28c09c11b950440cd8a33146e60bbffa22083f3"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-360.png",
+      "sha256": "4de4d67096ef8041d62467d41ec369f198898c837bdb9d7755006f5b01a381d7"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-360.png",
+      "sha256": "ed45e9245f51e6e772e6094a0f44ff521b6c452d7c6a029e06d5826f86883c83"
+    },
+    {
+      "path": "routes-desktop/inicio-light-1440.png",
+      "sha256": "2cda77da853887018dd8a5bc7b10005282962158e19342182917e14ebeacc9a1"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-1440.png",
+      "sha256": "bf6356462ca149b6ed79f07b2644fbdadeb48316bf888f5220fe8447c2efbc3f"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-768.png",
+      "sha256": "d454d4f79135ae1685dcef0a0f5d1880494aa3ea2e097d4787d8766ec8bd3197"
+    },
+    {
+      "path": "routes-desktop/estado-dark-390.png",
+      "sha256": "ef86bcc88648bb98440aac4bf71cd567aeb709f382fccc46f8cb5a628b046fd8"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-1024.png",
+      "sha256": "46d40102c94975d0fafc640bddcafa35264e5ea03851762d9f4dc3749a781084"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-1024.png",
+      "sha256": "448f4d43c10f5e4909a37c46fdd66c1e3ff1a0ba5a0a4b2f5e12c5dbaea53c36"
+    },
+    {
+      "path": "routes-desktop/estado-dark-320.png",
+      "sha256": "db0cc87e7b5deb90de5850d0aefa73decc81dfbe1b67f3e7df0e98eac2754a17"
+    },
+    {
+      "path": "routes-desktop/estado-dark-768.png",
+      "sha256": "52fae448767ba8964ee4a67dd2cafbedc0176664f6676266188aabb782fb6ecb"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-360.png",
+      "sha256": "9d862a60700034841fc9ed36c09619a3999378da37ed96a70037873b4d4bbde1"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-320.png",
+      "sha256": "ae43fa9eede7df5fa467892096e7d0d6f8a549c3362ab362475f404d5acf6f5e"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-768.png",
+      "sha256": "2b18883488e95ca00a0812a30d1339a467b296edd950bbe77a7640471cbdb4ea"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-320.png",
+      "sha256": "005c9f945c02d8c50f0338dd686476b2fdeafcb982bab489ec84d95b2e9515a8"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-768.png",
+      "sha256": "5c0453d7b6a49dc544b206fcac486415953c14855bd36a27d4034be006c0b835"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-1024.png",
+      "sha256": "9ba26f4cac592c7ce6470826617cd2f44bfa73af53e84006a036ca73d59a449c"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-1280.png",
+      "sha256": "a6ba6fd3a949fba0acab0ad729b85c3b17716d9ddee1592b1498b65e73ec2b9a"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-1440.png",
+      "sha256": "db0566838642fbf4321813482660d793d76be68bc4081c3154cf58217cd31196"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-1280.png",
+      "sha256": "560e07e154e76543decb1c965cc9d1c1d21d8fb4f65c021894772d384002fad9"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-768.png",
+      "sha256": "0d3a799ad729d745be5938750d8de69d5ea1a264a8f8863d4388aa0a91a78275"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-1280.png",
+      "sha256": "ff1aba1c8157366ab72230d4c078fecf07a6209f89ae9e6796cf8091f1251b41"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-768.png",
+      "sha256": "c1a25c110d7780e6d67a48807a52c49349dc787d5b15c7c92aa9559e6fa98dd0"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-360.png",
+      "sha256": "8d77a5e307053ab0ec38479bde8864ed26e67a3a62e816b6a0f0b00ea0798566"
+    },
+    {
+      "path": "routes-desktop/turnos-light-768.png",
+      "sha256": "74fc01fb3943f34ea8aa0de30b33a4cff1b70bbd6a06188693d37192f67bf26d"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-1024.png",
+      "sha256": "69f5ca95e4ef372aacfc9a1041645ce7a8a501bb5aea01729b0aa6196a79d76d"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-360.png",
+      "sha256": "268a3e27ee8d619d8b1d62d60de6964056b395373092515ea9f5d48b3df59a2d"
+    },
+    {
+      "path": "routes-desktop/avisos-light-1280.png",
+      "sha256": "fbd4698db70783c4aa452c0c684eb595e620b3a4038250fd58b9424de42d7bfb"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-1024.png",
+      "sha256": "003eba5087c870b7c800b3065bd440fc3586f927f3137964f14ed5d4493d56f4"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-360.png",
+      "sha256": "0fa322ce719d0fd4fed06dfeda60fb11b7ab1152b4dd9b021b71ae168f5eb4ae"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-1280.png",
+      "sha256": "7b66d335b740369bc9c02d0d986c195df753f04432eaa2723dcbba75633dd301"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-390.png",
+      "sha256": "53c9418a494a2a53085997c810bf9f502bb49bebf1294d009ec1836008af57ac"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-768.png",
+      "sha256": "65031c1450f57aaeeb94ddbf6db99b51348953e601a18a752a13bb9b8ac2422f"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-390.png",
+      "sha256": "fdec20d393a6696ac5d3866441deaebe8bfbe6f38e73cb56438184df458ec5a3"
+    },
+    {
+      "path": "routes-desktop/usuarios-light-1280.png",
+      "sha256": "8ef569b8b3093c055dccedf41b0cf973021ea0d56cacb323d83cb9134a0ef9e9"
+    },
+    {
+      "path": "routes-desktop/estado-light-320.png",
+      "sha256": "4dac7c8319809f248a999ae82fe71fc0ad14c00f5fc2bc2589ca40c414297d06"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-320.png",
+      "sha256": "9818af1ae8438a6f3a7420f90555927f070011cf06f265844b52c7dd1eed93f1"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-1024.png",
+      "sha256": "f34156ea6f5f626a5e8f92d75601eb748370f7aaa3cb712f02034f0c14ecf089"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-1024.png",
+      "sha256": "8f9a0c815a789ac41608fb5762d25cb0f14aecbe6815ae98358e371e3bd7fa98"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-1280.png",
+      "sha256": "837dcf601c8a1dde4651eebc4f4242672a2ffdabe13c2255fad82a776682a96f"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-390.png",
+      "sha256": "a5ea82b374ade8e1c67143579d6e29ac4acceb505fec18b88bb872e853c3edb6"
+    },
+    {
+      "path": "routes-desktop/responsables-dark-320.png",
+      "sha256": "cb30103f13ad00c420e7dce75a8590b0c24af5cee1dcac920b6ff9de34bad2d3"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-360.png",
+      "sha256": "dea09831dad0d2ca671bd492838788c8b80bf3a69da428847f29dc85a0b0bd2e"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-360.png",
+      "sha256": "3e631df9fa7df579d3c6797e8e5c6f5fa455fa836a40d930094f2e8722984033"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-768.png",
+      "sha256": "3beda711f4b444579f70c6fcee30ca5e063e98b1718ced410c1fbc33fe522600"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-1440.png",
+      "sha256": "5a763a650a6a8f35514139cd232721858a5fe27e986697e48167916101b50722"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-390.png",
+      "sha256": "eb881b2c0afbba6eb2b6af698d70cb5107b132b55e0bf1531107b0cf459492be"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-320.png",
+      "sha256": "a6e08e2347a6ef196ac4dd30833b20523471910fe9aee69a8d02f3856cf42e70"
+    },
+    {
+      "path": "routes-desktop/avisos-light-768.png",
+      "sha256": "e0cf56fa33d90ebe60e938f38787acd6c5547c9bbc8b1edae8bcea5cb0770809"
+    },
+    {
+      "path": "routes-desktop/responsables-light-360.png",
+      "sha256": "ae27b1eba821919c976d7912fbe29bb6d5959b93b83052a9c735ad6987eb1dec"
+    },
+    {
+      "path": "routes-desktop/turnos-light-320.png",
+      "sha256": "380ba4f5cbd9512579c62544b0f3d573415c461b1aa7120fbbc3f78f3d604f08"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-1440.png",
+      "sha256": "9f1ebf287763714f7b4ca0f4ad96710a6354888d6dba9e87e34a3c4efa1189b5"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-320.png",
+      "sha256": "79565ab822bb40596fdb87b7c06c9b546f8eb3c379670ca60f05e0aa88f95341"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-390.png",
+      "sha256": "6346e65e4f68453ccbda3ca27f3da70c77f330fc839a1116c00007fbde8637d3"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-1280.png",
+      "sha256": "0a25225c469175acdca2e0f1da952ed1fd5fdb8cb914a7476e6e04cd4b422902"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-390.png",
+      "sha256": "48c440c2ce6fda92f67b7d129a776565e9909aff37b9b9509f63499159863936"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-320.png",
+      "sha256": "a56900f3a9c9b6292ab22fbba69b32f4a8528bb02cc1b1605fb2a8869d348e9c"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-dark-390.png",
+      "sha256": "44495e7bd51ae089d6138bd3b72c98b20c7252c81d565b41e05e502cc4ebb615"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-1280.png",
+      "sha256": "6ec03a0709452c22fafea4ce82e2801c07c1fe51115c4e5551eb6c2b0745c9b3"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-1024.png",
+      "sha256": "d25f8fdeee4128c2fb390426dfbab55c6c51e9225a7c03b5e5125b22cef2b8aa"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-390.png",
+      "sha256": "0e35ac4ea08c56b71a0626848658408a1a180a8a2504ec6bda4b9e23cd25148b"
+    },
+    {
+      "path": "routes-desktop/calendario-light-1280.png",
+      "sha256": "fbae9b7857eed4a81ea165fbde9beb4621475501bc06c9fe44562670473763f9"
+    },
+    {
+      "path": "routes-desktop/empleados-light-1024.png",
+      "sha256": "53cf8832ff0a11044c18fa0bcb3207fe09a398ac18a2db17e5f9cbea7f98b758"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-390.png",
+      "sha256": "b1de3f3ea2dae4a43a1b6489939cd61b274f1b9bfa869e756f1936ceecdc8986"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-1280.png",
+      "sha256": "805e13e64ea7df00a86c941c651f8f33354d1b067b31ec97ab4b50ad44c26c18"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-768.png",
+      "sha256": "046fa2fad988c3ffc5827de0432247771f501b8ed2aedd46f706513c269fe3fd"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-360.png",
+      "sha256": "72870d9fd9dc5d7ebf770e3c4da893ee8b4f5d77ca133d24412de41a672186b0"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-320.png",
+      "sha256": "d1d1a435bd7ab7d56df494634ff7d8e90ca97a127189f0ab1893a56238252213"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-390.png",
+      "sha256": "959d971f704f0383ee678b7e0af1b7af953433e1d42a8ee452694a4877e20b3e"
+    },
+    {
+      "path": "routes-desktop/estado-light-390.png",
+      "sha256": "7016f43429b25c3e0bef23a86295a7df6f110b047c04b6fd9b811c972f8d7e0b"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-390.png",
+      "sha256": "ed0f6a77411b754013f271bcf8391bc09839ace8cb79356c4841a40f11e3203f"
+    },
+    {
+      "path": "routes-desktop/responsables-light-1280.png",
+      "sha256": "5b9eb2f2bfbde1fcbbecf894310c87ddad0934bef11f1a26b27561676b281209"
+    },
+    {
+      "path": "routes-desktop/responsables-light-390.png",
+      "sha256": "5006709d47d205e5915ac00a05d20c1c98d2bff15009428ef97f8a28a563d0a7"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-768.png",
+      "sha256": "2109f346697f43a967785f2c9f4f546bbf35cb60f114f2405a17fe34bfafff89"
+    },
+    {
+      "path": "routes-desktop/calendario-light-1440.png",
+      "sha256": "2cb81da232457eb9adf16ea58c628c7132472a31e4422f2a83c0c006c5e9e22d"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-1024.png",
+      "sha256": "b746fc7dbefb1d473a3284182f1bacdd8e9db604fc8aa13eb7004504cf0f5014"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-390.png",
+      "sha256": "c401cb05da9a7230bca330563c8b1dbcc47ef6358f0ac002e546854510d53d69"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-1440.png",
+      "sha256": "73dcb53de15dca7a147c719e8860013170e20bd50f78bc83af7a15642d2c420c"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-1280.png",
+      "sha256": "bb18e934521d9daa3bb0a369b6bdaf51ee8333ae12b55a723619cade57c6d0de"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-360.png",
+      "sha256": "8362fa4be922707923af10a6c5f827713db37a22ac84b7c63434bc777104f880"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-768.png",
+      "sha256": "6d7141ff8736962f71d6578f076fa5eeb34d14c9a1efa10a989ff21bd5b7da5f"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-1280.png",
+      "sha256": "afa6cf1e500f66e164e4c2f520c64da4b19d21426901b7ed39987bd69acd9f08"
+    },
+    {
+      "path": "routes-desktop/incidencias-dark-1280.png",
+      "sha256": "d9e4ce3ec528070e4ffc0eb05a3b35b392878b947bc6daded38e09f14fcdd7a4"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-768.png",
+      "sha256": "8289da4b2a27b45ae7db6cac2f3e4a1278ca691315423ef3bc3066bde875f00c"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-360.png",
+      "sha256": "0401281166b1ad2dd5319c9e13d7a7a14200b03158255448916701bf749a9676"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-320.png",
+      "sha256": "cf3cf3f9382dedc9a6347a653350c945d7b9d3d00c02983cab156c1ceb346d90"
+    },
+    {
+      "path": "routes-desktop/empleados-light-360.png",
+      "sha256": "1367c728574a1f56035ff12da04c70f9a1756c18cbf02758402a88a0d31a09ad"
+    },
+    {
+      "path": "routes-desktop/solicitudes-light-1440.png",
+      "sha256": "50abef54d69a604b2c77b22a3e5e89a9f16e9045f7aa4de9fa6a6a2374e51c3f"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-1440.png",
+      "sha256": "f0d8034bf06acb0ebed3aaa682079d93709ac9f7157c42ba64ad73dcc9dbcfa4"
+    },
+    {
+      "path": "routes-desktop/vacaciones-dark-1280.png",
+      "sha256": "72b27747153ef3cd4dfc3cecf7b8a7623b13ac7f740a42f46792891c7f92e406"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-1024.png",
+      "sha256": "40c758c1711a5dd720d5bd33d988b21290027557bc41cb861e57286d4a4fcb49"
+    },
+    {
+      "path": "routes-desktop/estado-dark-360.png",
+      "sha256": "8418b71b8105ac5815f8f541c186d5151b154f21e8a64b7bedcbdab2a83ffa03"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-1440.png",
+      "sha256": "c67eed2ea3a88306ddce6e83cc5dba5376bccea4f3f87872a20b39f3463b3e79"
+    },
+    {
+      "path": "routes-desktop/ubicaciones-light-360.png",
+      "sha256": "3677b8258326b3c50be4de4c3ae5c1d6ed4a4e0af84942c68d381d0b640b9760"
+    },
+    {
+      "path": "routes-desktop/inicio-dark-1440.png",
+      "sha256": "b5d8561d6500fe03454a3a2d5757968119d82a54f425eb2f90e7fd9eb0fc581f"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-320.png",
+      "sha256": "b50ea39c0809a1876801b3e7014e7634d8744e6f7c88917fa76065295d42288a"
+    },
+    {
+      "path": "routes-desktop/estado-light-360.png",
+      "sha256": "1d365311bb7d50bad2fce30f1e1434f2cea386caf9f74e305bcac542c64559b6"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-360.png",
+      "sha256": "5ea0d131a5d0de4dda4b435e455b702305e5cfe434bcaf3a1ee2bd9dce2df7e7"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-768.png",
+      "sha256": "c3e8dcec02b6504131e0005194ee919e0419ac692cf8044c4e3da2691614d827"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-1024.png",
+      "sha256": "daadcd2c2dd790640495cc189b599f89ee9d49d0a6b330979c0a3f20072ec2d1"
+    },
+    {
+      "path": "routes-desktop/configuracion-light-1024.png",
+      "sha256": "a872238cc9c77838db2c900df9f2886442b4171a2928faa02f1c55ead2230e8b"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-360.png",
+      "sha256": "85581a2e74c60a0bb0d1bec8e0c22017758e8ce33e9a8a401dd8978809358925"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-1440.png",
+      "sha256": "9cbfb22e3574acfee7eaa061a86f4e47726a87ead04fae98268bfa0b46951abc"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-1024.png",
+      "sha256": "d6ae00f33673a7ba47728271c3788969c38627904c532e36f3a17a090b200ea4"
+    },
+    {
+      "path": "routes-desktop/turnos-light-1440.png",
+      "sha256": "3ddd04d427dc37f0b201aad0b06200a6f219064559da0061d0155bdd77d00b77"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-320.png",
+      "sha256": "d45da2fc5b3cfb8bcebda997b618e2e7d5b44a84f14b288e964f14ed51c06901"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-1024.png",
+      "sha256": "2d78db60b28dc7545d2f8b20ce443560957d907cdbb90b0b5d100d5f7062f66f"
+    },
+    {
+      "path": "routes-desktop/empleados-light-1280.png",
+      "sha256": "c9d1c7dcd34c2ca908f8937793b859c3c5531dc9bb53180a399a300854abb32f"
+    },
+    {
+      "path": "routes-desktop/departamentos-dark-360.png",
+      "sha256": "5ed9a1268f31fc164fc7eb5b692ab40416f3730520c12058276782e1ad6bb280"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-390.png",
+      "sha256": "582b92947ff8518c1b6955ed31d364a4a13e0b3ce185aaeda3a237b052371c57"
+    },
+    {
+      "path": "routes-desktop/usuarios-dark-1280.png",
+      "sha256": "e9ae9c37bc623c33a48bfe520693daed9966dd40894364f77a8bceffbb8173fc"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-768.png",
+      "sha256": "776506851b26f819480240f871e73c1492c0e7da8e05b6683722774ef94fbdae"
+    },
+    {
+      "path": "routes-desktop/auditoria-light-390.png",
+      "sha256": "861d8320cc9c207f1a6e39e11741ffd2c4def91793c4abd581e39f385d1752f3"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-768.png",
+      "sha256": "53fa6af6de7ee5ee6cf5f752143697057c608c32bb0f850c1f446f84b94228f3"
+    },
+    {
+      "path": "routes-desktop/vacaciones-light-390.png",
+      "sha256": "214da341ef72a1a878793bd091cf49703e7413286360cacf8c1d378ead36e276"
+    },
+    {
+      "path": "routes-desktop/cuenta-light-360.png",
+      "sha256": "6369397a7b5494ae3221812b387c32589ab44fc0d44aac40e018b3e271be5678"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-320.png",
+      "sha256": "08c742742b5fba578acf96484273ee109200268ed9a375030a0270a08ee9cfc6"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-1280.png",
+      "sha256": "cc2e525aa08e71e314e53caec48d4c8cb52bd570ebb33a63086f76cd04206619"
+    },
+    {
+      "path": "routes-desktop/configuracion-dark-390.png",
+      "sha256": "b4f19a574ff22c807ce91986acac0f5c4011c14e0f54e3268a8a98352157b299"
+    },
+    {
+      "path": "routes-desktop/turnos-light-390.png",
+      "sha256": "846c6757ac22a3e51d9a2f7374aceffdb620224f933424d28aac6e17be41afbd"
+    },
+    {
+      "path": "routes-desktop/avisos-dark-360.png",
+      "sha256": "3ebb09d5976949b3c94c7d31160bec34b11cebf032828666ae521065b2892923"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-light-1024.png",
+      "sha256": "417562266e736cd23189c1e54f213b03253e8db2bbde7e89c20ee590ea2466d0"
+    },
+    {
+      "path": "routes-desktop/asistencia-dark-768.png",
+      "sha256": "17692b73825cfbfd5a9b4e3a0496e0eab4bb63b03c6fef7e8ca660abb0741a60"
+    },
+    {
+      "path": "routes-desktop/calendario-light-768.png",
+      "sha256": "4f7b49be8e67b32c9583efe768bbcdf22a682ed024546e440cce6ff6247b971e"
+    },
+    {
+      "path": "routes-desktop/inicio-light-320.png",
+      "sha256": "fa52d715f2cb1565d18d34544b3ff81636b50629968cee13acf1f220c7cce519"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-light-390.png",
+      "sha256": "dfec5b6c3f5ed1a3371016787049a2d592da47808ca48a37940323350dee45e7"
+    },
+    {
+      "path": "routes-desktop/turnos-dark-1024.png",
+      "sha256": "7a51e74232abc4367e0f2ecaba9ac552df6d0416cea14dac4aa93b1064d5e5c4"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-320.png",
+      "sha256": "3401296c24d514a3054fba37e2419bf34ed9c38c1cfb240b833719e5ff86dea8"
+    },
+    {
+      "path": "routes-desktop/avisos-light-1024.png",
+      "sha256": "43c56f712c775738eac153c894950f1858d006d7c2fa5fd261b4a443b0af622b"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-390.png",
+      "sha256": "236a102b30029f04c4c34c9b7fb4f984b2f5f0561f317cca8081ba1a175069c5"
+    },
+    {
+      "path": "routes-desktop/calendario-light-360.png",
+      "sha256": "23aa0c5359b92cb5cd86febfc4e4be7659966706f0e0ff9839a3483ba458245e"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-360.png",
+      "sha256": "c3d9d1d8373892ab66741c2989db304d789ad22e18447a8263e47c9676600987"
+    },
+    {
+      "path": "routes-desktop/incidencias-light-768.png",
+      "sha256": "5513ba8e1aba5d501edcf591d2aebfe89a45a691f215f9fdf561ee530b2ec53d"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-390.png",
+      "sha256": "090924117598db05f1e16088972542da6a71b52346331b0189977c3f2052b5f7"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-1280.png",
+      "sha256": "28e6175bc4093da04d9cbbf8157a0c8afce07d6f807b173ce351bef50658b920"
+    },
+    {
+      "path": "routes-desktop/cuenta-dark-1280.png",
+      "sha256": "19cb7def51438cf80513123e98674cb859d6cfc988bba691361ee3ee171ef7e2"
+    },
+    {
+      "path": "routes-desktop/solicitudes-dark-768.png",
+      "sha256": "fcd58cfcc34ab21d759cf438ce87b8d360093c950f072ea902c00d25a17eb09a"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-360.png",
+      "sha256": "347975df5ce3e3b55502e98c42fcd25657ddc698ed257cdf74646d157d0cf760"
+    },
+    {
+      "path": "routes-desktop/calendario-dark-1440.png",
+      "sha256": "139215b6d5774fdf2b75df9dd96a73df4347ad699226ef44842bcb16095707c0"
+    },
+    {
+      "path": "routes-desktop/calendario-light-390.png",
+      "sha256": "f6013d2357b8e888bdd66c452da240d3e8349484c221949f7b6b61729947f6df"
+    },
+    {
+      "path": "routes-desktop/departamentos-light-320.png",
+      "sha256": "52bc235f1114087035ebe89728bc3f0510039f60179c5d524b8765954466bb04"
+    },
+    {
+      "path": "routes-desktop/aprobaciones-dark-1024.png",
+      "sha256": "a7bb57ad65fc0c9f5a39fe00b5cfdf0e4d5a9f0b52a98652d570a8232690da08"
+    },
+    {
+      "path": "routes-desktop/estado-dark-1280.png",
+      "sha256": "94046d10bd8c64d573615b7231de3ef3e281d4f04c498c69d61ac2bd7b711034"
+    },
+    {
+      "path": "routes-desktop/empleados-dark-1024.png",
+      "sha256": "611f4eae3bb29ab72cc8e5d25cdfb5c444c9c6a64ba5a43e46d8bfef50296a24"
+    },
+    {
+      "path": "routes-desktop/configuracion-asistencia-dark-320.png",
+      "sha256": "3fe672c6f2124339cb453f03021d494634768bdd9299ccfb4d58d50e24641abf"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-light-1440.png",
+      "sha256": "dd3e847204c827c199e000814c30cf9ea274f5b19aea20a7371f636ee89d0171"
+    },
+    {
+      "path": "routes-desktop/auditoria-dark-360.png",
+      "sha256": "04dcf779b244f90c6c2c47fbdb44b77cc99bb9fc28465b3ec1750c6d05376071"
+    },
+    {
+      "path": "routes-desktop/politicas-ausencias-dark-390.png",
+      "sha256": "5a0bf079857693d1dbb415b84da013fe07b7f7d732abd9b62368124d7871ffa6"
+    },
+    {
+      "path": "routes-desktop/asistencia-light-390.png",
+      "sha256": "c9678cd599bda2a882ae6225d20fb2f9cda690be5d9c74bc17ebf7f86d7d2f1f"
+    },
+    {
+      "path": "routes-desktop/calendario-light-320.png",
+      "sha256": "5907fd3e6b4417e92849099347618be22948a9d9c92fc993c1a8cb834ffbc411"
+    },
+    {
+      "path": "routes-mobile/usuarios-light-390.png",
+      "sha256": "c7decf4a2978a18d1cec4232a615a3faf097d97fc3f5b2c186e742ac755f6850"
+    },
+    {
+      "path": "routes-mobile/departamentos-dark-390.png",
+      "sha256": "4a37fedc6205bcde5666e6d8d1dc689467aec1c4ca171f38b99d87f6835e01fc"
+    },
+    {
+      "path": "routes-mobile/responsables-dark-390.png",
+      "sha256": "9bcb1e650b7ebd939ace5782a0265787187c438920d11f22e895e29a3f49dccc"
+    },
+    {
+      "path": "routes-mobile/departamentos-light-390.png",
+      "sha256": "02a2b47235573b980fd5da20f74e72656a8661cb6e76d7d368887121855f1ce9"
+    },
+    {
+      "path": "routes-mobile/calendario-dark-390.png",
+      "sha256": "3f73af3e7631a1f339f8568eb300028ce1f5900e9ec0fb27025edf748bb67d56"
+    },
+    {
+      "path": "routes-mobile/turnos-dark-390.png",
+      "sha256": "ff59f4af609303108a57af290cf7f9bed6af9a485b79dfffccb120080fe030f0"
+    },
+    {
+      "path": "routes-mobile/configuracion-asistencia-light-390.png",
+      "sha256": "e9f4b890be9d0e0541ab6549f96e6464d80cfe99fe545e6d3983e06827b2cda2"
+    },
+    {
+      "path": "routes-mobile/inicio-light-390.png",
+      "sha256": "80b5c080b699601828b78e26c90efd8b0dd5599e7b428b6e706cadf08acb76e6"
+    },
+    {
+      "path": "routes-mobile/avisos-dark-390.png",
+      "sha256": "875206266099fc3af8de38bb9f6d67858b2572591b76af3f0ff881a0b9ea7b65"
+    },
+    {
+      "path": "routes-mobile/avisos-light-390.png",
+      "sha256": "c3aed6303c1f9a22fc1966751429e916ee3e748bb3a9b4ad3ea59490753337be"
+    },
+    {
+      "path": "routes-mobile/incidencias-dark-390.png",
+      "sha256": "31579c23f59ee105b155562046a746e2d54590f7a100a6038af9e0e773c25d63"
+    },
+    {
+      "path": "routes-mobile/empleados-light-390.png",
+      "sha256": "e82c3de1f27df8714a12e86e27715661e853bcbf52c8c7cb0200fb142f8a83be"
+    },
+    {
+      "path": "routes-mobile/auditoria-dark-390.png",
+      "sha256": "06a88444c6e736bda94e0b366f27fa9f35aefc4e61aa630f0e6a6bed0610a6b2"
+    },
+    {
+      "path": "routes-mobile/aprobaciones-dark-390.png",
+      "sha256": "89861b2745338e52b8a9e83efd53e47b0a38b5e5c2e18dc732f8cf756b09a25c"
+    },
+    {
+      "path": "routes-mobile/estado-dark-390.png",
+      "sha256": "39a2c6c46000a62a3f7028137002d04143b00c86ff8a06397e76e0b812b767b1"
+    },
+    {
+      "path": "routes-mobile/incidencias-light-390.png",
+      "sha256": "fa679524cd482a8d0dbbb863422427e48d195e46e20d891f9de851e3d744682c"
+    },
+    {
+      "path": "routes-mobile/vacaciones-dark-390.png",
+      "sha256": "2e916e12a2d57840b31ec8ff1efe211e7680cb8e10888891b30076d9eab9e73e"
+    },
+    {
+      "path": "routes-mobile/configuracion-light-390.png",
+      "sha256": "7bd618e3b169da8b28fa41f1d17910ebf02e4b50b58a56b08b1007a5585b9be1"
+    },
+    {
+      "path": "routes-mobile/inicio-dark-390.png",
+      "sha256": "d653bac3f79d63a8d691be0b56882900ec548fcc91428dd341f2e68f064f8fd2"
+    },
+    {
+      "path": "routes-mobile/asistencia-dark-390.png",
+      "sha256": "f95b146487634fd756ebfd6a4b55a20d8b3d191e5c504acfaaadf264dd957e17"
+    },
+    {
+      "path": "routes-mobile/ubicaciones-light-390.png",
+      "sha256": "ee829cbd8a19ca2463ca4209ccc63776b84724266ef880592bc61673c0dcea0c"
+    },
+    {
+      "path": "routes-mobile/ubicaciones-dark-390.png",
+      "sha256": "a20970a118da57d4779df8544c6cd40bd8c3e515f265fee6e992f0f5795b0fbe"
+    },
+    {
+      "path": "routes-mobile/solicitudes-light-390.png",
+      "sha256": "dd6c15ff5753ce5202d4bab2eece48a234651a6269c3808820338891435c10f5"
+    },
+    {
+      "path": "routes-mobile/politicas-ausencias-light-390.png",
+      "sha256": "afa719be77793c4489487a20b3437c6b2438471c0f8c19046b36db663e3634e6"
+    },
+    {
+      "path": "routes-mobile/cuenta-dark-390.png",
+      "sha256": "2610ffcebd3a04874663c49c9ef884f81fe683ba087463a75ece0348c1214ad5"
+    },
+    {
+      "path": "routes-mobile/estado-light-390.png",
+      "sha256": "cbd9947787ef98630a8c3af72cd508449027de5ad92bd46daf4347d9427b1fe4"
+    },
+    {
+      "path": "routes-mobile/usuarios-dark-390.png",
+      "sha256": "bf84f5e41b46ef31b8ca54f9ce1010b28f74cca4782bcb669699c51e4298bb98"
+    },
+    {
+      "path": "routes-mobile/responsables-light-390.png",
+      "sha256": "9b097487c366babb03e09b070f27b75e72dbcb604db827ab64ea2040ba1ba043"
+    },
+    {
+      "path": "routes-mobile/configuracion-asistencia-dark-390.png",
+      "sha256": "e00771c33a5d6edeb772f843fdc97a387ac5f5fb21ca86a70a280abb302e10f3"
+    },
+    {
+      "path": "routes-mobile/cuenta-light-390.png",
+      "sha256": "69d5c9b1c4234700e85d34f51894d0dfc1980d43c66cfbf88c614819ccef14d3"
+    },
+    {
+      "path": "routes-mobile/auditoria-light-390.png",
+      "sha256": "b1d011501a371fa9d41c9428119fb3d35c35a0c783b9391d9dff61a61640ab99"
+    },
+    {
+      "path": "routes-mobile/vacaciones-light-390.png",
+      "sha256": "d48e9a95f943802d21d30025c2953e109e76d9fdeed1c632be7149bb6d36634f"
+    },
+    {
+      "path": "routes-mobile/configuracion-dark-390.png",
+      "sha256": "f3dd153707cf318672decc49972d621e83f33feb24cceac1de060682ad119dcd"
+    },
+    {
+      "path": "routes-mobile/turnos-light-390.png",
+      "sha256": "0f1d54b3feaf08b4de7f4f530fce25252846c1098053e222ef62e515ada6e171"
+    },
+    {
+      "path": "routes-mobile/aprobaciones-light-390.png",
+      "sha256": "2dbbf192d3790777ad6cfab8f6fca5d67ca78c2352be9c23ea660a7a7bc4f12f"
+    },
+    {
+      "path": "routes-mobile/empleados-dark-390.png",
+      "sha256": "2352c0c1fc4bebcb9529e4eae3b5df0c23b32530edf7c183d326ee460ee65ce7"
+    },
+    {
+      "path": "routes-mobile/solicitudes-dark-390.png",
+      "sha256": "4ec6f77906af1c3c36d434188994dd959a932c5bed3e5b102a89d77b5b3caf51"
+    },
+    {
+      "path": "routes-mobile/calendario-light-390.png",
+      "sha256": "235abe8ea867c5616401e371adb08a147f11257234be0ff26f01815c1a003d65"
+    },
+    {
+      "path": "routes-mobile/politicas-ausencias-dark-390.png",
+      "sha256": "d88a1e416abe53da032b148df3adf0fbc298bf780b01e69567159a6af6d86668"
+    },
+    {
+      "path": "routes-mobile/asistencia-light-390.png",
+      "sha256": "8feccd47644acaf634c430bdc42906cc833beaaf80c46eaecb3e6aaff332ba61"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/incidencias-presencial.png",
+      "sha256": "bd4ebd3b134fe8e13f9693a3805801100ad66a32eea25c2c4523f43164f35b1b"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-aceptada.png",
+      "sha256": "631bb7f82438b003289dcedf04d6f34b550bbd8fb864c76e17f388d69d1504cf"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-salida.png",
+      "sha256": "030e8f52354ec5bb789dac4b7a093af9fbd676e995c15727fc68b2d6f668395c"
+    },
+    {
+      "path": "workflows/attendance-conserva-rechaz-93a4c-pta-GPS-del-centro-asignado-desktop/asistencia-presencial-rechazada.png",
+      "sha256": "e4deb1a31df370226cf93d5319648f35070d0eb79016066e807ac8c80fee4d4e"
+    },
+    {
+      "path": "workflows/identity-employees-crea-em-d2557--conserva-ambos-al-recargar-desktop/responsables.png",
+      "sha256": "64218dbb4a5c46a691e809685ef8036585a677a7da6c753b4d260d195fb5acc8"
+    },
+    {
+      "path": "workflows/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-mobile/permiso-evidencia-privada.png",
+      "sha256": "d14535b777ebe77f5a8710018aa2f35cce77169a4f11db3061f2337e575ab5a4"
+    },
+    {
+      "path": "workflows/requests-permiso-conserva--7b873-a-y-guarda-rechazo-del-jefe-mobile/permiso-rechazo-conservado.png",
+      "sha256": "7fd278aac3cef7c46b1dc813dc4d60cecf3d9f71195ba09d5d9895a0a78eb55f"
+    },
+    {
+      "path": "workflows/requests-permiso-por-horas-f9409-onserva-condiciones-previas-desktop/permiso-horas-sin-comprobante.png",
+      "sha256": "697263b68dcd0d7213ce00e414345cabecde97bb0c664b518b6c9bcf7b4a48da"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-mobile/directory-dark-390.png",
+      "sha256": "4f2fc98e72a2b4fb1e5817a2554ae13049c272f3653c3018efbfd84424fb2d6f"
+    },
+    {
+      "path": "workflows/employees-design-directori-f2af6-serva-reflow-en-ambos-temas-mobile/directory-light-390.png",
+      "sha256": "fd316ac9609edb99ffbb5a13a7a3e54da864b232526d70ff01ce3c91f5b81688"
+    },
+    {
+      "path": "workflows/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-desktop/vacaciones-saldo-aprobado.png",
+      "sha256": "4e8b8d46cf86aff9004d28c6da2cf7e1da81e42602c30eac6b750071aeeb8202"
+    },
+    {
+      "path": "workflows/requests-jefatura-aprueba--9f8f0-plicar-consumo-o-devoluci\u00f3n-desktop/solicitudes-cancelacion-jefatura-definitiva.png",
+      "sha256": "60b294b1a3c628895095dabb3dbbc7dd8625e111ab19d01e8f66ef3eac11cb1d"
+    },
+    {
+      "path": "workflows/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-desktop/departments.png",
+      "sha256": "9846f1cbbf7bdde18d24d275cc27a2a23780bd8a703d642eeac1e54d18278e7f"
+    }
+  ]
+}

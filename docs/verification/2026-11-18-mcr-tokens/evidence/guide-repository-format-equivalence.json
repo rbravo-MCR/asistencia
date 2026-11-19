@@ -1,0 +1,82 @@
+[
+  {
+    "file": "00_UX_UI_MASTER_GUIDELINES.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "01_DESIGN_SYSTEM.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "02_DESIGN_TOKENS.md",
+    "repositoryFormatChanged": true,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "03_COMPONENT_LIBRARY.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "04_GLASSMORPHISM.md",
+    "repositoryFormatChanged": true,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "05_SCREEN_BLUEPRINTS.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "06_USER_JOURNEYS.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "07_MICROINTERACTIONS.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "08_RESPONSIVE_DESIGN.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "09_ACCESSIBILITY.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "10_PERFORMANCE_BUDGET.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "11_FRONTEND_ARCHITECTURE.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "12_SECURITY_GOVERNANCE.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "13_TESTING_STRATEGY.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "14_DEFINITION_OF_DONE.md",
+    "repositoryFormatChanged": false,
+    "markdownAstEquivalent": true
+  },
+  {
+    "file": "MCR_UX_UI_Master.md",
+    "repositoryFormatChanged": true,
+    "markdownAstEquivalent": true
+  }
+]

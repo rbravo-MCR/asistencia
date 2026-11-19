@@ -1,0 +1,175 @@
+{
+  "routes": [
+    "/",
+    "/estado",
+    "/departamentos",
+    "/configuracion",
+    "/configuracion/asistencia",
+    "/solicitudes",
+    "/aprobaciones",
+    "/vacaciones",
+    "/politicas-ausencias",
+    "/asistencia",
+    "/incidencias",
+    "/auditoria",
+    "/avisos",
+    "/calendario",
+    "/turnos",
+    "/ubicaciones",
+    "/ingresar",
+    "/recuperar",
+    "/cuenta",
+    "/usuarios",
+    "/empleados",
+    "/responsables"
+  ],
+  "routeCount": 22,
+  "primitives": [
+    "apps/web/src/components/ui/badge.tsx",
+    "apps/web/src/components/ui/button.tsx",
+    "apps/web/src/components/ui/card.tsx",
+    "apps/web/src/components/ui/input.tsx",
+    "apps/web/src/components/ui/label.tsx",
+    "apps/web/src/components/ui/table.tsx"
+  ],
+  "features": [
+    "attendance",
+    "audit",
+    "configuration",
+    "dashboard",
+    "departments",
+    "employees",
+    "identity",
+    "locations",
+    "notifications",
+    "planning",
+    "requests",
+    "system"
+  ],
+  "webTests": [
+    "apps/web/src/app/router.test.tsx",
+    "apps/web/src/features/attendance/attendance-pages.test.tsx",
+    "apps/web/src/features/attendance/attendance-policy.test.tsx",
+    "apps/web/src/features/dashboard/dashboard.test.tsx",
+    "apps/web/src/features/departments/departments-screen.test.tsx",
+    "apps/web/src/features/departments/form-schema.test.ts",
+    "apps/web/src/features/employees/form-schema.test.ts",
+    "apps/web/src/features/employees/organization-pages.test.tsx",
+    "apps/web/src/features/identity/form-schema.test.ts",
+    "apps/web/src/features/identity/session.test.tsx",
+    "apps/web/src/features/identity/super-admin.test.tsx",
+    "apps/web/src/features/planning/steps-pages.test.tsx",
+    "apps/web/src/features/requests/evidence.test.ts",
+    "apps/web/src/features/requests/requests-pages.test.tsx",
+    "apps/web/src/features/system/system-status.test.tsx",
+    "apps/web/src/lib/date-range-search.test.ts"
+  ],
+  "apiUnitTests": [
+    "apps/api/tests/app.test.ts",
+    "apps/api/tests/attendance.test.ts",
+    "apps/api/tests/backup.test.ts",
+    "apps/api/tests/boundaries.test.ts",
+    "apps/api/tests/config.test.ts",
+    "apps/api/tests/department-contracts.test.ts",
+    "apps/api/tests/departments.test.ts",
+    "apps/api/tests/identity-employees.test.ts",
+    "apps/api/tests/local-origin.test.ts",
+    "apps/api/tests/locations.test.ts",
+    "apps/api/tests/official-holidays.test.ts",
+    "apps/api/tests/planning.test.ts",
+    "apps/api/tests/requests.test.ts",
+    "apps/api/tests/super-admin.test.ts"
+  ],
+  "integrationTests": [
+    "apps/api/tests/admin-cli.integration.test.ts",
+    "apps/api/tests/attendance.integration.test.ts",
+    "apps/api/tests/audit-notifications.integration.test.ts",
+    "apps/api/tests/backup-cleanup.integration.test.ts",
+    "apps/api/tests/dashboard.integration.test.ts",
+    "apps/api/tests/database.integration.test.ts",
+    "apps/api/tests/departments-http.integration.test.ts",
+    "apps/api/tests/departments.integration.test.ts",
+    "apps/api/tests/head-final.integration.test.ts",
+    "apps/api/tests/identity-http.integration.test.ts",
+    "apps/api/tests/leave-attendance.integration.test.ts",
+    "apps/api/tests/locations.integration.test.ts",
+    "apps/api/tests/official-holidays.integration.test.ts",
+    "apps/api/tests/planning.integration.test.ts",
+    "apps/api/tests/requests.integration.test.ts",
+    "apps/api/tests/stage13-http.integration.test.ts",
+    "apps/api/tests/super-admin.integration.test.ts"
+  ],
+  "e2eSuites": [
+    "tests/e2e/attendance.spec.ts",
+    "tests/e2e/base.spec.ts",
+    "tests/e2e/dashboard.spec.ts",
+    "tests/e2e/departments.spec.ts",
+    "tests/e2e/identity-employees.spec.ts",
+    "tests/e2e/official-holidays.spec.ts",
+    "tests/e2e/requests.spec.ts",
+    "tests/e2e/steps10-12.spec.ts",
+    "tests/e2e/super-admin.spec.ts"
+  ],
+  "contracts": [
+    "packages/contracts/src/attendance.ts",
+    "packages/contracts/src/audit.ts",
+    "packages/contracts/src/dashboard.ts",
+    "packages/contracts/src/departments.ts",
+    "packages/contracts/src/employees.ts",
+    "packages/contracts/src/identity.ts",
+    "packages/contracts/src/index.ts",
+    "packages/contracts/src/locations.ts",
+    "packages/contracts/src/planning.ts",
+    "packages/contracts/src/requests.ts"
+  ],
+  "largestWebModules": [
+    {
+      "path": "apps/web/src/features/attendance/attendance-pages.tsx",
+      "lines": 589
+    },
+    {
+      "path": "apps/web/src/features/employees/employees-page.tsx",
+      "lines": 545
+    },
+    {
+      "path": "apps/web/src/features/planning/calendar-page.tsx",
+      "lines": 492
+    },
+    {
+      "path": "apps/web/src/features/requests/requests-pages.tsx",
+      "lines": 488
+    },
+    {
+      "path": "apps/web/src/features/locations/locations-page.tsx",
+      "lines": 410
+    },
+    {
+      "path": "apps/web/src/features/employees/assignments-page.tsx",
+      "lines": 361
+    },
+    {
+      "path": "apps/web/src/features/dashboard/dashboard.tsx",
+      "lines": 359
+    },
+    {
+      "path": "apps/web/src/features/requests/policies-page.tsx",
+      "lines": 342
+    },
+    {
+      "path": "apps/web/src/features/planning/shifts-page.tsx",
+      "lines": 327
+    },
+    {
+      "path": "apps/web/src/features/identity/auth-pages.tsx",
+      "lines": 293
+    },
+    {
+      "path": "apps/web/src/features/identity/users-page.tsx",
+      "lines": 285
+    },
+    {
+      "path": "apps/web/src/features/departments/departments-screen.tsx",
+      "lines": 232
+    }
+  ]
+}

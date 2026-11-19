@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Entrada tardía",
+    "paid": true,
+    "evidenceRequired": false,
+    "allowPartial": true,
+    "partialOnly": true,
+    "minimumNoticeHours": 24,
+    "active": true
+  },
+  {
+    "name": "Salida anticipada",
+    "paid": true,
+    "evidenceRequired": false,
+    "allowPartial": true,
+    "partialOnly": true,
+    "minimumNoticeHours": 24,
+    "active": true
+  }
+]

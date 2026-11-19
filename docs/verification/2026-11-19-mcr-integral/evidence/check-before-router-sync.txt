@@ -1,0 +1,98 @@
+$ pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build
+$ eslint . && pnpm check:boundaries
+$ depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src
+
+✔ no dependency violations found (279 modules, 943 dependencies cruised)
+
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done
+$ pnpm --filter @asistencia/contracts build && vitest run
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ ❯ |web| apps/web/src/app/router.test.tsx (10 tests | 2 failed) 2819ms
+   ❯ navegación de la aplicación (5)
+     × admite acceso directo a una ruta interna 109ms
+     × muestra 404 con regreso al inicio conservando navegación 69ms
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/app/router.test.tsx > navegación de la aplicación > admite acceso directo a una ruta interna
+Error: expect(element).toBeVisible()
+
+Received element is not visible (element is not in the document):
+  <h1
+  class="break-words text-[28px] font-semibold tracking-[-0.035em] sm:text-[32px]"
+/>
+ ❯ apps/web/src/app/router.test.tsx:118:7
+    116|     expect(
+    117|       await screen.findByRole('heading', { name: 'Estado del sistema' …
+    118|     ).toBeVisible();
+       |       ^
+    119|     expect(await screen.findByText('Servicios disponibles')).toBeVisib…
+    120|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  |web| apps/web/src/app/router.test.tsx > navegación de la aplicación > muestra 404 con regreso al inicio conservando navegación
+Error: expect(element).toBeVisible()
+
+Received element is not visible (element is not in the document):
+  <h1
+  class="break-words text-[28px] font-semibold tracking-[-0.035em] sm:text-[32px]"
+/>
+ ❯ apps/web/src/app/router.test.tsx:125:7
+    123|     expect(
+    124|       await screen.findByRole('heading', { name: 'Página no encontrada…
+    125|     ).toBeVisible();
+       |       ^
+    126|     await userEvent.click(
+    127|       screen.getByRole('link', { name: 'Volver al inicio' }),
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed | 35 passed (36)
+      Tests  2 failed | 232 passed (234)
+   Start at  09:42:04
+   Duration  36.87s (tests 48%, import 24%, environment 20%, setup 6%, transform 1%)
+
+    Isolate  36 workers spawned · ~786ms startup each (spawn + environment, per file)
+             at least ~8.65s faster with isolate: false — reuses workers across files instead of one per file
+
+[ELIFECYCLE] Test failed. See above for more details.
+[ELIFECYCLE] Command failed with exit code 1.

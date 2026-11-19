@@ -1,0 +1,11 @@
+$ pnpm --filter @asistencia/contracts build && vitest run --config vitest.integration.config.ts
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+
+ Test Files  17 passed (17)
+      Tests  175 passed (175)
+   Start at  09:29:47
+   Duration  61.85s (tests 70%, import 29%)
+

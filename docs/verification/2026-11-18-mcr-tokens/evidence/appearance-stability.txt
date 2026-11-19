@@ -1,0 +1,39 @@
+[WebServer] (node:710265) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:710419) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 22 tests using 2 workers
+
+(node:710527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:710528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.9s)
+  ✓   2 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (4.0s)
+  ✓   3 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.1s)
+  ✓   5 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (401ms)
+  ✓   4 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (3.7s)
+  ✓   6 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (3.9s)
+  ✓   7 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.7s)
+  ✓   8 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (2.5s)
+  ✓   9 [desktop] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (1.9s)
+  ✓  10 [desktop] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (2.5s)
+(node:711678) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [desktop] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (3.3s)
+(node:711776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.5s)
+  ✓  12 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (5.0s)
+  ✓  14 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (1.9s)
+  ✓  16 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (521ms)
+  ✓  15 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (3.7s)
+  ✓  18 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.5s)
+  ✓  17 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (4.4s)
+  ✓  20 [desktop] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (2.5s)
+  ✓  19 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (3.1s)
+  ✓  21 [desktop] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (3.3s)
+  ✓  22 [desktop] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (4.2s)
+
+  22 passed (42.1s)

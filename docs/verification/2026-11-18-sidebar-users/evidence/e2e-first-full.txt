@@ -1,0 +1,247 @@
+[WebServer] (node:1012834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1012927) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 68 tests using 3 workers
+
+(node:1013032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1013039) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1013033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.5s)
+  ✓   1 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.8s)
+  ✓   5 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (697ms)
+  ✓   2 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (4.4s)
+  ✓   4 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (4.4s)
+  ✓   7 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.7s)
+  ✓   6 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (4.0s)
+  ✓   9 [desktop] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (2.4s)
+  ✓   8 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (2.7s)
+  ✓  10 [desktop] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (3.2s)
+  ✓  12 [desktop] › tests/e2e/appearance.spec.ts:316:1 › descarga el módulo de calendario solo al navegar hacia él (3.4s)
+  ✓  11 [desktop] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (5.0s)
+  ✓  13 [desktop] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (9.6s)
+  ✓  15 [desktop] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (8.4s)
+  ✓  16 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (4.3s)
+  ✓  14 [desktop] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (18.1s)
+  ✓  17 [desktop] › tests/e2e/base.spec.ts:34:1 › navega entre rutas, permite acceso directo y recupera una página 404 (8.4s)
+  ✓  18 [desktop] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (10.2s)
+  ✓  19 [desktop] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (10.2s)
+  ✓  20 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (11.4s)
+  ✓  21 [desktop] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (8.8s)
+  ✓  23 [desktop] › tests/e2e/identity-employees.spec.ts:212:1 › empleado no ve administración ni puede concederse roles mediante la API (4.2s)
+  ✓  22 [desktop] › tests/e2e/identity-employees.spec.ts:61:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (9.9s)
+  ✓  24 [desktop] › tests/e2e/identity-employees.spec.ts:275:1 › edita y elimina empleados desde la web sin cambiar el número interno (7.9s)
+  ✓  25 [desktop] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (5.0s)
+  ✓  26 [desktop] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (9.5s)
+  ✓  29 [desktop] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (2.7s)
+  ✓  30 [desktop] › tests/e2e/shell-users.spec.ts:58:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (7.0s)
+  ✓  27 [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (19.3s)
+  ✘  31 [desktop] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (2.7s)
+(node:1017723) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  28 [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (31.9s)
+  ✓  33 [desktop] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (7.5s)
+(node:1018364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  32 [desktop] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (15.6s)
+(node:1018456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  34 [desktop] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (6.6s)
+  ✓  36 [mobile] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.2s)
+  ✓  35 [mobile] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (4.1s)
+(node:1018859) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  38 [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (690ms)
+  ✓  37 [mobile] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (3.7s)
+  ✓  39 [mobile] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (3.8s)
+  ✓  40 [mobile] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (2.5s)
+  ✓  41 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.6s)
+  ✓  42 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (2.8s)
+  ✓  43 [mobile] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (2.8s)
+  ✓  44 [mobile] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (2.9s)
+  ✓  46 [mobile] › tests/e2e/appearance.spec.ts:316:1 › descarga el módulo de calendario solo al navegar hacia él (3.3s)
+  ✓  45 [mobile] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (5.0s)
+  ✓  47 [mobile] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (9.8s)
+  ✓  49 [mobile] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (8.4s)
+  ✓  50 [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (4.5s)
+  ✓  51 [mobile] › tests/e2e/base.spec.ts:34:1 › navega entre rutas, permite acceso directo y recupera una página 404 (7.8s)
+  ✓  48 [mobile] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (18.5s)
+  ✓  53 [mobile] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (7.0s)
+  ✘  54 [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (8.8s)
+(node:1021149) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  56 [mobile] › tests/e2e/identity-employees.spec.ts:61:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (4.9s)
+  ✓  57 [mobile] › tests/e2e/identity-employees.spec.ts:212:1 › empleado no ve administración ni puede concederse roles mediante la API (2.4s)
+  ✓  58 [mobile] › tests/e2e/identity-employees.spec.ts:275:1 › edita y elimina empleados desde la web sin cambiar el número interno (4.1s)
+  ✘  52 [mobile] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (30.1s)
+  ✓  59 [mobile] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (2.5s)
+(node:1022062) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  60 [mobile] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (8.0s)
+  ✘  55 [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (30.3s)
+(node:1022919) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  63 [mobile] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (4.6s)
+  ✓  61 [mobile] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (17.3s)
+  ✘  65 [mobile] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (3.2s)
+(node:1023607) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  64 [mobile] › tests/e2e/shell-users.spec.ts:58:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (8.0s)
+  ✓  62 [mobile] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (22.8s)
+  ✓  67 [mobile] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (6.5s)
+  ✓  68 [mobile] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (6.4s)
+  ✓  66 [mobile] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (15.4s)
+
+
+  1) [desktop] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 72
+    Received: 73
+
+      181 |       }));
+      182 |       expect(geometry.scrollWidth).toBeLessThanOrEqual(width);
+    > 183 |       expect(geometry.headerHeight).toBe(72);
+          |                                     ^
+      184 |       metrics.push({ theme: mode, ...geometry });
+      185 |       await page.screenshot({
+      186 |         path: testInfo.outputPath(`users-${mode}-${width}.png`),
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:183:37
+
+    Error Context: test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Configuración', exact: true })
+
+
+      29 |     await page
+      30 |       .getByRole('link', { name: 'Configuración', exact: true })
+    > 31 |       .click();
+         |        ^
+      32 |     await expect(
+      33 |       page.getByRole('heading', { name: 'Configuración administrativa' }),
+      34 |     ).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/dashboard.spec.ts:31:8
+
+    Error Context: test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/dashboard-dashboard-y-conf-72bbb-argar-y-conservar-versiones-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: getByRole('navigation').getByRole('link', { name: 'Departamentos', exact: true })
+    Expected: "page"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" getByRole('navigation').getByRole('link', { name: 'Departamentos', exact: true }) with timeout 5000ms
+      - waiting for getByRole('navigation').getByRole('link', { name: 'Departamentos', exact: true })
+
+
+      60 |         .getByRole('navigation')
+      61 |         .getByRole('link', { name: 'Departamentos', exact: true }),
+    > 62 |     ).toHaveAttribute('aria-current', 'page');
+         |       ^
+      63 |     expect(
+      64 |       await page.evaluate(
+      65 |         () => document.documentElement.scrollWidth <= innerWidth,
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments.spec.ts:62:7
+
+    Error Context: test-results/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-crea-edita-y-e-b1d9d--persistencia-tras-recargar-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'Mi cuenta', exact: true })
+
+
+      26 |   await page.getByRole('button', { name: 'Ingresar', exact: true }).click();
+      27 |   await expect(page.getByRole('heading', { name: /^Hola,/ })).toBeVisible();
+    > 28 |   await page.getByRole('link', { name: 'Mi cuenta', exact: true }).click();
+         |                                                                    ^
+      29 |   await expect(
+      30 |     page.getByRole('heading', { name: 'Mi cuenta', exact: true }),
+      31 |   ).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/identity-employees.spec.ts:28:68
+
+    Error Context: test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/identity-employees-ingresa-962a0--acceso-privado-al-recargar-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [mobile] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 72
+    Received: 73
+
+      181 |       }));
+      182 |       expect(geometry.scrollWidth).toBeLessThanOrEqual(width);
+    > 183 |       expect(geometry.headerHeight).toBe(72);
+          |                                     ^
+      184 |       metrics.push({ theme: mode, ...geometry });
+      185 |       await page.screenshot({
+      186 |         path: testInfo.outputPath(`users-${mode}-${width}.png`),
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:183:37
+
+    Error Context: test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [desktop] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+    [mobile] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones 
+    [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar 
+    [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar 
+    [mobile] › tests/e2e/shell-users.spec.ts:153:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+  63 passed (3.2m)

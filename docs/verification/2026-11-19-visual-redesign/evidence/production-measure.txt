@@ -1,0 +1,1 @@
+{"measurements":24,"output":"/home/rafael/proyectos/asistencia/docs/verification/2026-11-19-visual-redesign/evidence/production/"}

@@ -1,0 +1,192 @@
+$ pnpm --filter @asistencia/contracts build && playwright test
+$ tsc -p tsconfig.json
+[WebServer] (node:74767) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:74958) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 78 tests using 2 workers
+
+(node:75179) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:75180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [desktop] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (2.8s)
+  ✓   1 [desktop] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (5.0s)
+  ✓   3 [desktop] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (3.0s)
+  ✘   5 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (3.7s)
+  ✓   4 [desktop] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (5.7s)
+(node:76142) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (2.9s)
+  ✓   8 [desktop] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (3.7s)
+  ✓   7 [desktop] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (5.2s)
+  ✓   9 [desktop] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (2.9s)
+  ✓  10 [desktop] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (3.8s)
+  ✓  11 [desktop] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (5.6s)
+  ✓  12 [desktop] › tests/e2e/appearance.spec.ts:316:1 › descarga el módulo de calendario solo al navegar hacia él (3.8s)
+  ✓  13 [desktop] › tests/e2e/appearance.spec.ts:338:1 › mantiene el acceso público sin mostrar el sidebar mientras verifica la sesión (2.7s)
+  ✓  14 [desktop] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (12.1s)
+  ✓  16 [desktop] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (7.1s)
+  ✓  15 [desktop] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (20.4s)
+  ✓  17 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (4.3s)
+  ✓  18 [desktop] › tests/e2e/base.spec.ts:34:1 › navega entre rutas, permite acceso directo y recupera una página 404 (9.2s)
+  ✓  19 [desktop] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (11.3s)
+  ✓  20 [desktop] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (14.7s)
+  ✓  22 [desktop] › tests/e2e/departments-design.spec.ts:247:1 › consulta sin permisos conserva vacío real y no ofrece acciones de escritura (5.9s)
+  ✓  21 [desktop] › tests/e2e/departments-design.spec.ts:6:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (33.1s)
+  ✓  23 [desktop] › tests/e2e/departments.spec.ts:10:1 › crea, edita y elimina departamentos con persistencia tras recargar (15.5s)
+  ✓  24 [desktop] › tests/e2e/employees-design.spec.ts:3:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia (11.2s)
+  ✓  25 [desktop] › tests/e2e/employees-design.spec.ts:74:1 › directorio filtra registros reales, pagina y conserva reflow en ambos temas (15.3s)
+  ✓  26 [desktop] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (10.7s)
+  ✓  28 [desktop] › tests/e2e/identity-employees.spec.ts:222:1 › empleado no ve administración ni puede concederse roles mediante la API (4.6s)
+  ✓  27 [desktop] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (14.1s)
+  ✓  30 [desktop] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (5.2s)
+  ✓  29 [desktop] › tests/e2e/identity-employees.spec.ts:285:1 › edita y elimina empleados desde la web sin cambiar el número interno (12.4s)
+  ✓  31 [desktop] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (13.8s)
+  ✓  32 [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (18.3s)
+  ✓  34 [desktop] › tests/e2e/shell-users.spec.ts:10:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (3.7s)
+  ✓  33 [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (22.4s)
+  ✓  35 [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (14.1s)
+  ✓  37 [desktop] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (13.8s)
+  ✓  38 [desktop] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (2.6s)
+  ✓  39 [desktop] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (3.7s)
+  ✘  36 [desktop] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (23.8s)
+(node:86551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:86559) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  41 [mobile] › tests/e2e/appearance.spec.ts:27:3 › identidad y preferencia visual MCR › sigue cambios del sistema y recupera una preferencia corrupta (1.4s)
+  ✓  40 [mobile] › tests/e2e/appearance.spec.ts:7:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (2.5s)
+  ✓  42 [mobile] › tests/e2e/appearance.spec.ts:41:3 › identidad y preferencia visual MCR › permite cambiar tema aunque el navegador bloquee almacenamiento (1.3s)
+  ✘  44 [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (1.4s)
+  ✓  43 [mobile] › tests/e2e/appearance.spec.ts:63:3 › identidad y preferencia visual MCR › sincroniza la preferencia entre pestañas del mismo origen (2.3s)
+(node:87116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  45 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en light (1.4s)
+  ✓  46 [mobile] › tests/e2e/appearance.spec.ts:124:5 › identidad y preferencia visual MCR › mantiene contraste de texto, acciones, campos y estados en dark (1.8s)
+  ✓  47 [mobile] › tests/e2e/appearance.spec.ts:86:3 › identidad y preferencia visual MCR › carga fuente local y conserva fallback sin conexiones externas (3.0s)
+  ✓  48 [mobile] › tests/e2e/appearance.spec.ts:208:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (1.9s)
+  ✓  49 [mobile] › tests/e2e/appearance.spec.ts:242:1 › los campos reales del calendario mantienen bordes accesibles en ambos temas (2.3s)
+  ✓  50 [mobile] › tests/e2e/appearance.spec.ts:272:1 › el calendario y navegación conservan selección distinta del foco en colores forzados (3.4s)
+  ✓  51 [mobile] › tests/e2e/appearance.spec.ts:316:1 › descarga el módulo de calendario solo al navegar hacia él (2.5s)
+  ✓  52 [mobile] › tests/e2e/appearance.spec.ts:338:1 › mantiene el acceso público sin mostrar el sidebar mientras verifica la sesión (1.4s)
+  ✓  53 [mobile] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (5.4s)
+  ✓  55 [mobile] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (4.8s)
+  ✓  54 [mobile] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (12.4s)
+  ✓  56 [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (3.2s)
+  ✓  57 [mobile] › tests/e2e/base.spec.ts:34:1 › navega entre rutas, permite acceso directo y recupera una página 404 (7.0s)
+  ✓  58 [mobile] › tests/e2e/dashboard.spec.ts:19:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (8.9s)
+  ✓  59 [mobile] › tests/e2e/dashboard.spec.ts:128:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (7.9s)
+  ✓  61 [mobile] › tests/e2e/departments-design.spec.ts:247:1 › consulta sin permisos conserva vacío real y no ofrece acciones de escritura (2.3s)
+  ✓  62 [mobile] › tests/e2e/departments.spec.ts:10:1 › crea, edita y elimina departamentos con persistencia tras recargar (9.9s)
+  ✓  60 [mobile] › tests/e2e/departments-design.spec.ts:6:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (20.0s)
+  ✓  63 [mobile] › tests/e2e/employees-design.spec.ts:3:1 › Empleados abre panel lateral y filtra directorio con identidad de referencia (5.5s)
+  ✓  64 [mobile] › tests/e2e/employees-design.spec.ts:74:1 › directorio filtra registros reales, pagina y conserva reflow en ambos temas (5.4s)
+  ✓  65 [mobile] › tests/e2e/identity-employees.spec.ts:15:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (6.7s)
+  ✓  66 [mobile] › tests/e2e/identity-employees.spec.ts:62:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (6.9s)
+  ✓  67 [mobile] › tests/e2e/identity-employees.spec.ts:222:1 › empleado no ve administración ni puede concederse roles mediante la API (3.0s)
+  ✓  69 [mobile] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (3.4s)
+  ✓  68 [mobile] › tests/e2e/identity-employees.spec.ts:285:1 › edita y elimina empleados desde la web sin cambiar el número interno (6.7s)
+  ✓  70 [mobile] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (9.7s)
+  ✓  71 [mobile] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (13.2s)
+  ✓  73 [mobile] › tests/e2e/shell-users.spec.ts:10:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (2.9s)
+  ✓  72 [mobile] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (12.5s)
+  ✓  74 [mobile] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (6.9s)
+  ✓  75 [mobile] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (14.7s)
+  ✓  76 [mobile] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (11.7s)
+  ✓  77 [mobile] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (4.3s)
+  ✓  78 [mobile] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (4.4s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "Saltar al contenidoInicioIngresarEstado del sistemaTemaClaroOscuroSistemaIngresarAccede con tu cuenta de MCR.Número de usuario o correoContraseñaIngresarRecuperar accesoMCR · Uso interno"
+
+      81 |     await page.goto('/ingresar');
+      82 |     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+    > 83 |     expect(await page.locator('#root').textContent()).toBe('');
+         |                                                       ^
+      84 |   });
+      85 |
+      86 |   test('carga fuente local y conserva fallback sin conexiones externas', async ({
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:83:55
+
+    Error Context: test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('row').filter({ hasText: '04791e42-8204-4f40-a268-91ae90967f69@example.test' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('row').filter({ hasText: '04791e42-8204-4f40-a268-91ae90967f69@example.test' }) with timeout 5000ms
+      - waiting for getByRole('row').filter({ hasText: '04791e42-8204-4f40-a268-91ae90967f69@example.test' })
+
+
+      229 |       await expect(
+      230 |         page.getByRole('row').filter({ hasText: account.email }),
+    > 231 |       ).toBeVisible();
+          |         ^
+      232 |       await page.evaluate(() => document.fonts.ready);
+      233 |       const geometry = await page.evaluate(() => ({
+      234 |         width: innerWidth,
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:231:9
+
+    Error Context: test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-Usuarios-manti-1d670--ambos-temas-y-siete-anchos-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "Saltar al contenidoInicioIngresarEstado del sistemaTemaClaroOscuroSistemaIngresarAccede con tu cuenta de MCR.Número de usuario o correoContraseñaIngresarRecuperar accesoMCR · Uso interno"
+
+      81 |     await page.route(
+      82 |       (url) => url.pathname === '/src/main.tsx',
+    > 83 |       (route) => {
+         |                   ^
+      84 |         entryBlocked = true;
+      85 |         return route.abort();
+      86 |       },
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:83:55
+
+    Error Context: test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-identidad-y-pre-33a70-antes-de-que-arranque-React-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React 
+    [desktop] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos 
+    [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React 
+  75 passed (5.3m)
+[ELIFECYCLE] Command failed with exit code 1.

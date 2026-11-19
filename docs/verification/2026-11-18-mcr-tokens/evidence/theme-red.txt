@@ -1,0 +1,42 @@
+[WebServer] (node:654184) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:654343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:654471) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/appearance.spec.ts:5:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema (8.1s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:5:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema 
+
+    Test timeout of 8000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 8000ms exceeded.
+    Call log:
+      - waiting for getByRole('combobox', { name: 'Tema de apariencia' })
+
+
+       6 |     await page.emulateMedia({ colorScheme: 'light' });
+       7 |     await page.goto('/ingresar');
+    >  8 |     await theme(page).selectOption('dark');
+         |                       ^
+       9 |     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+      10 |     await page.reload();
+      11 |     await expect(theme(page)).toHaveValue('dark');
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:8:23
+
+    Error Context: test-results/appearance-identidad-y-pre-1097c-no-lo-cambia-con-el-sistema-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-identidad-y-pre-1097c-no-lo-cambia-con-el-sistema-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-identidad-y-pre-1097c-no-lo-cambia-con-el-sistema-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/appearance.spec.ts:5:3 › identidad y preferencia visual MCR › recuerda el tema explícito al recargar y no lo cambia con el sistema 

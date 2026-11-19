@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+coverage/
+playwright-report/
+test-results/
+.superpowers/
+*.log
+# Evidencia visual y snapshots generados, conservados solo en el entorno local.
+docs/verification/**/*.png
+docs/verification/**/*.tar.gz

@@ -1,0 +1,390 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ ❯ |web| apps/web/src/features/departments/departments-screen.test.tsx (16 tests | 2 failed | 14 skipped) 597ms
+   × bloquea navegación mientras espera una escritura sin confirmar 386ms
+   × mantiene confirmación pendiente hasta recargar y devuelve foco a búsqueda al eliminar 210ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/features/departments/departments-screen.test.tsx > bloquea navegación mientras espera una escritura sin confirmar
+AssertionError: expected '/fuera' to be '/' // Object.is equality
+
+Expected: "/"
+Received: "/fuera"
+
+ ❯ apps/web/src/features/departments/departments-screen.test.tsx:431:37
+    429|   history.push('/fuera');
+    430|   await new Promise((resolve) => setTimeout(resolve, 0));
+    431|   expect(history.location.pathname).toBe('/');
+       |                                     ^
+    432| });
+    433|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  |web| apps/web/src/features/departments/departments-screen.test.tsx > mantiene confirmación pendiente hasta recargar y devuelve foco a búsqueda al eliminar
+TestingLibraryElementError: Unable to find an accessible element with the role "alertdialog"
+
+Here are the accessible roles:
+
+  main:
+
+  Name "":
+  [36m<main[39m
+    [33mclass[39m=[32m"mx-auto max-w-[1600px] px-4 pb-10 pt-8 sm:px-7 lg:px-10 lg:pt-11"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  paragraph:
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"mb-2.5 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"mt-3 max-w-2xl text-sm leading-6 text-muted-foreground"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"mt-4 px-4 text-xs text-muted-foreground"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<p[39m
+    [33mclass[39m=[32m"min-w-0 flex-1 break-words text-sm leading-6"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  heading:
+
+  Name "Departamentos":
+  [36m<h1[39m
+    [33mclass[39m=[32m"text-[28px] font-semibold tracking-[-0.035em] sm:text-[32px]"[39m
+  [36m/>[39m
+
+  Name "Directorio":
+  [36m<h2[39m
+    [33mclass[39m=[32m"relative py-3.5 text-sm font-medium after:absolute after:inset-x-0 after:bottom-[-1px] after:h-0.5 after:rounded-full after:bg-primary"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  button:
+
+  Name "Nuevo departamento":
+  [36m<button[39m
+    [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary-hover h-9 py-2 has-[>svg]:px-3 min-h-11 rounded-lg px-4"[39m
+    [33mdata-size[39m=[32m"default"[39m
+    [33mdata-slot[39m=[32m"button"[39m
+    [33mdata-variant[39m=[32m"default"[39m
+  [36m/>[39m
+
+  Name "Actualizar listado":
+  [36m<button[39m
+    [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 hover:bg-accent dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 min-h-11 rounded-lg text-muted-foreground hover:text-foreground"[39m
+    [33mdata-size[39m=[32m"default"[39m
+    [33mdata-slot[39m=[32m"button"[39m
+    [33mdata-variant[39m=[32m"ghost"[39m
+    [33mdisabled[39m=[32m""[39m
+  [36m/>[39m
+
+  Name "Acciones de Administración":
+  [36m<button[39m
+    [33maria-expanded[39m=[32m"false"[39m
+    [33maria-haspopup[39m=[32m"menu"[39m
+    [33maria-label[39m=[32m"Acciones de Administración"[39m
+    [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 hover:bg-accent dark:hover:bg-accent/50 has-[>svg]:px-3 size-11 rounded-lg p-0 text-muted-foreground hover:text-foreground data-[state=open]:bg-secondary data-[state=open]:text-foreground"[39m
+    [33mdata-size[39m=[32m"default"[39m
+    [33mdata-slot[39m=[32m"button"[39m
+    [33mdata-state[39m=[32m"closed"[39m
+    [33mdata-variant[39m=[32m"ghost"[39m
+    [33mid[39m=[32m"radix-_r_3_"[39m
+    [33mtype[39m=[32m"button"[39m
+  [36m/>[39m
+
+  Name "Ocultar confirmación":
+  [36m<button[39m
+    [33maria-label[39m=[32m"Ocultar confirmación"[39m
+    [33mclass[39m=[32m"flex size-11 shrink-0 items-center justify-center rounded-md hover:bg-secondary"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  region:
+
+  Name "Directorio de departamentos":
+  [36m<section[39m
+    [33maria-label[39m=[32m"Directorio de departamentos"[39m
+    [33mclass[39m=[32m"mt-9"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  searchbox:
+
+  Name "Buscar departamentos":
+  [36m<input[39m
+    [33maria-label[39m=[32m"Buscar departamentos"[39m
+    [33mclass[39m=[32m"w-full min-w-0 border px-3 py-1 text-base transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 h-11 rounded-lg border-input bg-secondary/35 pl-10 shadow-none focus-visible:ring-0 focus-visible:border-ring"[39m
+    [33mdata-slot[39m=[32m"input"[39m
+    [33mid[39m=[32m"departments-search"[39m
+    [33mplaceholder[39m=[32m"Buscar por nombre…"[39m
+    [33mtype[39m=[32m"search"[39m
+    [33mvalue[39m=[32m""[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  table:
+
+  Name "Departamentos registrados":
+  [36m<table[39m
+    [33maria-label[39m=[32m"Departamentos registrados"[39m
+    [33mclass[39m=[32m"w-full caption-bottom text-sm table-fixed"[39m
+    [33mdata-slot[39m=[32m"table"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  rowgroup:
+
+  Name "":
+  [36m<thead[39m
+    [33mclass[39m=[32m"[&_tr]:border-b"[39m
+    [33mdata-slot[39m=[32m"table-header"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<tbody[39m
+    [33mclass[39m=[32m"[&_tr:last-child]:border-0"[39m
+    [33mdata-slot[39m=[32m"table-body"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  row:
+
+  Name "Departamento Fecha de creación Acciones":
+  [36m<tr[39m
+    [33mclass[39m=[32m"border-b transition-colors has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted border-border/60 hover:bg-transparent"[39m
+    [33mdata-slot[39m=[32m"table-row"[39m
+  [36m/>[39m
+
+  Name "Administración12 nov 2026 12 nov 2026":
+  [36m<tr[39m
+    [33mclass[39m=[32m"border-b transition-colors has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted group border-border/40 hover:bg-secondary/60 focus-within:bg-secondary/50"[39m
+    [33mdata-slot[39m=[32m"table-row"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  columnheader:
+
+  Name "Departamento":
+  [36m<th[39m
+    [33mclass[39m=[32m"px-2 text-left align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] h-11 pl-4 text-[11px] font-medium uppercase tracking-wider text-muted-foreground sm:pl-5"[39m
+    [33mdata-slot[39m=[32m"table-head"[39m
+  [36m/>[39m
+
+  Name "Fecha de creación":
+  [36m<th[39m
+    [33mclass[39m=[32m"h-10 px-2 text-left align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] hidden w-48 text-[11px] font-medium uppercase tracking-wider text-muted-foreground sm:table-cell"[39m
+    [33mdata-slot[39m=[32m"table-head"[39m
+  [36m/>[39m
+
+  Name "Acciones":
+  [36m<th[39m
+    [33mclass[39m=[32m"h-10 px-2 align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] w-16 pr-3 text-right"[39m
+    [33mdata-slot[39m=[32m"table-head"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  cell:
+
+  Name "Administración12 nov 2026":
+  [36m<td[39m
+    [33mclass[39m=[32m"p-2 align-middle [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] whitespace-normal py-5 pl-4 sm:pl-5"[39m
+    [33mdata-slot[39m=[32m"table-cell"[39m
+  [36m/>[39m
+
+  Name "12 nov 2026":
+  [36m<td[39m
+    [33mclass[39m=[32m"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] hidden text-[13px] text-muted-foreground sm:table-cell"[39m
+    [33mdata-slot[39m=[32m"table-cell"[39m
+  [36m/>[39m
+
+  Name "":
+  [36m<td[39m
+    [33mclass[39m=[32m"p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px] py-4 pr-3 text-right"[39m
+    [33mdata-slot[39m=[32m"table-cell"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  time:
+
+  Name "":
+  [36m<time[39m
+    [33mclass[39m=[32m"mt-1 block text-xs text-muted-foreground sm:hidden"[39m
+    [33mdatetime[39m=[32m"2026-11-12T15:00:00.000Z"[39m
+  [36m/>[39m
+
+  Name "Fecha en America/Merida":
+  [36m<time[39m
+    [33mdatetime[39m=[32m"2026-11-12T15:00:00.000Z"[39m
+    [33mtitle[39m=[32m"Fecha en America/Merida"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+  status:
+
+  Name "":
+  [36m<div[39m
+    [33mclass[39m=[32m"mcr-floating-surface fixed inset-x-4 bottom-24 z-40 flex items-start gap-3 rounded-xl p-4 shadow-lg sm:left-auto sm:right-6 sm:max-w-md xl:bottom-6"[39m
+    [33mrole[39m=[32m"status"[39m
+  [36m/>[39m
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+[36m<body[39m
+  [33mstyle[39m=[32m""[39m
+[36m>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"mx-auto max-w-[1600px] px-4 pb-10 pt-8 sm:px-7 lg:px-10 lg:pt-11"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex flex-wrap items-start justify-between gap-5"[39m
+      [36m>[39m
+        [36m<div>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mb-2.5 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-foreground"[39m
+          [36m>[39m
+            [0mOrganización[0m
+          [36m</p>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"text-[28px] font-semibold tracking-[-0.035em] sm:text-[32px]"[39m
+          [36m>[39m
+            [0mDepartamentos[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 max-w-2xl text-sm leading-6 text-muted-foreground"[39m
+          [36m>[39m
+            [0mUna estructura clara para tu equipo. Consulta y organiza las áreas de la empresa según tu alcance.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary-hover h-9 py-2 has-[>svg]:px-3 min-h-11 rounded-lg px-4"[39m
+          [33mdata-size[39m=[32m"default"[39m
+          [33mdata-slot[39m=[32m"button"[39m
+          [33mdata-variant[39m=[32m"default"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-plus size-4"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M5 12h14"[39m
+            [36m/>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M12 5v14"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0mNuevo departamento[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<section[39m
+        [33maria-label[39m=[32m"Directorio de departamentos"[39m
+        [33mclass[39m=[32m"mt-9"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex items-center gap-2.5 border-b border-border/60"[39m
+        [36m>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"relative py-3.5 text-sm font-medium after:absolute after:inset-x-0 after:bottom-[-1px] after:h-0.5 after:rounded-full after:bg-primary"[39m
+          [36m>[39m
+            [0mDirectorio[0m
+          [36m</h2>[39m
+          [36m<span[39m
+            [33maria-label[39m=[32m"1 departamentos en el listado autorizado"[39m
+            [33mclass[39m=[32m"rounded-md bg-secondary px-2 py-0.5 text-[11px] font-medium text-muted-foreground"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</span>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"flex flex-wrap items-center justify-between gap-3 py-5"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative w-full sm:max-w-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-search pointer-events-none absolute left-3 top-3.5 size-4 text-muted-foreground"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"m21 21-4.34-4.34"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"11"[39m
+                [33mcy[39m=[32m"11"[39m
+                [33mr[39m=[32m"8"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [36m<input[39m
+              [33maria-label[39m=[32m"Buscar departamentos"[39m
+              [33mclass[39m=[32m"w-full min-w-0 border px-3 py-1 text-base transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 h-11 rounded-lg border-input bg-secondary/35 pl-10 shadow-none focus-visible:ring-0 focus-visible:border-ring"[39m
+              [33mdata-slot[39m=[32m"input"[39m
+              [33mid[39m=[32m"departments-search"[39m
+              [33mplaceholder[39m=[32m"Buscar por nombre…"[39m
+              [33mtype[39m=[32m"search"[39m
+              [33mvalue[39m=[32m""[39m
+            [36m/>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 hover:bg-accent dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 min-h-11 rounded-lg text-muted-foreground hover:text-foreground"[39m
+            [33mdata-size[39m=[32m"default"[39m
+            [33mdata-slot[39m=[32m"button"[39m
+            [33mdata-variant[39m=[32m"ghost"[39m
+            [33mdisabled[39m=[32m""[39m
+          [36m>[39m
+            [36m<svg[39m
+       ...
+ ❯ Object.getElementError node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ apps/web/src/features/departments/departments-screen.test.tsx:458:19
+    456|   await waitFor(() => expect(finishGet).toBeTypeOf('function'));
+    457|   try {
+    458|     expect(screen.getByRole('alertdialog')).toBeVisible();
+       |                   ^
+    459|     expect(
+    460|       screen.getByRole('button', { name: 'Cancelar eliminación' }),
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 14 skipped (16)
+   Start at  15:45:06
+   Duration  2.37s (import 31%, tests 27%, environment 26%, transform 8%, setup 7%)
+

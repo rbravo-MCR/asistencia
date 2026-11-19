@@ -1,0 +1,8 @@
+{
+  "isolatedTestDatabase": true,
+  "remainingFixtures": {
+    "users": 0,
+    "employees": 0,
+    "departments": 0
+  }
+}

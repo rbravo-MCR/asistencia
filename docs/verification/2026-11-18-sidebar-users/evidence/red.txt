@@ -1,0 +1,143 @@
+[WebServer] (node:982312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:982553) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 2 workers
+
+(node:982618) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:982617) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (7.8s)
+(node:983290) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (30.2s)
+(node:984484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [mobile] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco (30.2s)
+  ✘  4 [mobile] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (30.1s)
+
+
+  1) [desktop] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('complementary', { name: 'Navegación de MCR' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('complementary', { name: 'Navegación de MCR' }) with timeout 5000ms
+      - waiting for getByRole('complementary', { name: 'Navegación de MCR' })
+
+
+      11 |   if (desktop) {
+      12 |     const sidebar=page.getByRole('complementary', { name: 'Navegación de MCR' });
+    > 13 |     await expect(sidebar).toBeVisible();
+         |                           ^
+      14 |     const box=await sidebar.boundingBox();
+      15 |     expect(box!.x).toBe(0);expect(box!.width).toBeGreaterThan(200);expect(box!.width).toBeLessThan(300);
+      16 |     await expect(sidebar.getByText('Operación',{exact:true})).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:13:27
+
+    Error Context: test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('searchbox', { name: 'Buscar usuarios' })
+
+
+      41 |     await page.goto('/usuarios');
+      42 |     const search=page.getByRole('searchbox',{name:'Buscar usuarios'});
+    > 43 |     await search.fill(account.email);
+         |                  ^
+      44 |     await expect(page.getByRole('row').filter({hasText:account.email})).toHaveCount(1);
+      45 |     await page.getByLabel('Estado de cuenta',{exact:true}).selectOption('inactive');
+      46 |     await expect(page.getByText('No hay usuarios con estos filtros.')).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:43:18
+
+    Error Context: test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [mobile] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Abrir menú principal' })
+
+
+      21 |   } else {
+      22 |     const trigger=page.getByRole('button',{name:'Abrir menú principal'});
+    > 23 |     await trigger.click();
+         |                   ^
+      24 |     const drawer=page.getByRole('dialog',{name:'Menú principal'});
+      25 |     await expect(drawer).toBeVisible();
+      26 |     await page.keyboard.press('Escape');
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:23:19
+
+    Error Context: test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-sidebar-ordena-63176-on-Escape-y-retorno-de-foco-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('searchbox', { name: 'Buscar usuarios' })
+
+
+      41 |     await page.goto('/usuarios');
+      42 |     const search=page.getByRole('searchbox',{name:'Buscar usuarios'});
+    > 43 |     await search.fill(account.email);
+         |                  ^
+      44 |     await expect(page.getByRole('row').filter({hasText:account.email})).toHaveCount(1);
+      45 |     await page.getByLabel('Estado de cuenta',{exact:true}).selectOption('inactive');
+      46 |     await expect(page.getByText('No hay usuarios con estos filtros.')).toBeVisible();
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:43:18
+
+    Error Context: test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+    [desktop] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+    [mobile] › tests/e2e/shell-users.spec.ts:5:1 › sidebar ordenado, colapso y menú móvil con Escape y retorno de foco 
+    [mobile] › tests/e2e/shell-users.spec.ts:36:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 

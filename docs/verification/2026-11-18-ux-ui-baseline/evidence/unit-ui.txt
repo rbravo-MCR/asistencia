@@ -1,0 +1,21 @@
+$ pnpm --filter @asistencia/contracts build && vitest run
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+ Test Files  30 passed (30)
+      Tests  186 passed (186)
+   Start at  11:14:04
+   Duration  25.60s (tests 39%, import 28%, environment 23%, setup 7%, transform 2%, worker 1%)
+
+Environment  |web| jsdom was created 16 times · 16.09s total, 31% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+

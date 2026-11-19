@@ -1,0 +1,17 @@
+[WebServer] (node:95461) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:95606) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:95672) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (228ms)
+  ✓  2 [desktop] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (9.3s)
+(node:96302) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [mobile] › tests/e2e/appearance.spec.ts:76:3 › identidad y preferencia visual MCR › aplica el tema guardado antes de que arranque React (210ms)
+  ✓  4 [mobile] › tests/e2e/shell-users.spec.ts:213:1 › Usuarios mantiene composición, foco y reflow en ambos temas y siete anchos (8.1s)
+
+  4 passed (24.8s)

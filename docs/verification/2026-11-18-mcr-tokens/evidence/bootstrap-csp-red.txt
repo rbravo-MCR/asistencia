@@ -1,0 +1,18 @@
+node:internal/modules/run_main:111
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: La preferencia debe aplicarse sin React
+
+null !== 'dark'
+
+    at file:///tmp/mcr-bootstrap-production-test.mjs:20:9 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: 'dark',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.13.1

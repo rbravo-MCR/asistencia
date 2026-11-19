@@ -1,0 +1,96 @@
+$ pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build
+$ eslint . && pnpm check:boundaries
+$ depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src
+
+✔ no dependency violations found (263 modules, 862 dependencies cruised)
+
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done
+$ pnpm --filter @asistencia/contracts build && vitest run
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+ Test Files  32 passed (32)
+      Tests  195 passed (195)
+   Start at  09:10:29
+   Duration  33.72s (tests 47%, import 23%, environment 21%, setup 7%, transform 2%)
+
+Environment  |web| jsdom was created 18 times · 19.12s total, 26% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+
+$ pnpm --filter @asistencia/contracts build && pnpm --filter @asistencia/api build && pnpm --filter @asistencia/web build
+$ tsc -p tsconfig.json
+$ tsc -p tsconfig.build.json
+$ tsc --noEmit && vite build
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 3191 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               1.12 kB │ gzip:   0.52 kB
+dist/assets/logo-MCR (1)-BKpUBcB3.png         9.94 kB
+dist/assets/index-DE-GaPJr.css               60.30 kB │ gzip:  11.17 kB
+dist/assets/check-JyQoEj-V.js                 0.15 kB │ gzip:   0.15 kB
+dist/assets/use-write-CJ_MUKJh.js             0.40 kB │ gzip:   0.30 kB
+dist/assets/rolldown-runtime-XKyaHtl9.js      0.72 kB │ gzip:   0.42 kB
+dist/assets/query-feedback-Dl1hSRl_.js        1.14 kB │ gzip:   0.56 kB
+dist/assets/controls-1RbwVmyH.js              1.52 kB │ gzip:   0.58 kB
+dist/assets/pencil-DWC4bJtS.js                1.84 kB │ gzip:   0.86 kB
+dist/assets/useMutation-BxMtsgc2.js           2.37 kB │ gzip:   0.98 kB
+dist/assets/form-schema-C68XaVyN.js           2.38 kB │ gzip:   1.15 kB
+dist/assets/notifications-page-CkVeh-i3.js    3.04 kB │ gzip:   1.09 kB
+dist/assets/attendance-policy-BSifb-Ze.js     3.88 kB │ gzip:   1.44 kB
+dist/assets/audit-page-4EUI1RJr.js            4.19 kB │ gzip:   1.45 kB
+dist/assets/configuration-page-BszUcqcU.js    5.00 kB │ gzip:   1.56 kB
+dist/assets/assignments-page-Q4gXSZr3.js     10.27 kB │ gzip:   2.99 kB
+dist/assets/shifts-page-Cy6hCDRe.js          10.44 kB │ gzip:   2.73 kB
+dist/assets/locations-page-CjH8c0OP.js       12.60 kB │ gzip:   3.29 kB
+dist/assets/calendar-page-Bque0Wov.js        14.20 kB │ gzip:   4.03 kB
+dist/assets/attendance-pages-T_L3GZRX.js     16.03 kB │ gzip:   4.79 kB
+dist/assets/dashboard-BnCE0XcD.js            17.57 kB │ gzip:   4.21 kB
+dist/assets/users-page-oHImgse6.js           23.92 kB │ gzip:   6.19 kB
+dist/assets/departments-page-YwaA33Zs.js     29.33 kB │ gzip:   7.43 kB
+dist/assets/employees-page-IoHwAX8f.js       35.59 kB │ gzip:   8.11 kB
+dist/assets/requests-pages-DAhyMkAc.js       42.35 kB │ gzip:   9.99 kB
+dist/assets/dist-C1F2ClDt.js                 52.95 kB │ gzip:  18.34 kB
+dist/assets/validation-sLBhemX9.js           74.72 kB │ gzip:  20.99 kB
+dist/assets/index-CRR2ne6s.js               412.27 kB │ gzip: 127.05 kB
+dist/assets/react-CDb74C0S.js               431.26 kB │ gzip: 129.65 kB
+
+✓ built in 1.39s

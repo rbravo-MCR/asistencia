@@ -1,0 +1,5 @@
+{
+  "sidebarVisibleWhileSessionPending": true,
+  "sidebarVisibleAfterAnonymousSession": false,
+  "note": "Salida observada de la primera ejecucion de /tmp/mcr-check-public-shell.mjs antes de corregir root-layout; el script posterior reutilizo su ruta de salida."
+}

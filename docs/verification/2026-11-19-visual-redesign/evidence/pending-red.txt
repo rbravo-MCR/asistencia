@@ -1,0 +1,37 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+ ❯ |web| apps/web/src/features/employees/organization-pages.test.tsx (10 tests | 1 failed | 9 skipped) 1268ms
+   ❯ expedientes y responsables (8)
+     × mantiene bloqueado el formulario hasta terminar la actualización del directorio 1265ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/features/employees/organization-pages.test.tsx > expedientes y responsables > mantiene bloqueado el formulario hasta terminar la actualización del directorio
+Error: expect(element).toBeDisabled()
+
+Received element is not disabled:
+  <input
+  aria-invalid="false"
+  autocomplete="name"
+  class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+  data-slot="input"
+  id="employee-name"
+  name="fullName"
+/>
+ ❯ apps/web/src/features/employees/organization-pages.test.tsx:118:56
+    116|       await userEvent.click(screen.getByRole('button', { name: 'Crear …
+    117|       await waitFor(() => expect(refreshing).toBe(true));
+    118|       expect(screen.getByLabelText('Nombre completo')).toBeDisabled();
+       |                                                        ^
+    119|       expect(screen.getByRole('button', { name: 'Guardando…' })).toBeD…
+    120|     } finally {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 9 skipped (10)
+   Start at  08:37:17
+   Duration  5.22s (import 33%, tests 26%, environment 21%, transform 12%, setup 7%)
+

@@ -1,0 +1,94 @@
+{
+  "count": 22,
+  "note": "Playwright dev contra API/PostgreSQL aislado. before-employees significa antes de abrir panel en la version final; no es captura del producto original.",
+  "files": [
+    {
+      "file": "screenshots/desktop-before-employees.png",
+      "sha256": "208ba65348b798351bdab2ee4c3b66cd4248910dcee89e8ff6ef444b82cf053e"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-1024.png",
+      "sha256": "efd753c6f5a9aa422808d48982fc38a7c92ebb21119598cc030b08faf26aea7f"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-1280.png",
+      "sha256": "33cb5964cd1fcd08a9a5b140994cf906424fe9ad29dc8c5ab4cd2a933d0fa834"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-1440.png",
+      "sha256": "54212f7c0b28bf82e08d66f6482a70dcf8d0995f812927c11ede8642e773ea2d"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-320.png",
+      "sha256": "9ba6fdfa559f275101ec38ff87a8fbc120dc9e564827b9c9653476aee10102c3"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-360.png",
+      "sha256": "7bdaf8fe490b2f9a4c8d2e76d04e69252e9d33a9148a61544977e4faa7746cb7"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-390.png",
+      "sha256": "676686c06a21061f223acd06fac2ccf58053b018e2dd84747eadcaf8df6e53a6"
+    },
+    {
+      "file": "screenshots/desktop-directory-dark-768.png",
+      "sha256": "5043340d0a3eaee59d60c3b75cf395ec21d7a9070c7282653a4dd7055c2a98f6"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-1024.png",
+      "sha256": "73c077c26d908c7e70da660386f5db1e4cf78566e08bba3e029976a752dca51d"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-1280.png",
+      "sha256": "d7c655bd4139549feeb0c65e967caad78b3af6f7f591650a4c0b3d6161d937ed"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-1440.png",
+      "sha256": "5f40e0658d6b1f88cf8a957de0ebfb1cbb2a11f6084302e36e0a191039300235"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-320.png",
+      "sha256": "e9fb9789830afedc34378c25a61ab1a27d8a73b24d7f1149a55a4b98ee14507e"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-360.png",
+      "sha256": "f97340172e9f9b612800e5d5858b62e488910ee35f59b238444421502c28925b"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-390.png",
+      "sha256": "bd1e8ceae0814183dcae69133477c5ddfb17f7a221f62155ce7d98978f0be2a5"
+    },
+    {
+      "file": "screenshots/desktop-directory-light-768.png",
+      "sha256": "8f026cde4561292523f7dfc72e02a308f55986c46c40f522c8657e703ecb4648"
+    },
+    {
+      "file": "screenshots/desktop-employees-dark-desktop.png",
+      "sha256": "7a7420231385bf3aab7efc407afe59b6a9e89a5cad975700a482df9f488f444a"
+    },
+    {
+      "file": "screenshots/desktop-employees-light-desktop.png",
+      "sha256": "2091d4823ec81af172fff48dfbbce8086c5b87c2fe6faa1ded7d8abb38413499"
+    },
+    {
+      "file": "screenshots/mobile-before-employees.png",
+      "sha256": "75a66d8a3b9eeabba184aaa8a12e1aa26fe869bf8a4836465487b27a431e067a"
+    },
+    {
+      "file": "screenshots/mobile-directory-dark-390.png",
+      "sha256": "bbc48f28d363f2a04bc964dc5b00aaae7dfb0cabd5caee789ec235708e7c5233"
+    },
+    {
+      "file": "screenshots/mobile-directory-light-390.png",
+      "sha256": "a1794df57e57adee9bef1a843e5454b0964e5f03a6c7467fdd27bd86773e7bf4"
+    },
+    {
+      "file": "screenshots/mobile-employees-dark-mobile.png",
+      "sha256": "ef42a6995b50b06832df775a861fb465423a3c26df08f3e9e686b66f81498c02"
+    },
+    {
+      "file": "screenshots/mobile-employees-light-mobile.png",
+      "sha256": "bb4350dac14dd05df171586181283756e19488c52463c73f722321ff3dde7351"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "recordedAt": "2026-11-19T15:56:41.669Z",
+  "browser": "158.0.8127.18",
+  "node": "v26.13.1",
+  "method": "Traza de fuentes layout-shift: dashboard/asistencia, 390px claro, una carga before/after por pantalla. Diagnostico de geometria con check concurrente; no usar tiempos como benchmark.",
+  "measurements": [
+    {
+      "screen": "dashboard",
+      "version": "before",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 876,
+      "cls": 0.15949749345271103,
+      "shifts": [
+        {
+          "value": 0.04047517676833269,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 240,
+                "width": 390,
+                "height": 112,
+                "top": 240,
+                "right": 390,
+                "bottom": 352,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 400,
+                "width": 390,
+                "height": 112,
+                "top": 400,
+                "right": 390,
+                "bottom": 512,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.11902231668437832,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 400,
+                "width": 390,
+                "height": 112,
+                "top": 400,
+                "right": 390,
+                "bottom": 512,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "screen": "dashboard",
+      "version": "after",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 1048,
+      "cls": 0.17303138068462226,
+      "shifts": [
+        {
+          "value": 0.05400906400024393,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 376,
+                "width": 390,
+                "height": 112,
+                "top": 376,
+                "right": 390,
+                "bottom": 488,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 589.5,
+                "width": 390,
+                "height": 112,
+                "top": 589.5,
+                "right": 390,
+                "bottom": 701.5,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.11902231668437832,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 589.5,
+                "width": 390,
+                "height": 112,
+                "top": 589.5,
+                "right": 390,
+                "bottom": 701.5,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "screen": "attendance",
+      "version": "before",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 640,
+      "cls": 0.256615678588595,
+      "shifts": [
+        {
+          "value": 0.10397061032365461,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 240,
+                "width": 390,
+                "height": 112,
+                "top": 240,
+                "right": 390,
+                "bottom": 352,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.03521111038042514,
+          "sources": [
+            {
+              "node": "<section class=\"space-y-5 rounded-xl border bg-card p-5\"><h2 class=\"text-xl font-semibold\">Configuraci\u00f3n de asistencia</h2><button data-slot=\"button\" data-variant=\"ghost\" data-size=\"default\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invali",
+              "previous": {
+                "x": 24,
+                "y": 812,
+                "width": 342,
+                "height": 114,
+                "top": 812,
+                "right": 366,
+                "bottom": 926,
+                "left": 24
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            },
+            {
+              "node": "<button data-slot=\"button\" data-variant=\"outline\" data-size=\"default\" class=\"inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_s",
+              "previous": {
+                "x": 42,
+                "y": 729,
+                "width": 144,
+                "height": 42,
+                "top": 729,
+                "right": 186,
+                "bottom": 771,
+                "left": 42
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.11743395788451526,
+          "sources": [
+            {
+              "node": "<section class=\"space-y-5 rounded-xl border bg-card p-5\"><h2 class=\"text-xl font-semibold\">Historial en tu alcance</h2><p>Fechas civiles del turno, incluso si termina al d\u00eda siguiente. M\u00e1ximo 93 d\u00edas.</p><form class=\"flex flex-wrap items-end gap-3\"><div class=\"space-y-2\"><label data-slot=\"label\" class=\"flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disa",
+              "previous": {
+                "x": 24,
+                "y": 402,
+                "width": 342,
+                "height": 539,
+                "top": 402,
+                "right": 366,
+                "bottom": 941,
+                "left": 24
+              },
+              "current": {
+                "x": 24,
+                "y": 622,
+                "width": 342,
+                "height": 319,
+                "top": 622,
+                "right": 366,
+                "bottom": 941,
+                "left": 24
+              }
+            }
+          ]
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "screen": "attendance",
+      "version": "after",
+      "width": 390,
+      "theme": "light",
+      "run": 1,
+      "lcp": 544,
+      "cls": 0.1832251623693789,
+      "shifts": [
+        {
+          "value": 0.11902231668437832,
+          "sources": [
+            {
+              "node": "<footer class=\"mx-auto max-w-[1600px] px-6 pb-24 text-xs text-muted-foreground xl:pb-6\">M\u00e9xico Car Rental \u00b7 Uso interno</footer>",
+              "previous": {
+                "x": 0,
+                "y": 376,
+                "width": 390,
+                "height": 112,
+                "top": 376,
+                "right": 390,
+                "bottom": 488,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "value": 0.06420284568500058,
+          "sources": [
+            {
+              "node": "<aside class=\"min-w-0 space-y-5 rounded-2xl border border-border/70 bg-card p-5 sm:p-6 text-sm leading-6\"><h2 class=\"font-semibold\">Antes de marcar</h2><ol class=\"space-y-4 text-muted-foreground\"><li class=\"flex gap-3\"><span class=\"flex size-6 shrink-0 items-center justify-center rounded-full bg-secondary text-xs font-medium text-foreground\">1</span>Revisa la fecha, el horario y la modalidad del turno seleccionado.</li><li class=\"flex gap-3\"><span class=\"flex size-6 shrink-0 items-center justify",
+              "previous": {
+                "x": 16,
+                "y": 543.5,
+                "width": 358,
+                "height": 367,
+                "top": 543.5,
+                "right": 374,
+                "bottom": 910.5,
+                "left": 16
+              },
+              "current": {
+                "x": 16,
+                "y": 699.5,
+                "width": 358,
+                "height": 241.5,
+                "top": 699.5,
+                "right": 374,
+                "bottom": 941,
+                "left": 16
+              }
+            },
+            {
+              "node": "<section class=\"min-w-0 space-y-5 rounded-2xl border border-border/70 bg-card p-5 sm:p-6\"><h2 class=\"text-xl font-semibold\">Historial en tu alcance</h2><p>Fechas civiles del turno, incluso si termina al d\u00eda siguiente. M\u00e1ximo 93 d\u00edas.</p><form class=\"flex flex-wrap items-end gap-3 rounded-xl border bg-secondary/30 p-4\"><div class=\"space-y-2\"><label data-slot=\"label\" class=\"flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-dat",
+              "previous": {
+                "x": 16,
+                "y": 938.5,
+                "width": 358,
+                "height": 2.5,
+                "top": 938.5,
+                "right": 374,
+                "bottom": 941,
+                "left": 16
+              },
+              "current": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

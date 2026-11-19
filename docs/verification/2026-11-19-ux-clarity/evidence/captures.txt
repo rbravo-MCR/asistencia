@@ -1,0 +1,1 @@
+{"captures":60,"mutationsSubmitted":0,"directory":"/home/rafael/proyectos/asistencia/docs/verification/2026-11-19-ux-clarity/after/"}

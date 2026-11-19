@@ -1,0 +1,18 @@
+{
+  "productionScreenshots": 8,
+  "interactionScreenshots": 22,
+  "allPngFiles": 33,
+  "performanceRuns": 21,
+  "noPageErrors": true,
+  "noGlobalOverflow": true,
+  "authenticatedHeader72px": true,
+  "themeBeforePaint": true,
+  "localBootstrapOnce": true,
+  "fontsExpected": true,
+  "fontsLoadedInScreenshots": true,
+  "same22Routes": true,
+  "allProtectedFilesUnchanged": true,
+  "testFixturesClean": true,
+  "numberedGuidesPreserved": true,
+  "brokenLocalLinks": []
+}

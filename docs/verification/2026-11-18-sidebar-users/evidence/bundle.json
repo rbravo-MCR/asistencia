@@ -1,0 +1,37 @@
+{
+  "initialAssets": [
+    {
+      "file": "/assets/index-Dld6IwE2.js",
+      "bytes": 393035,
+      "gzip": 121665
+    },
+    {
+      "file": "/assets/rolldown-runtime-XKyaHtl9.js",
+      "bytes": 726,
+      "gzip": 429
+    },
+    {
+      "file": "/assets/react-CDb74C0S.js",
+      "bytes": 431268,
+      "gzip": 128503
+    },
+    {
+      "file": "/assets/validation-sLBhemX9.js",
+      "bytes": 74729,
+      "gzip": 20831
+    },
+    {
+      "file": "/assets/index-DYTFQXaH.css",
+      "bytes": 44262,
+      "gzip": 8798
+    }
+  ],
+  "themeBootstrapGzip": 554,
+  "totalInitialJsGzip": 271982,
+  "totalInitialCssGzip": 8798,
+  "originalBaselineJsGzip": 285073,
+  "previousTokensJsGzip": 255427,
+  "jsChangeVsPreviousPercent": 6.481303855896203,
+  "jsChangeVsOriginalPercent": -4.592157096603322,
+  "developmentSpecimenInBuild": false
+}

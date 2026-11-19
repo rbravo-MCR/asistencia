@@ -1,0 +1,47 @@
+[WebServer] (node:665931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:665984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:666072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/appearance.spec.ts:202:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local (6.2s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:202:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: 'Eliminar ejemplo' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('button', { name: 'Eliminar ejemplo' }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Eliminar ejemplo' })
+
+
+      206 |   await expect(
+      207 |     page.getByRole('button', { name: 'Eliminar ejemplo' }),
+    > 208 |   ).toBeVisible();
+          |     ^
+      209 |   await expect(page.getByRole('button', { name: 'Guardando…' })).toBeDisabled();
+      210 |   await expect(page.getByLabel('Campo con error')).toHaveAttribute(
+      211 |     'aria-invalid',
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:208:5
+
+    Error Context: test-results/appearance-las-variantes-d-eef03-okens-en-el-espécimen-local-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-las-variantes-d-eef03-okens-en-el-espécimen-local-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-las-variantes-d-eef03-okens-en-el-espécimen-local-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/appearance.spec.ts:202:1 › las variantes destructiva, deshabilitada e inválida usan los tokens en el espécimen local 

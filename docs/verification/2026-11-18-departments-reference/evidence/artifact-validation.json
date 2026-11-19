@@ -1,0 +1,14 @@
+{
+  "finalInteractionPng": 44,
+  "productionPng": 8,
+  "baselinePng": 2,
+  "baselineRuns": 6,
+  "finalRuns": 6,
+  "noPageErrors": true,
+  "noOverflow": true,
+  "googleSansLoaded": true,
+  "themeBeforeFirstPaint": true,
+  "testFixturesClean": true,
+  "protectedFilesUnchanged": true,
+  "brokenLocalLinks": []
+}

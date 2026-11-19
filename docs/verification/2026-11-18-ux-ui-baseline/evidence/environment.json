@@ -1,0 +1,9 @@
+{
+  "testDatabase": {
+    "host": "127.0.0.1",
+    "port": "55433",
+    "database": "asistencia_test",
+    "version": "PostgreSQL 18.6 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit"
+  },
+  "node": "v26.13.1"
+}

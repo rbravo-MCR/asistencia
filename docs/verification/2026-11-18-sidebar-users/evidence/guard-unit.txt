@@ -1,0 +1,11 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  14:34:56
+   Duration  2.22s (import 34%, environment 27%, tests 22%, setup 9%, transform 8%)
+

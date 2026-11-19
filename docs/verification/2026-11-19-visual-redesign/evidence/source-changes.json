@@ -1,0 +1,20 @@
+{
+  "changed": [
+    "apps/web/src/features/employees/organization-pages.test.tsx",
+    "apps/web/src/features/employees/employees-page.tsx",
+    "apps/web/src/styles.css",
+    "tests/e2e/employees-design.spec.ts"
+  ],
+  "added": [
+    "apps/web/src/features/employees/employee-actions.tsx",
+    "apps/web/src/features/employees/employee-form.tsx",
+    "apps/web/src/features/employees/employees-directory.tsx",
+    "apps/web/src/features/employees/employee-delete-dialog.tsx"
+  ],
+  "removed": [],
+  "additionalModifiedTests": [
+    "tests/e2e/identity-employees.spec.ts",
+    "tests/e2e/appearance.spec.ts"
+  ],
+  "note": "Snapshot del frontend previo a cambios de producto; organization-pages.test ya contiene la primera regresion RED. Los dos tests adicionales modificados no estaban en este snapshot."
+}

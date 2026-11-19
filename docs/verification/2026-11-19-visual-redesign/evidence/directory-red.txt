@@ -1,0 +1,36 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+ ❯ |web| apps/web/src/features/employees/organization-pages.test.tsx (9 tests | 1 failed | 8 skipped) 598ms
+   ❯ expedientes y responsables (7)
+     × abre el alta bajo demanda y filtra sin perder el directorio 596ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/features/employees/organization-pages.test.tsx > expedientes y responsables > abre el alta bajo demanda y filtra sin perder el directorio
+Error: expect(element).not.toBeInTheDocument()
+
+expected document not to contain element, found <input
+  aria-invalid="false"
+  autocomplete="name"
+  class="h-9 w-full min-w-0 rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm dark:bg-input/30 focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40"
+  data-slot="input"
+  id="employee-name"
+  name="fullName"
+/> instead
+ ❯ apps/web/src/features/employees/organization-pages.test.tsx:99:60
+     97|     await mount('/empleados');
+     98|     await screen.findByRole('heading', { name: 'José Pérez' });
+     99|     expect(screen.queryByLabelText('Nombre completo')).not.toBeInTheDo…
+       |                                                            ^
+    100|     const search = screen.getByRole('searchbox', { name: 'Buscar emple…
+    101|     await userEvent.type(search, 'sin coincidencias');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 8 skipped (9)
+   Start at  08:28:36
+   Duration  3.33s (import 36%, environment 32%, tests 19%, transform 7%, setup 6%)
+

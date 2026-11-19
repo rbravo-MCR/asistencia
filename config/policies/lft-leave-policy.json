@@ -1,0 +1,8 @@
+{
+  "name": "Vacaciones LFT",
+  "administrativeWeekdays": [1, 2, 3, 4, 5],
+  "operationalWeekdays": [1, 2, 3, 4, 5, 6, 7],
+  "excludeHolidays": true,
+  "entitlementsFile": "lft-vacation-entitlements.json",
+  "notes": "Calendario operativo de cobertura semanal; revisar descansos individuales antes de incorporar operativos. No concede saldos ni sustituye periodos respaldados por RR. HH."
+}

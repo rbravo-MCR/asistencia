@@ -1,0 +1,250 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: steps10-12.spec.ts >> publica turno, conserva snapshot y entrega aviso auditable
+- Location: tests/e2e/steps10-12.spec.ts:123:1
+
+# Error details
+
+```
+Error: expect(locator).toContainText(expected) failed
+
+Locator: getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).locator('section').filter({ has: getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).getByRole('heading', { name: 'Después', exact: true }) })
+Expected substring: "PUBLISHED"
+Timeout: 5000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toContainText" getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).locator('section').filter({ has: getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).getByRole('heading', { name: 'Después', exact: true }) }) with timeout 5000ms
+  - waiting for getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).locator('section').filter({ has: getByRole('dialog', { name: 'Detalle de auditoría', exact: true }).getByRole('heading', { name: 'Después', exact: true }) })
+
+```
+
+```yaml
+- dialog "Detalle de auditoría":
+  - heading "Detalle de auditoría" [level=2]
+  - paragraph: Información de cambios sanitizada por el servidor.
+  - button "Cerrar panel"
+  - heading "planning.assignment.publish · scheduleAssignment" [level=2]
+  - paragraph: Administración E2E chromium · 19/11/2026, 9:45:06 a.m.
+  - term: Entidad
+  - definition: 0aa9d545-feea-4ded-9f62-a488baab7aa5
+  - term: Solicitud
+  - definition: 406cdd17-835d-4ffd-9d64-93a7cc4b7714
+  - heading "Antes" [level=3]
+  - text: "{ \"id\": \"0aa9d545-feea-4ded-9f62-a488baab7aa5\", \"kind\": \"DUTY\", \"endsAt\": \"2026-11-15T22:00:00.000Z\", \"status\": \"DRAFT\", \"modality\": \"HOME_OFFICE\", \"snapshot\": { \"name\": \"Turno b5460556\", \"active\": true, \"endTime\": \"16:00\", \"version\": 1, \"category\": \"OPERATIONAL\", \"modality\": \"HOME_OFFICE\", \"timeZone\": \"America/Merida\", \"weekdays\": [ 1, 2, 3, 4, 5, 6, 7 ], \"startTime\": \"08:00\" }, \"startsAt\": \"2026-11-15T14:00:00.000Z\", \"timeZone\": \"America/Merida\", \"workDate\": \"2026-11-15\", \"employeeId\": \"22f6e434-e3b5-4459-9043-0378df217991\", \"locationId\": null, \"templateId\": \"d295a78d-3966-45d2-b200-00ca67da08d2\", \"cancelledAt\": null, \"publishedAt\": null, \"templateName\": \"Turno b5460556\", \"templateVersion\": 1, \"cancellationReason\": null }"
+  - heading "Después" [level=3]
+  - text: "{ \"id\": \"0aa9d545-feea-4ded-9f62-a488baab7aa5\", \"kind\": \"DUTY\", \"endsAt\": \"2026-11-15T22:00:00.000Z\", \"status\": \"PUBLISHED\", \"modality\": \"HOME_OFFICE\", \"snapshot\": { \"name\": \"Turno b5460556\", \"active\": true, \"endTime\": \"16:00\", \"version\": 1, \"category\": \"OPERATIONAL\", \"modality\": \"HOME_OFFICE\", \"timeZone\": \"America/Merida\", \"weekdays\": [ 1, 2, 3, 4, 5, 6, 7 ], \"startTime\": \"08:00\" }, \"startsAt\": \"2026-11-15T14:00:00.000Z\", \"timeZone\": \"America/Merida\", \"workDate\": \"2026-11-15\", \"employeeId\": \"22f6e434-e3b5-4459-9043-0378df217991\", \"locationId\": null, \"templateId\": \"d295a78d-3966-45d2-b200-00ca67da08d2\", \"cancelledAt\": null, \"publishedAt\": \"2026-11-19T15:45:06.220Z\", \"templateName\": \"Turno b5460556\", \"changedFields\": [ \"status\", \"publishedAt\" ], \"templateVersion\": 1, \"cancellationReason\": null }"
+```
+
+# Test source
+
+```ts
+  257 |       .poll(
+  258 |         async () => {
+  259 |           const response = await page.request.get('/api/notifications');
+  260 |           expect(response.status()).toBe(200);
+  261 |           const notifications: { items: NotificationView[] } =
+  262 |             await response.json();
+  263 |           return notifications.items.some(
+  264 |             (item) =>
+  265 |               item.title === 'Horario publicado' &&
+  266 |               item.message.includes(template.name),
+  267 |           );
+  268 |         },
+  269 |         {
+  270 |           timeout: 20_000,
+  271 |           message: 'El worker real debe entregar el aviso publicado',
+  272 |         },
+  273 |       )
+  274 |       .toBe(true);
+  275 |     await page.goto('/avisos');
+  276 |     const notice = page
+  277 |       .getByRole('listitem')
+  278 |       .filter({ hasText: `${template.name}: ${workDate}.` });
+  279 |     await expect(
+  280 |       notice.getByRole('heading', { name: 'Horario publicado', exact: false }),
+  281 |     ).toBeVisible();
+  282 |     await expect(
+  283 |       notice.getByRole('link', { name: 'Ver detalle', exact: true }),
+  284 |     ).toHaveAttribute('href', '/calendario');
+  285 |     const reading = page.waitForResponse(
+  286 |       (r) =>
+  287 |         /\/api\/notifications\/[^/]+\/read$/.test(r.url()) &&
+  288 |         r.request().method() === 'POST',
+  289 |     );
+  290 |     await notice
+  291 |       .getByRole('button', {
+  292 |         name: 'Marcar leído: Horario publicado',
+  293 |         exact: true,
+  294 |       })
+  295 |       .click();
+  296 |     expect((await reading).status()).toBe(204);
+  297 |     await page.reload();
+  298 |     await expect(
+  299 |       notice.getByRole('button', {
+  300 |         name: 'Marcar leído: Horario publicado',
+  301 |         exact: true,
+  302 |       }),
+  303 |     ).toHaveCount(0);
+  304 |     const inboxResponse = await page.request.get('/api/notifications');
+  305 |     expect(inboxResponse.status()).toBe(200);
+  306 |     const inbox = (await inboxResponse.json()) as { items: NotificationView[] };
+  307 |     const persistedNotice = inbox.items.find(
+  308 |       (item) =>
+  309 |         item.title === 'Horario publicado' &&
+  310 |         item.message.includes(`${template.name}: ${workDate}.`),
+  311 |     );
+  312 |     expect(persistedNotice?.readAt).toEqual(expect.any(String));
+  313 |     await capture(page, testInfo, 'avisos');
+  314 |     await notice
+  315 |       .getByRole('link', { name: 'Ver detalle', exact: true })
+  316 |       .click();
+  317 |     await expect(
+  318 |       page.getByRole('heading', { name: 'Calendario de turnos', exact: true }),
+  319 |     ).toBeVisible();
+  320 | 
+  321 |     await page.goto('/auditoria');
+  322 |     await page
+  323 |       .getByLabel('Entidad', { exact: true })
+  324 |       .fill('scheduleAssignment');
+  325 |     await page
+  326 |       .getByLabel('Acción', { exact: true })
+  327 |       .fill('planning.assignment.publish');
+  328 |     await page.getByRole('button', { name: 'Filtrar', exact: true }).click();
+  329 |     const audit = page.getByRole('row').filter({ hasText: draft.id });
+  330 |     await expect(
+  331 |       audit.getByText('planning.assignment.publish', { exact: true }),
+  332 |     ).toBeVisible();
+  333 |     await expect(
+  334 |       audit.getByText('scheduleAssignment', { exact: true }),
+  335 |     ).toBeVisible();
+  336 |     await audit
+  337 |       .getByRole('button', {
+  338 |         name: 'Ver cambios: planning.assignment.publish · scheduleAssignment',
+  339 |         exact: true,
+  340 |       })
+  341 |       .click();
+  342 |     const detail = page.getByRole('dialog', {
+  343 |       name: 'Detalle de auditoría',
+  344 |       exact: true,
+  345 |     });
+  346 |     await expect(
+  347 |       detail.getByRole('heading', {
+  348 |         name: 'planning.assignment.publish · scheduleAssignment',
+  349 |         exact: true,
+  350 |       }),
+  351 |     ).toBeVisible();
+  352 |     await expect(detail.getByText(draft.id, { exact: true })).toBeVisible();
+  353 |     await expect(
+  354 |       detail.locator('section').filter({
+  355 |         has: detail.getByRole('heading', { name: 'Después', exact: true }),
+  356 |       }),
+> 357 |     ).toContainText('PUBLISHED');
+      |       ^ Error: expect(locator).toContainText(expected) failed
+  358 |     await capture(page, testInfo, 'auditoria');
+  359 |     expect(errors).toEqual([]);
+  360 |   } finally {
+  361 |     await own.cleanup();
+  362 |   }
+  363 | });
+  364 | 
+  365 | test('comprueba GPS puntual y conserva rechazos sin marcajes', async ({
+  366 |   page,
+  367 |   context,
+  368 |   account,
+  369 | }, testInfo) => {
+  370 |   test.setTimeout(60_000);
+  371 |   const own = await setup(page.request);
+  372 |   const suffix = randomUUID().slice(0, 8);
+  373 |   try {
+  374 |     const department = await own.department(`Centro ${suffix}`);
+  375 |     const employee = await own.employee(
+  376 |       employeeInput(
+  377 |         `ADM ${suffix}`,
+  378 |         department.id,
+  379 |         account.id,
+  380 |         'ADMINISTRATIVE',
+  381 |       ),
+  382 |     );
+  383 |     const location = await own.location({
+  384 |       name: `Sede ${suffix}`,
+  385 |       ...center,
+  386 |       radiusMeters: 10,
+  387 |       maxAccuracyMeters: 10,
+  388 |       active: true,
+  389 |     });
+  390 |     const authorization = await page.request.post(
+  391 |       '/api/location-authorizations',
+  392 |       {
+  393 |         headers: own.headers,
+  394 |         data: {
+  395 |           employeeId: employee.id,
+  396 |           locationId: location.id,
+  397 |           startsOn: '2024-01-01',
+  398 |           endsOn: null,
+  399 |         },
+  400 |       },
+  401 |     );
+  402 |     expect(authorization.status()).toBe(201);
+  403 |     await context.grantPermissions(['geolocation'], { origin });
+  404 |     await context.setGeolocation({ ...center, accuracy: 5 });
+  405 |     await page.goto('/ubicaciones');
+  406 |     await expect(
+  407 |       page.getByRole('heading', { name: 'Centros de trabajo', exact: true }),
+  408 |     ).toBeVisible();
+  409 |     const mutations: string[] = [];
+  410 |     page.on('request', (request) => {
+  411 |       if (request.method() === 'POST' && request.url().includes('/api/'))
+  412 |         mutations.push(new URL(request.url()).pathname);
+  413 |     });
+  414 |     const validating = page.waitForResponse(
+  415 |       (r) =>
+  416 |         r.url().endsWith('/api/locations/validate') &&
+  417 |         r.request().method() === 'POST',
+  418 |     );
+  419 |     await page
+  420 |       .getByRole('button', { name: 'Comprobar mi ubicación', exact: true })
+  421 |       .click();
+  422 |     const validated = await validating;
+  423 |     expect(validated.status()).toBe(200);
+  424 |     const valid: GeoCheckView = await validated.json();
+  425 |     expect(valid).toMatchObject({
+  426 |       employeeId: employee.id,
+  427 |       locationId: location.id,
+  428 |       result: 'VALID',
+  429 |     });
+  430 |     expect(valid.distanceMeters).toBeLessThanOrEqual(10);
+  431 |     await expect(
+  432 |       page.getByText('Ubicación válida', { exact: true }),
+  433 |     ).toBeVisible();
+  434 |     await expect(
+  435 |       page
+  436 |         .getByRole('listitem')
+  437 |         .filter({
+  438 |           has: page.getByRole('heading', {
+  439 |             name: `Sede ${suffix} · Activo`,
+  440 |             exact: true,
+  441 |           }),
+  442 |         })
+  443 |         .getByText('Radio: 10 m · Precisión máxima: 10 m', { exact: true }),
+  444 |     ).toBeVisible();
+  445 |     await capture(page, testInfo, 'ubicaciones');
+  446 |     const saved = await own.database.pool.query(
+  447 |       'select result, latitude, longitude, accuracy, policy_snapshot from geo_checks where id=$1 and employee_id=$2',
+  448 |       [valid.id, employee.id],
+  449 |     );
+  450 |     expect(saved.rows).toHaveLength(1);
+  451 |     expect(saved.rows[0]).toMatchObject({
+  452 |       result: 'VALID',
+  453 |       ...center,
+  454 |       accuracy: 5,
+  455 |     });
+  456 |     expect(saved.rows[0].policy_snapshot).toBeTruthy();
+  457 |     for (const check of [
+```

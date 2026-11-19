@@ -1,0 +1,715 @@
+{
+  "before": {
+    "files": [
+      {
+        "file": "assets/api-D5FMuPgQ.js",
+        "bytes": 76311,
+        "gzipBytes": 25303,
+        "sha256": "df9036ecfd3a3d3f916c0ee0c532316976cc108ce83a8e6913654b41f3753d53",
+        "initial": true
+      },
+      {
+        "file": "assets/assignments-page-ConPE4Bz.js",
+        "bytes": 11112,
+        "gzipBytes": 4077,
+        "sha256": "c33d273121d9683e6bb3a9bfc2a2759a66fe59f1def4c83f41a0472e0821959e",
+        "initial": false
+      },
+      {
+        "file": "assets/attendance-pages-7hJMtw5c.js",
+        "bytes": 16514,
+        "gzipBytes": 5774,
+        "sha256": "d24a0a035b37e53eaf24f7fd1c2e389481e380a27f95cc8d84293c816aa72a0c",
+        "initial": false
+      },
+      {
+        "file": "assets/attendance-policy-qBz5DTWE.js",
+        "bytes": 3138,
+        "gzipBytes": 1435,
+        "sha256": "9c6e5c455189478d8fd5c6b307332df05797b6bbca1af8b0dec2de12f8853372",
+        "initial": false
+      },
+      {
+        "file": "assets/audit-page-BX5TGycS.js",
+        "bytes": 6339,
+        "gzipBytes": 2351,
+        "sha256": "f6b78e04a61c2e9c104a24ef4ef47c208a5706e6acd5a6c93b84b7d650ca40cf",
+        "initial": false
+      },
+      {
+        "file": "assets/calendar-page-CCOPMOQe.js",
+        "bytes": 12496,
+        "gzipBytes": 4104,
+        "sha256": "721a92fc29d699babd77f60eba3b3673c04505af7e935cd42011bcd987cb5196",
+        "initial": false
+      },
+      {
+        "file": "assets/check-CsXtN47w.js",
+        "bytes": 152,
+        "gzipBytes": 159,
+        "sha256": "7acc439d7d2212660c2ee78540057facbc7b54337f0d49d4a433a608bd3c0cfd",
+        "initial": false
+      },
+      {
+        "file": "assets/configuration-page-DuAilSBs.js",
+        "bytes": 4539,
+        "gzipBytes": 1760,
+        "sha256": "76236db0f87d22c224479623f3614d74d17e0af465d810b5429a34d2db1e4573",
+        "initial": false
+      },
+      {
+        "file": "assets/controls-Bg2RKL0L.js",
+        "bytes": 932,
+        "gzipBytes": 461,
+        "sha256": "946643aa1e72b2b70e8229cdafba1d908d1ddefae18c4d03a2cb4b939e93c30a",
+        "initial": false
+      },
+      {
+        "file": "assets/dashboard-D18z0oa6.js",
+        "bytes": 11795,
+        "gzipBytes": 3607,
+        "sha256": "b917baac7660798f443150338fec80d66bea21dc7f34af539d125d4bf4fde58f",
+        "initial": false
+      },
+      {
+        "file": "assets/departments-page-C5iuu4bP.js",
+        "bytes": 20675,
+        "gzipBytes": 6544,
+        "sha256": "137b149e1051ffc5e514bc4bd17f28d6c33b2606a1d32ddd3b5c5d8f1185635a",
+        "initial": false
+      },
+      {
+        "file": "assets/dist-BNdqKZbL.js",
+        "bytes": 51011,
+        "gzipBytes": 17655,
+        "sha256": "832bca5ba9e6f09772b20074ad245f5a9dfd921bc743a1860291c9e78bc0c06a",
+        "initial": false
+      },
+      {
+        "file": "assets/dist-_UE1HkKK.js",
+        "bytes": 1953,
+        "gzipBytes": 726,
+        "sha256": "881f7d64a868296bc0205c5360521bf49c98b4e90aaab24f3aa0e68875e019c6",
+        "initial": false
+      },
+      {
+        "file": "assets/employees-page-0GqJN_yh.js",
+        "bytes": 24536,
+        "gzipBytes": 7058,
+        "sha256": "c75029f7f8a7c1ad18904133e7be835970214367bbcf8d2fd4ad544bb87c3f83",
+        "initial": false
+      },
+      {
+        "file": "assets/form-schema-FtfDO00X.js",
+        "bytes": 2385,
+        "gzipBytes": 1150,
+        "sha256": "a562fe4438a00c4abefbb9b59000e60f9c29d22a8c6c3417e6163e8540451b5e",
+        "initial": false
+      },
+      {
+        "file": "assets/index-C9V3JErw.css",
+        "bytes": 64183,
+        "gzipBytes": 11529,
+        "sha256": "8ec642cf688442ff91696c7a25cea17b9888227f59cfa95d952aa426019417cd",
+        "initial": true
+      },
+      {
+        "file": "assets/index-Dgd8OqrP.js",
+        "bytes": 297328,
+        "gzipBytes": 93745,
+        "sha256": "7bf4a00ddc200ab8dbee146e0ca683164ba566867ddebfa74dd058c0c22bd5d2",
+        "initial": true
+      },
+      {
+        "file": "assets/locations-page-BxYJlJUE.js",
+        "bytes": 11733,
+        "gzipBytes": 3834,
+        "sha256": "6af3c9a7468d38dee99f75e7a61f5cb3cdc7d3529d05d590de3d33cacec1cea4",
+        "initial": false
+      },
+      {
+        "file": "assets/logo-MCR (1)-BKpUBcB3.png",
+        "bytes": 9949,
+        "gzipBytes": 8088,
+        "sha256": "9471322c1705db2f2e8c3b80ad8151ca9e09cbe16b58ae253cfc8b59fead3703",
+        "initial": false
+      },
+      {
+        "file": "assets/native-form-changes-D08ihN5f.js",
+        "bytes": 501,
+        "gzipBytes": 308,
+        "sha256": "222f600bfadf193a4e271e9c58fd06cf533d32c5ca418ca0c391c28cb3b1e4f1",
+        "initial": false
+      },
+      {
+        "file": "assets/notifications-page-Bg9tn1_x.js",
+        "bytes": 3100,
+        "gzipBytes": 1305,
+        "sha256": "4f0cd576e682d93721d7e3ee4fe257c488ab90424411b396fd191353b917f5d3",
+        "initial": false
+      },
+      {
+        "file": "assets/pencil-DrMETsJH.js",
+        "bytes": 304,
+        "gzipBytes": 243,
+        "sha256": "6416917eeb5970d7f80a3dbc091d6c492236e07b34b0dfae4a3b3d3c54a52acc",
+        "initial": false
+      },
+      {
+        "file": "assets/planning-editor-ClnUESZz.js",
+        "bytes": 1322,
+        "gzipBytes": 757,
+        "sha256": "53644af91cddfe1c93de8d6340fac040574425b30d9d73ea9cf0a72d4fcd8fad",
+        "initial": false
+      },
+      {
+        "file": "assets/plus--A8TFhkf.js",
+        "bytes": 181,
+        "gzipBytes": 168,
+        "sha256": "a8004fce60f0b5eca90806831e42821ab2d50ef3fedea81dddd33992fbf4e693",
+        "initial": false
+      },
+      {
+        "file": "assets/protected-page-CnNMgnV8.js",
+        "bytes": 1479,
+        "gzipBytes": 751,
+        "sha256": "e27618527778ba65fc2e18bf6037a78a1642f874ac799a7d6c18c70cb5ba8c13",
+        "initial": true
+      },
+      {
+        "file": "assets/query-feedback-823eyW2E.js",
+        "bytes": 693,
+        "gzipBytes": 418,
+        "sha256": "45c6e12bcbc009c789a5849d9cad601e27f98a184eb198299bfdda459592f7e5",
+        "initial": false
+      },
+      {
+        "file": "assets/react-C1iE8mnY.js",
+        "bytes": 218754,
+        "gzipBytes": 67375,
+        "sha256": "da12a137fe3f1fd2470fbf431f134ee9c9c4fad70dc30193ddd4a7195ce196cf",
+        "initial": true
+      },
+      {
+        "file": "assets/requests-pages-CFwut3bY.js",
+        "bytes": 37669,
+        "gzipBytes": 10544,
+        "sha256": "015437defda8c87b8631cf2ba5d082044275bd40e9909b53c397e3178ab489d4",
+        "initial": false
+      },
+      {
+        "file": "assets/rolldown-runtime-XKyaHtl9.js",
+        "bytes": 726,
+        "gzipBytes": 431,
+        "sha256": "548d1dbf321e7d2ae804fcc158b588706a7c52f8ca175de1490c6ccb4dbe55b7",
+        "initial": true
+      },
+      {
+        "file": "assets/shifts-page-EJa_sMds.js",
+        "bytes": 8408,
+        "gzipBytes": 2814,
+        "sha256": "b4003274efbd8052a60a7f3f4e1c5835f2881dceb4c99e0f08a645156399b904",
+        "initial": false
+      },
+      {
+        "file": "assets/sliders-horizontal-SSOEXinV.js",
+        "bytes": 452,
+        "gzipBytes": 257,
+        "sha256": "48b6c24eb048e7941a8514bc37438584cd5a0cd6afb40be1f9208ac4ecce35dd",
+        "initial": false
+      },
+      {
+        "file": "assets/use-write-DE44ox0c.js",
+        "bytes": 406,
+        "gzipBytes": 307,
+        "sha256": "36c65e572404a6f917d478b4278f5253b07fd1258af53f568de5352bf0c52568",
+        "initial": false
+      },
+      {
+        "file": "assets/useBlocker-C4FcnrPp.js",
+        "bytes": 1589,
+        "gzipBytes": 701,
+        "sha256": "10dda1f5337cd09bb860fbd0e714f2eeed1476cf85384723eecd1cdc1e9d0f73",
+        "initial": false
+      },
+      {
+        "file": "assets/useMutation-7uuNKG6P.js",
+        "bytes": 2399,
+        "gzipBytes": 999,
+        "sha256": "a70ca15284c631ead6409f78906092df0a118634b1dbdc8bb001cf65a00cc589",
+        "initial": false
+      },
+      {
+        "file": "assets/users-page-aouN3nSv.js",
+        "bytes": 16182,
+        "gzipBytes": 5295,
+        "sha256": "eab93ea9a7e37c5ae8af366af7ad75b2827b0de83230a7fe3682e08bc7df6f4b",
+        "initial": false
+      },
+      {
+        "file": "assets/validation-sLBhemX9.js",
+        "bytes": 74729,
+        "gzipBytes": 20687,
+        "sha256": "4f3a1ed542dcebfce10f71841467c303dd85aeacd7a730c8afe05c917423c0a8",
+        "initial": true
+      },
+      {
+        "file": "favicon-180.png",
+        "bytes": 5694,
+        "gzipBytes": 5668,
+        "sha256": "f110d19eb0f3f0a521e9783783b2c53a0a4e9fb80f0f94b29bfb4d0ace90c39a",
+        "initial": false
+      },
+      {
+        "file": "favicon-192.png",
+        "bytes": 6289,
+        "gzipBytes": 6269,
+        "sha256": "079d35f63446f8d9d4aa3cc0111877316b1aeaf75e6dd19aa4475f6ef32178d1",
+        "initial": false
+      },
+      {
+        "file": "favicon-32.png",
+        "bytes": 616,
+        "gzipBytes": 639,
+        "sha256": "cf4ecec8b41d4630051c9e0dc9b84022931fbf0bc3737b65bc1848a7c21eaad8",
+        "initial": false
+      },
+      {
+        "file": "favicon-512.png",
+        "bytes": 70199,
+        "gzipBytes": 70242,
+        "sha256": "7a0d1c7c2cc008f3c9c0c902bd17d9db096df10904c06cd723d6164cbd55b75e",
+        "initial": false
+      },
+      {
+        "file": "favicon.ico",
+        "bytes": 20434,
+        "gzipBytes": 20212,
+        "sha256": "dfe732f3ddea5ca255cb57e646b66644bab1cf63ca8fe62fde4fb6ccf66c020e",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/OFL.txt",
+        "bytes": 4488,
+        "gzipBytes": 2003,
+        "sha256": "2b75ef20f13d83a7514aee452c4782c20cdc9ff2dee17600f44d37a06d4fb958",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/PROVENANCE.json",
+        "bytes": 2554,
+        "gzipBytes": 863,
+        "sha256": "b1ebc9ac86b6f04ca20e67d1b793018d6055ae22ccbe987f29f87d0fe3fd9d13",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-italic-latin-ext.woff2",
+        "bytes": 22104,
+        "gzipBytes": 22132,
+        "sha256": "f6f069859c53e20edfe44fa21e65572242c044447878b3193420975c71d6dc36",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-italic-latin.woff2",
+        "bytes": 37876,
+        "gzipBytes": 37909,
+        "sha256": "ad23e4db5501424d87dc195e7cf3baa2336153df0566baa148be0d8ec16dd148",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-normal-latin-ext.woff2",
+        "bytes": 21348,
+        "gzipBytes": 21376,
+        "sha256": "c55117aef4e05fb991522c88b9e4291ad2ce937b376c9f9e4cf945adf34df1b3",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-normal-latin.woff2",
+        "bytes": 35876,
+        "gzipBytes": 35909,
+        "sha256": "c9503c934c3c95fbe85b214bca1d0a918bba68faf32c467fef306773696f110c",
+        "initial": false
+      },
+      {
+        "file": "images/employees-black-gold.webp",
+        "bytes": 9050,
+        "gzipBytes": 8721,
+        "sha256": "77ef9a72221751dce35af37b64fe91bf5050dad4564f55cf4eebe89c13727ae0",
+        "initial": false
+      },
+      {
+        "file": "index.html",
+        "bytes": 1285,
+        "gzipBytes": 552,
+        "sha256": "f7f1c4fbbe76be9f939a9b8f2e5d6c0cc90ea7f4f752e74dd6b4ef98ece38361",
+        "initial": false
+      },
+      {
+        "file": "theme-init.js",
+        "bytes": 1336,
+        "gzipBytes": 558,
+        "sha256": "ce9e8c0864c34e2583ce6b71d358ebee7a5d36b072ad46f4e805f6e4de32406e",
+        "initial": false
+      }
+    ],
+    "totals": {
+      "initialJs": 208292,
+      "initialJsCss": 219821,
+      "allJs": 293661,
+      "allCss": 11529
+    }
+  },
+  "after": {
+    "files": [
+      {
+        "file": "assets/api-C-CVeuuC.js",
+        "bytes": 76403,
+        "gzipBytes": 25336,
+        "sha256": "19677c301be3a6d3415e7377a651044e5a67f6c7147b3ceee2bae590d84ecc5c",
+        "initial": true
+      },
+      {
+        "file": "assets/assignments-page-DDjOd7_f.js",
+        "bytes": 11066,
+        "gzipBytes": 4053,
+        "sha256": "c9fca6d147e6188df260ac5aa5ade495e17d93ecc9932dcd2f3692045eecfe1e",
+        "initial": false
+      },
+      {
+        "file": "assets/attendance-pages-Oq3GbGCw.js",
+        "bytes": 16477,
+        "gzipBytes": 5747,
+        "sha256": "866a80d5c03c1f3a2e3782ed00ecfc2c2b903cadad61e1287a4694c173b21988",
+        "initial": false
+      },
+      {
+        "file": "assets/attendance-policy-Dqe8MPjT.js",
+        "bytes": 3096,
+        "gzipBytes": 1415,
+        "sha256": "b805ef6585897a1604871cf38e47c41e294110885aaa530c32c646d36ace738d",
+        "initial": false
+      },
+      {
+        "file": "assets/audit-page-Bt2ot-kN.js",
+        "bytes": 6297,
+        "gzipBytes": 2331,
+        "sha256": "ab9f96c51dc3980606de0a80450ce7a6f261d7578829985db49dcd25923c6d8f",
+        "initial": false
+      },
+      {
+        "file": "assets/calendar-page-91KNXqFa.js",
+        "bytes": 18953,
+        "gzipBytes": 5771,
+        "sha256": "d69c07668a460801661394265994a81d96e9ec9ba7dda4aefdd8cbc8a34bd231",
+        "initial": false
+      },
+      {
+        "file": "assets/check-CNr0aMif.js",
+        "bytes": 152,
+        "gzipBytes": 158,
+        "sha256": "56b58b81822f115b07dd0d199cc9ea353a15500f4982b91e910e4881d4544712",
+        "initial": false
+      },
+      {
+        "file": "assets/configuration-page-Bq6NwW7F.js",
+        "bytes": 4498,
+        "gzipBytes": 1740,
+        "sha256": "209e68db56e2a76b377938a745e4406ddcd5a5c238d4918aa99c04182f1fed40",
+        "initial": false
+      },
+      {
+        "file": "assets/controls-D0t6CZTm.js",
+        "bytes": 932,
+        "gzipBytes": 458,
+        "sha256": "d0f98592b92570e5c0dfc12ea568273258a64cc2ecbd8e727999ba0eb6e11a49",
+        "initial": false
+      },
+      {
+        "file": "assets/dashboard-D96IJwqd.js",
+        "bytes": 13680,
+        "gzipBytes": 3848,
+        "sha256": "b5b391fb505c0a2fdc94a20afd5296371adccb6783536c1a5ed4eae77fb34877",
+        "initial": false
+      },
+      {
+        "file": "assets/departments-page-icsq-MT0.js",
+        "bytes": 20634,
+        "gzipBytes": 6519,
+        "sha256": "bec10112cb520c1bd060a44c94467db75865238853feaf29891503c4bccb777e",
+        "initial": false
+      },
+      {
+        "file": "assets/dist-CK_YKpl8.js",
+        "bytes": 1953,
+        "gzipBytes": 713,
+        "sha256": "eab744211aa4350c6db33b49c00ac5916a4fd6bf35be786ee09cc86c38da6f22",
+        "initial": false
+      },
+      {
+        "file": "assets/dist-dOphlzin.js",
+        "bytes": 51011,
+        "gzipBytes": 17649,
+        "sha256": "4cb2df4dea109a31fae480c80fe9ef74a33bc50d4665632037be4b2a64bfa2a9",
+        "initial": false
+      },
+      {
+        "file": "assets/employees-page-lBGMpEtc.js",
+        "bytes": 24495,
+        "gzipBytes": 7033,
+        "sha256": "8ce9c7359e250b7d80520539240c87bdad8cf234be443c58bc0894ce47e3f2ab",
+        "initial": false
+      },
+      {
+        "file": "assets/form-schema-Cg-PIStZ.js",
+        "bytes": 2385,
+        "gzipBytes": 1150,
+        "sha256": "4f316cd12bd8fb332ba01ad807f204cc4cd9f85fdb8ed9c757c9053466b2888b",
+        "initial": false
+      },
+      {
+        "file": "assets/index-Byv02P0D.js",
+        "bytes": 299633,
+        "gzipBytes": 94453,
+        "sha256": "41dbe6abb35ea1eec05696f2a65b2aba05029a625b193a022aaa20529555393a",
+        "initial": true
+      },
+      {
+        "file": "assets/index-C0qnX3NN.css",
+        "bytes": 65563,
+        "gzipBytes": 11701,
+        "sha256": "5b2df58419f663018ed4c847853083f7477287bcce210232f86bdd0112e264b2",
+        "initial": true
+      },
+      {
+        "file": "assets/locations-page-CQd4ndko.js",
+        "bytes": 11691,
+        "gzipBytes": 3812,
+        "sha256": "bcd36801761f9e148b236181eaeefb050a3d05aa996f933ab70d685d19a9ee7e",
+        "initial": false
+      },
+      {
+        "file": "assets/logo-MCR (1)-BKpUBcB3.png",
+        "bytes": 9949,
+        "gzipBytes": 8088,
+        "sha256": "9471322c1705db2f2e8c3b80ad8151ca9e09cbe16b58ae253cfc8b59fead3703",
+        "initial": false
+      },
+      {
+        "file": "assets/native-form-changes-D08ihN5f.js",
+        "bytes": 501,
+        "gzipBytes": 308,
+        "sha256": "222f600bfadf193a4e271e9c58fd06cf533d32c5ca418ca0c391c28cb3b1e4f1",
+        "initial": false
+      },
+      {
+        "file": "assets/notifications-page-Dp-tQtiN.js",
+        "bytes": 3058,
+        "gzipBytes": 1287,
+        "sha256": "a72fa2b9a87e612a89d16e4e25c3bcc710617c18b86b88cc09723fd85600a145",
+        "initial": false
+      },
+      {
+        "file": "assets/pencil-DuFAsYL1.js",
+        "bytes": 304,
+        "gzipBytes": 241,
+        "sha256": "c0adc66fd496fec860a295b0fd24823f8cc14f47921802279f45dbb437e90143",
+        "initial": false
+      },
+      {
+        "file": "assets/planning-editor-D382RicU.js",
+        "bytes": 1338,
+        "gzipBytes": 758,
+        "sha256": "9976dad34e6fb76738575613a4e92923c74c288d2083ca9ee6ff94458dbec31e",
+        "initial": false
+      },
+      {
+        "file": "assets/plus-DN9p8IXU.js",
+        "bytes": 181,
+        "gzipBytes": 167,
+        "sha256": "bdaaff63b638313b2e78237b32aafdaa2e94047685b4f1538a15b4e839d99ce4",
+        "initial": false
+      },
+      {
+        "file": "assets/query-feedback-CfxRdGiX.js",
+        "bytes": 693,
+        "gzipBytes": 416,
+        "sha256": "dbb5a1c2576ffc8f1fbb97449e8e795508ee42ef8efefa439f19bf872ae15b01",
+        "initial": false
+      },
+      {
+        "file": "assets/react-C1iE8mnY.js",
+        "bytes": 218754,
+        "gzipBytes": 67375,
+        "sha256": "da12a137fe3f1fd2470fbf431f134ee9c9c4fad70dc30193ddd4a7195ce196cf",
+        "initial": true
+      },
+      {
+        "file": "assets/requests-pages-DvziHN19.js",
+        "bytes": 55795,
+        "gzipBytes": 14874,
+        "sha256": "665346f9d73a560711c57d3e3a0fa052de565accac7087dcd7c40ad39de16c3a",
+        "initial": false
+      },
+      {
+        "file": "assets/rolldown-runtime-XKyaHtl9.js",
+        "bytes": 726,
+        "gzipBytes": 431,
+        "sha256": "548d1dbf321e7d2ae804fcc158b588706a7c52f8ca175de1490c6ccb4dbe55b7",
+        "initial": true
+      },
+      {
+        "file": "assets/shifts-page-Cg0cL6nW.js",
+        "bytes": 9070,
+        "gzipBytes": 3027,
+        "sha256": "7267bb998634cf70cd2382b2f538ea30fa857e96f554163d53a62dd5dfa2f6e9",
+        "initial": false
+      },
+      {
+        "file": "assets/sliders-horizontal-bgWzETNn.js",
+        "bytes": 452,
+        "gzipBytes": 256,
+        "sha256": "6e0ee4f6f30a4574eb1d25a521366d4ef3dc471338e596b308b37d1d70a284aa",
+        "initial": false
+      },
+      {
+        "file": "assets/use-write-Dq67JhFR.js",
+        "bytes": 406,
+        "gzipBytes": 305,
+        "sha256": "6eee92c03562cf1347e58365e1bd99d47dd1222b614079cb806077291e18749b",
+        "initial": false
+      },
+      {
+        "file": "assets/useBlocker-B8tuIb-l.js",
+        "bytes": 1579,
+        "gzipBytes": 692,
+        "sha256": "048b19f847e9acd0dac09a83a17a7e95e1a50d0ac66e1c1d8d7d5106db37e9d9",
+        "initial": false
+      },
+      {
+        "file": "assets/useMutation-CHeE-udw.js",
+        "bytes": 2399,
+        "gzipBytes": 998,
+        "sha256": "610ada4ba807bff1947fdf3bc58c6fe02bff7e0fca57cf2b8b69a4a6c617c3e4",
+        "initial": false
+      },
+      {
+        "file": "assets/users-page-BZg9GioV.js",
+        "bytes": 16141,
+        "gzipBytes": 5273,
+        "sha256": "9c10689a3ee3b8758103dc269cb57b6581416e4a945f151d3623336de3ae5d95",
+        "initial": false
+      },
+      {
+        "file": "assets/validation-sLBhemX9.js",
+        "bytes": 74729,
+        "gzipBytes": 20687,
+        "sha256": "4f3a1ed542dcebfce10f71841467c303dd85aeacd7a730c8afe05c917423c0a8",
+        "initial": true
+      },
+      {
+        "file": "favicon-180.png",
+        "bytes": 5694,
+        "gzipBytes": 5668,
+        "sha256": "f110d19eb0f3f0a521e9783783b2c53a0a4e9fb80f0f94b29bfb4d0ace90c39a",
+        "initial": false
+      },
+      {
+        "file": "favicon-192.png",
+        "bytes": 6289,
+        "gzipBytes": 6269,
+        "sha256": "079d35f63446f8d9d4aa3cc0111877316b1aeaf75e6dd19aa4475f6ef32178d1",
+        "initial": false
+      },
+      {
+        "file": "favicon-32.png",
+        "bytes": 616,
+        "gzipBytes": 639,
+        "sha256": "cf4ecec8b41d4630051c9e0dc9b84022931fbf0bc3737b65bc1848a7c21eaad8",
+        "initial": false
+      },
+      {
+        "file": "favicon-512.png",
+        "bytes": 70199,
+        "gzipBytes": 70242,
+        "sha256": "7a0d1c7c2cc008f3c9c0c902bd17d9db096df10904c06cd723d6164cbd55b75e",
+        "initial": false
+      },
+      {
+        "file": "favicon.ico",
+        "bytes": 20434,
+        "gzipBytes": 20212,
+        "sha256": "dfe732f3ddea5ca255cb57e646b66644bab1cf63ca8fe62fde4fb6ccf66c020e",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/OFL.txt",
+        "bytes": 4488,
+        "gzipBytes": 2003,
+        "sha256": "2b75ef20f13d83a7514aee452c4782c20cdc9ff2dee17600f44d37a06d4fb958",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/PROVENANCE.json",
+        "bytes": 2554,
+        "gzipBytes": 863,
+        "sha256": "b1ebc9ac86b6f04ca20e67d1b793018d6055ae22ccbe987f29f87d0fe3fd9d13",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-italic-latin-ext.woff2",
+        "bytes": 22104,
+        "gzipBytes": 22132,
+        "sha256": "f6f069859c53e20edfe44fa21e65572242c044447878b3193420975c71d6dc36",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-italic-latin.woff2",
+        "bytes": 37876,
+        "gzipBytes": 37909,
+        "sha256": "ad23e4db5501424d87dc195e7cf3baa2336153df0566baa148be0d8ec16dd148",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-normal-latin-ext.woff2",
+        "bytes": 21348,
+        "gzipBytes": 21376,
+        "sha256": "c55117aef4e05fb991522c88b9e4291ad2ce937b376c9f9e4cf945adf34df1b3",
+        "initial": false
+      },
+      {
+        "file": "fonts/google-sans/google-sans-normal-latin.woff2",
+        "bytes": 35876,
+        "gzipBytes": 35909,
+        "sha256": "c9503c934c3c95fbe85b214bca1d0a918bba68faf32c467fef306773696f110c",
+        "initial": false
+      },
+      {
+        "file": "images/employees-black-gold.webp",
+        "bytes": 9050,
+        "gzipBytes": 8721,
+        "sha256": "77ef9a72221751dce35af37b64fe91bf5050dad4564f55cf4eebe89c13727ae0",
+        "initial": false
+      },
+      {
+        "file": "index.html",
+        "bytes": 1200,
+        "gzipBytes": 530,
+        "sha256": "4f9b7cb3cb95ff6fab2fbe82d57957777f4822de9634e8fdcc43dd8c1a03c374",
+        "initial": false
+      },
+      {
+        "file": "theme-init.js",
+        "bytes": 1336,
+        "gzipBytes": 558,
+        "sha256": "ce9e8c0864c34e2583ce6b71d358ebee7a5d36b072ad46f4e805f6e4de32406e",
+        "initial": false
+      }
+    ],
+    "totals": {
+      "initialJs": 208282,
+      "initialJsCss": 219983,
+      "allJs": 299839,
+      "allCss": 11701
+    }
+  }
+}

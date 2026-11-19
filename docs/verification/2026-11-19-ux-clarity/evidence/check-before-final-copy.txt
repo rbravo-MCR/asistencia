@@ -1,0 +1,96 @@
+$ pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm build
+$ eslint . && pnpm check:boundaries
+$ depcruise --config .dependency-cruiser.cjs apps/api/src apps/web/src packages/contracts/src
+
+✔ no dependency violations found (286 modules, 980 dependencies cruised)
+
+$ prettier --check .
+Checking formatting...
+All matched files use Prettier code style!
+$ pnpm --filter @asistencia/contracts build && pnpm -r typecheck && tsc -p tsconfig.tools.json
+$ tsc -p tsconfig.json
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+apps/api typecheck$ tsc --noEmit
+apps/web typecheck$ tsc --noEmit
+apps/api typecheck: Done
+apps/web typecheck: Done
+$ pnpm --filter @asistencia/contracts build && vitest run
+$ tsc -p tsconfig.json
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+ Test Files  37 passed (37)
+      Tests  256 passed (256)
+   Start at  12:43:21
+   Duration  31.76s (tests 52%, import 23%, environment 19%, setup 5%, transform 1%)
+
+    Isolate  37 workers spawned · ~631ms startup each (spawn + environment, per file)
+             at least ~7.16s faster with isolate: false — reuses workers across files instead of one per file
+
+$ pnpm --filter @asistencia/contracts build && pnpm --filter @asistencia/api build && pnpm --filter @asistencia/web build
+$ tsc -p tsconfig.json
+$ tsc -p tsconfig.build.json
+$ tsc --noEmit && vite build
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 3204 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                1.20 kB │ gzip:   0.53 kB
+dist/assets/logo-MCR (1)-BKpUBcB3.png          9.94 kB
+dist/assets/index-C0qnX3NN.css                65.56 kB │ gzip:  11.90 kB
+dist/assets/check-BNAytq--.js                  0.15 kB │ gzip:   0.16 kB
+dist/assets/plus-BP-nkNaG.js                   0.18 kB │ gzip:   0.16 kB
+dist/assets/pencil-BR4OdFGU.js                 0.30 kB │ gzip:   0.24 kB
+dist/assets/use-write-BD1UPqfw.js              0.40 kB │ gzip:   0.30 kB
+dist/assets/sliders-horizontal-DVHU05-m.js     0.45 kB │ gzip:   0.25 kB
+dist/assets/native-form-changes-D08ihN5f.js    0.50 kB │ gzip:   0.31 kB
+dist/assets/rolldown-runtime-XKyaHtl9.js       0.72 kB │ gzip:   0.42 kB
+dist/assets/query-feedback-wvxPMVQv.js         1.14 kB │ gzip:   0.56 kB
+dist/assets/controls-F8av-rq3.js               1.55 kB │ gzip:   0.59 kB
+dist/assets/useBlocker-F9S3zLIA.js             1.57 kB │ gzip:   0.69 kB
+dist/assets/planning-editor-D5tKtjKV.js        1.72 kB │ gzip:   0.89 kB
+dist/assets/dist-h8VVpttZ.js                   1.94 kB │ gzip:   0.71 kB
+dist/assets/form-schema-Bi1HISyk.js            2.38 kB │ gzip:   1.15 kB
+dist/assets/useMutation-Bagaua0-.js            2.39 kB │ gzip:   1.00 kB
+dist/assets/attendance-policy-DgNJhj3G.js      4.21 kB │ gzip:   1.60 kB
+dist/assets/notifications-page-CSDDJKi8.js     4.71 kB │ gzip:   1.52 kB
+dist/assets/configuration-page-Ci9MgIo_.js     6.71 kB │ gzip:   2.04 kB
+dist/assets/audit-page-BhfcMzWb.js             9.78 kB │ gzip:   2.71 kB
+dist/assets/shifts-page-BDMT059x.js           13.71 kB │ gzip:   3.56 kB
+dist/assets/assignments-page-CgxLEiA_.js      15.82 kB │ gzip:   4.62 kB
+dist/assets/locations-page-DHu4HPJj.js        17.23 kB │ gzip:   4.45 kB
+dist/assets/dashboard-D55HHN9B.js             20.47 kB │ gzip:   4.56 kB
+dist/assets/attendance-pages-DNiJMGRl.js      23.01 kB │ gzip:   6.48 kB
+dist/assets/users-page-BcDmQ082.js            23.71 kB │ gzip:   6.11 kB
+dist/assets/calendar-page-CMweX8GN.js         26.75 kB │ gzip:   6.61 kB
+dist/assets/departments-page-3HcY_6W8.js      29.46 kB │ gzip:   7.48 kB
+dist/assets/employees-page-B1C2AosI.js        35.87 kB │ gzip:   8.21 kB
+dist/assets/dist-Cqm0l9Ru.js                  51.01 kB │ gzip:  17.85 kB
+dist/assets/validation-sLBhemX9.js            74.72 kB │ gzip:  20.99 kB
+dist/assets/requests-pages-B83IJA7I.js        79.42 kB │ gzip:  17.53 kB
+dist/assets/api-BVy6ALQ0.js                   79.54 kB │ gzip:  26.68 kB
+dist/assets/index-Dg4bhbNq.js                336.72 kB │ gzip: 103.06 kB
+dist/assets/react-CDb74C0S.js                431.26 kB │ gzip: 129.65 kB
+
+✓ built in 785ms

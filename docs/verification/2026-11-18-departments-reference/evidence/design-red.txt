@@ -1,0 +1,88 @@
+[WebServer] (node:1157603) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1157660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 2 workers
+
+(node:1157841) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1157842) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (10.2s)
+  ✘  1 [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas (10.7s)
+
+
+  1) [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('textbox', { name: 'Nombre del departamento', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('textbox', { name: 'Nombre del departamento', exact: true }) with timeout 5000ms
+      - waiting for getByRole('textbox', { name: 'Nombre del departamento', exact: true })
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      41 |         exact: true,
+      42 |       }),
+    > 43 |     ).toHaveCount(0);
+         |       ^
+      44 |     const search = page.getByRole('searchbox', {
+      45 |       name: 'Buscar departamentos',
+      46 |     });
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:43:7
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('textbox', { name: 'Nombre del departamento', exact: true })
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('textbox', { name: 'Nombre del departamento', exact: true }) with timeout 5000ms
+      - waiting for getByRole('textbox', { name: 'Nombre del departamento', exact: true })
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      41 |         exact: true,
+      42 |       }),
+    > 43 |     ).toHaveCount(0);
+         |       ^
+      44 |     const search = page.getByRole('searchbox', {
+      45 |       name: 'Buscar departamentos',
+      46 |     });
+        at /home/rafael/proyectos/asistencia/tests/e2e/departments-design.spec.ts:43:7
+
+    Error Context: test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/departments-design-Departa-70f23-es-y-estados-en-ambos-temas-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 
+    [mobile] › tests/e2e/departments-design.spec.ts:5:1 › Departamentos establece referencia visual con drawer, acciones y estados en ambos temas 

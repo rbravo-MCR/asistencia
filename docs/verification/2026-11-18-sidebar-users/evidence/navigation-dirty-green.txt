@@ -1,0 +1,15 @@
+[WebServer] (node:1046321) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1046528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 2 workers
+
+(node:1046639) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1046640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (9.1s)
+  ✓  2 [mobile] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (9.5s)
+
+  2 passed (16.1s)

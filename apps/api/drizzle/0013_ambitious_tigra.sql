@@ -1,0 +1,2 @@
+ALTER TABLE "attendance_policies" ADD COLUMN "administrative_absence_minutes" integer;--> statement-breakpoint
+ALTER TABLE "attendance_policies" ADD CONSTRAINT "attendance_absence_bounds" CHECK ("attendance_policies"."administrative_absence_minutes" is null or ("attendance_policies"."administrative_absence_minutes" between 1 and 1440 and "attendance_policies"."administrative_absence_minutes" > "attendance_policies"."late_tolerance_minutes"));

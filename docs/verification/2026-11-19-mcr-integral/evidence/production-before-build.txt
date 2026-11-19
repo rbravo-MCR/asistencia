@@ -1,0 +1,36 @@
+vite v8.3.8 building client environment for production...
+transforming...
+✓ 3179 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               1.12 kB │ gzip:   0.52 kB
+dist/assets/logo-MCR (1)-BKpUBcB3.png         9.94 kB
+dist/assets/index-CkJ7uysg.css               55.09 kB │ gzip:  10.40 kB
+dist/assets/check-7KBb-GXk.js                 0.15 kB │ gzip:   0.15 kB
+dist/assets/use-write-CaQhV3X_.js             0.40 kB │ gzip:   0.30 kB
+dist/assets/query-feedback-DBEJgwTD.js        0.70 kB │ gzip:   0.41 kB
+dist/assets/rolldown-runtime-XKyaHtl9.js      0.72 kB │ gzip:   0.42 kB
+dist/assets/controls-ChxUTJrz.js              0.90 kB │ gzip:   0.44 kB
+dist/assets/notifications-page-DZfo43CK.js    1.93 kB │ gzip:   0.90 kB
+dist/assets/search-D7Iuu8rk.js                1.99 kB │ gzip:   0.93 kB
+dist/assets/useMutation-CD2cjFEk.js           2.37 kB │ gzip:   0.98 kB
+dist/assets/form-schema-BkS3rDNF.js           2.38 kB │ gzip:   1.15 kB
+dist/assets/audit-page-CjamB270.js            2.73 kB │ gzip:   1.22 kB
+dist/assets/attendance-policy-BId_adYa.js     2.82 kB │ gzip:   1.27 kB
+dist/assets/configuration-page-BaFbEzam.js    3.25 kB │ gzip:   1.30 kB
+dist/assets/shifts-page-CHtxAbMu.js           6.55 kB │ gzip:   2.25 kB
+dist/assets/assignments-page-CtXrRCqF.js      6.93 kB │ gzip:   2.54 kB
+dist/assets/locations-page-CEMBHByV.js        8.26 kB │ gzip:   2.79 kB
+dist/assets/calendar-page-CjNSN-Y2.js         9.62 kB │ gzip:   3.43 kB
+dist/assets/dashboard-D528zvOI.js             9.63 kB │ gzip:   2.98 kB
+dist/assets/attendance-pages-B6vDWscF.js     11.42 kB │ gzip:   4.24 kB
+dist/assets/users-page-DvXD3InN.js           16.34 kB │ gzip:   5.36 kB
+dist/assets/departments-page-CNo_QgHJ.js     20.50 kB │ gzip:   6.49 kB
+dist/assets/employees-page-BZMDDLM4.js       24.22 kB │ gzip:   6.94 kB
+dist/assets/requests-pages-B5QQ2U4R.js       29.04 kB │ gzip:   8.48 kB
+dist/assets/dist-DRsVH72R.js                 52.95 kB │ gzip:  18.36 kB
+dist/assets/validation-sLBhemX9.js           74.72 kB │ gzip:  20.99 kB
+dist/assets/react-C1iE8mnY.js               218.75 kB │ gzip:  68.27 kB
+dist/assets/index-BbhGn9R7.js               359.81 kB │ gzip: 115.05 kB
+
+✓ built in 5.14s

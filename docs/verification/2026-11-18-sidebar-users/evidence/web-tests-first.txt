@@ -1,0 +1,877 @@
+
+ RUN  v5.1.0 /home/rafael/proyectos/asistencia
+
+ ❯ |web| apps/web/src/features/employees/organization-pages.test.tsx (8 tests | 1 failed) 5661ms
+   ❯ expedientes y responsables (6)
+     × empleado consulta su expediente sin opciones de edición ni directorio de usuarios 1511ms
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ ❯ |web| apps/web/src/features/identity/super-admin.test.tsx (2 tests | 2 failed) 1257ms
+   × shows the protected role but no owner modification or grant controls to ADMIN 217ms
+   × lets SUPER_ADMIN select the actual role and manage the protected owner 1038ms
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |web| apps/web/src/features/employees/organization-pages.test.tsx > expedientes y responsables > empleado consulta su expediente sin opciones de edición ni directorio de usuarios
+TestingLibraryElementError: Unable to find role="heading" and name "José Pérez"
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<a[39m
+      [33mclass[39m=[32m"sr-only rounded-md bg-card p-3 text-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70]"[39m
+      [33mhref[39m=[32m"#contenido"[39m
+    [36m>[39m
+      [0mSaltar al contenido[0m
+    [36m</a>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"min-h-screen xl:pl-[var(--shell-sidebar)]"[39m
+      [33mstyle[39m=[32m"--shell-sidebar: 16rem;"[39m
+    [36m>[39m
+      [36m<aside[39m
+        [33maria-label[39m=[32m"Navegación de MCR"[39m
+        [33mclass[39m=[32m"fixed inset-y-0 left-0 z-30 hidden w-[var(--shell-sidebar)] flex-col bg-navigation text-navigation-foreground xl:flex"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"shrink-0 border-b border-white/10 px-5 py-5"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33maria-label[39m=[32m"Ir al inicio"[39m
+            [33mclass[39m=[32m"block rounded-md"[39m
+            [33mhref[39m=[32m"/"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"México Car Rental"[39m
+              [33mclass[39m=[32m"h-10 w-44 object-cover"[39m
+              [33mheight[39m=[32m"725"[39m
+              [33msrc[39m=[32m"/assets/logo-MCR%20(1).png"[39m
+              [33mwidth[39m=[32m"800"[39m
+            [36m/>[39m
+          [36m</a>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-[10px] font-semibold tracking-[0.2em] text-white/60"[39m
+          [36m>[39m
+            [0mGESTIÓN DE PERSONAL[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Principal"[39m
+          [33mclass[39m=[32m"min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mGeneral[0m
+            [36m</p>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"space-y-1"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Inicio"[39m
+                  [33mclass[39m=[32m"flex min-h-10 items-center gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-layout-dashboard size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"12"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"16"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mInicio[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Avisos"[39m
+                  [33mclass[39m=[32m"flex min-h-10 items-center gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/avisos"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-bell size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M10.268 21a2 2 0 0 0 3.464 0"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mAvisos[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mOperación[...
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<a[39m
+      [33mclass[39m=[32m"sr-only rounded-md bg-card p-3 text-foreground focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70]"[39m
+      [33mhref[39m=[32m"#contenido"[39m
+    [36m>[39m
+      [0mSaltar al contenido[0m
+    [36m</a>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"min-h-screen xl:pl-[var(--shell-sidebar)]"[39m
+      [33mstyle[39m=[32m"--shell-sidebar: 16rem;"[39m
+    [36m>[39m
+      [36m<aside[39m
+        [33maria-label[39m=[32m"Navegación de MCR"[39m
+        [33mclass[39m=[32m"fixed inset-y-0 left-0 z-30 hidden w-[var(--shell-sidebar)] flex-col bg-navigation text-navigation-foreground xl:flex"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"shrink-0 border-b border-white/10 px-5 py-5"[39m
+        [36m>[39m
+          [36m<a[39m
+            [33maria-label[39m=[32m"Ir al inicio"[39m
+            [33mclass[39m=[32m"block rounded-md"[39m
+            [33mhref[39m=[32m"/"[39m
+          [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"México Car Rental"[39m
+              [33mclass[39m=[32m"h-10 w-44 object-cover"[39m
+              [33mheight[39m=[32m"725"[39m
+              [33msrc[39m=[32m"/assets/logo-MCR%20(1).png"[39m
+              [33mwidth[39m=[32m"800"[39m
+            [36m/>[39m
+          [36m</a>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-[10px] font-semibold tracking-[0.2em] text-white/60"[39m
+          [36m>[39m
+            [0mGESTIÓN DE PERSONAL[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<nav[39m
+          [33maria-label[39m=[32m"Principal"[39m
+          [33mclass[39m=[32m"min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 py-4"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mGeneral[0m
+            [36m</p>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"space-y-1"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Inicio"[39m
+                  [33mclass[39m=[32m"flex min-h-10 items-center gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-layout-dashboard size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"3"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"9"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"14"[39m
+                      [33my[39m=[32m"12"[39m
+                    [36m/>[39m
+                    [36m<rect[39m
+                      [33mheight[39m=[32m"5"[39m
+                      [33mrx[39m=[32m"1"[39m
+                      [33mwidth[39m=[32m"7"[39m
+                      [33mx[39m=[32m"3"[39m
+                      [33my[39m=[32m"16"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mInicio[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+              [36m<li>[39m
+                [36m<a[39m
+                  [33maria-label[39m=[32m"Avisos"[39m
+                  [33mclass[39m=[32m"flex min-h-10 items-center gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-white/80 transition-colors hover:bg-navigation-hover hover:text-white "[39m
+                  [33mhref[39m=[32m"/avisos"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"lucide lucide-bell size-[18px] shrink-0"[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"24"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"24"[39m
+                    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M10.268 21a2 2 0 0 0 3.464 0"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                  [36m<span>[39m
+                    [0mAvisos[0m
+                  [36m</span>[39m
+                [36m</a>[39m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mb-5 last:mb-0"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mclass[39m=[32m"mb-2 px-3 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/55"[39m
+            [36m>[39m
+              [0mOperación[...
+ ❯ waitForWrapper node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+ ❯ apps/web/src/features/employees/organization-pages.test.tsx:107:20
+    105|     await mount('/empleados');
+    106|     expect(
+    107|       await screen.findByRole('heading', { name: 'José Pérez' }),
+       |                    ^
+    108|     ).toBeVisible();
+    109|     expect(screen.getByText('01/11/2026')).toBeVisible();
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  |web| apps/web/src/features/identity/super-admin.test.tsx > shows the protected role but no owner modification or grant controls to ADMIN
+TestingLibraryElementError: Found multiple elements with the text: Super administrador
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<option[39m
+  [33mvalue[39m=[32m"SUPER_ADMIN"[39m
+[36m>[39m
+  [0mSuper administrador[0m
+[36m</option>[39m
+
+Ignored nodes: comments, script, style
+[36m<span[39m
+  [33mclass[39m=[32m"inline-flex items-center gap-1 rounded-md border bg-secondary/60 px-2 py-1 text-[11px] font-medium"[39m
+[36m>[39m
+  [36m<svg[39m
+    [33maria-hidden[39m=[32m"true"[39m
+    [33mclass[39m=[32m"lucide lucide-shield-check size-3"[39m
+    [33mfill[39m=[32m"none"[39m
+    [33mheight[39m=[32m"24"[39m
+    [33mstroke[39m=[32m"currentColor"[39m
+    [33mstroke-linecap[39m=[32m"round"[39m
+    [33mstroke-linejoin[39m=[32m"round"[39m
+    [33mstroke-width[39m=[32m"2"[39m
+    [33mviewBox[39m=[32m"0 0 24 24"[39m
+    [33mwidth[39m=[32m"24"[39m
+    [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+  [36m>[39m
+    [36m<path[39m
+      [33md[39m=[32m"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"[39m
+    [36m/>[39m
+    [36m<path[39m
+      [33md[39m=[32m"m9 12 2 2 4-4"[39m
+    [36m/>[39m
+  [36m</svg>[39m
+  [0mSuper administrador[0m
+[36m</span>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"mx-auto max-w-[1600px] space-y-6 px-4 py-7 sm:px-6 lg:px-8 lg:py-9"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex flex-wrap items-start justify-between gap-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"max-w-2xl"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"[39m
+          [36m>[39m
+            [0mAdministración / Identidad y acceso[0m
+          [36m</p>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0mUsuarios[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-sm leading-6 text-muted-foreground"[39m
+          [36m>[39m
+            [0mGestiona las cuentas de tu equipo y sus permisos de acceso a México Car Rental.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary-hover h-9 py-2 has-[>svg]:px-3 min-h-11 rounded-xl px-5 shadow-sm"[39m
+          [33mdata-size[39m=[32m"default"[39m
+          [33mdata-slot[39m=[32m"button"[39m
+          [33mdata-variant[39m=[32m"default"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-user-plus size-4"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"7"[39m
+              [33mr[39m=[32m"4"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"19"[39m
+              [33mx2[39m=[32m"19"[39m
+              [33my1[39m=[32m"8"[39m
+              [33my2[39m=[32m"14"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"22"[39m
+              [33mx2[39m=[32m"16"[39m
+              [33my1[39m=[32m"11"[39m
+              [33my2[39m=[32m"11"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0mNuevo usuario[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<dl[39m
+        [33mclass[39m=[32m"grid grid-cols-3 divide-x divide-border border-y py-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pr-4"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-users hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 3.128a4 4 0 0 1 0 7.744"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M22 21v-2a4 4 0 0 0-3-3.87"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"9"[39m
+                [33mcy[39m=[32m"7"[39m
+                [33mr[39m=[32m"4"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas registradas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-check hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M20 6 9 17l-5-5"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas activas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide luci...
+ ❯ Object.getElementError node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/config.js:37:19
+ ❯ getElementError node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:20:35
+ ❯ getMultipleElementsFoundError node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:23:10
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:55:13
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+ ❯ apps/web/src/features/identity/super-admin.test.tsx:54:17
+     52|   mount(false);
+     53|   expect(await screen.findByText(/Cuenta protegida:/)).toBeVisible();
+     54|   expect(screen.getByText('Super administrador')).toBeVisible();
+       |                 ^
+     55|   expect(
+     56|     screen.queryByRole('checkbox', { name: 'Super administrador' }),
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  |web| apps/web/src/features/identity/super-admin.test.tsx > lets SUPER_ADMIN select the actual role and manage the protected owner
+TestingLibraryElementError: Unable to find role="checkbox" and name "Super administrador"
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"mx-auto max-w-[1600px] space-y-6 px-4 py-7 sm:px-6 lg:px-8 lg:py-9"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex flex-wrap items-start justify-between gap-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"max-w-2xl"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"[39m
+          [36m>[39m
+            [0mAdministración / Identidad y acceso[0m
+          [36m</p>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0mUsuarios[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-sm leading-6 text-muted-foreground"[39m
+          [36m>[39m
+            [0mGestiona las cuentas de tu equipo y sus permisos de acceso a México Car Rental.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary-hover h-9 py-2 has-[>svg]:px-3 min-h-11 rounded-xl px-5 shadow-sm"[39m
+          [33mdata-size[39m=[32m"default"[39m
+          [33mdata-slot[39m=[32m"button"[39m
+          [33mdata-variant[39m=[32m"default"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-user-plus size-4"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"7"[39m
+              [33mr[39m=[32m"4"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"19"[39m
+              [33mx2[39m=[32m"19"[39m
+              [33my1[39m=[32m"8"[39m
+              [33my2[39m=[32m"14"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"22"[39m
+              [33mx2[39m=[32m"16"[39m
+              [33my1[39m=[32m"11"[39m
+              [33my2[39m=[32m"11"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0mNuevo usuario[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<dl[39m
+        [33mclass[39m=[32m"grid grid-cols-3 divide-x divide-border border-y py-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pr-4"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-users hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 3.128a4 4 0 0 1 0 7.744"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M22 21v-2a4 4 0 0 0-3-3.87"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"9"[39m
+                [33mcy[39m=[32m"7"[39m
+                [33mr[39m=[32m"4"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas registradas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-check hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M20 6 9 17l-5-5"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas activas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide luci...
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<main[39m
+      [33mclass[39m=[32m"mx-auto max-w-[1600px] space-y-6 px-4 py-7 sm:px-6 lg:px-8 lg:py-9"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"flex flex-wrap items-start justify-between gap-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"max-w-2xl"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground"[39m
+          [36m>[39m
+            [0mAdministración / Identidad y acceso[0m
+          [36m</p>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0mUsuarios[0m
+          [36m</h1>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"mt-3 text-sm leading-6 text-muted-foreground"[39m
+          [36m>[39m
+            [0mGestiona las cuentas de tu equipo y sus permisos de acceso a México Car Rental.[0m
+          [36m</p>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary-hover h-9 py-2 has-[>svg]:px-3 min-h-11 rounded-xl px-5 shadow-sm"[39m
+          [33mdata-size[39m=[32m"default"[39m
+          [33mdata-slot[39m=[32m"button"[39m
+          [33mdata-variant[39m=[32m"default"[39m
+        [36m>[39m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"lucide lucide-user-plus size-4"[39m
+            [33mfill[39m=[32m"none"[39m
+            [33mheight[39m=[32m"24"[39m
+            [33mstroke[39m=[32m"currentColor"[39m
+            [33mstroke-linecap[39m=[32m"round"[39m
+            [33mstroke-linejoin[39m=[32m"round"[39m
+            [33mstroke-width[39m=[32m"2"[39m
+            [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [33mwidth[39m=[32m"24"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+            [36m/>[39m
+            [36m<circle[39m
+              [33mcx[39m=[32m"9"[39m
+              [33mcy[39m=[32m"7"[39m
+              [33mr[39m=[32m"4"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"19"[39m
+              [33mx2[39m=[32m"19"[39m
+              [33my1[39m=[32m"8"[39m
+              [33my2[39m=[32m"14"[39m
+            [36m/>[39m
+            [36m<line[39m
+              [33mx1[39m=[32m"22"[39m
+              [33mx2[39m=[32m"16"[39m
+              [33my1[39m=[32m"11"[39m
+              [33my2[39m=[32m"11"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+          [0mNuevo usuario[0m
+        [36m</button>[39m
+      [36m</div>[39m
+      [36m<dl[39m
+        [33mclass[39m=[32m"grid grid-cols-3 divide-x divide-border border-y py-5"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pr-4"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-users hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M16 3.128a4 4 0 0 1 0 7.744"[39m
+              [36m/>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M22 21v-2a4 4 0 0 0-3-3.87"[39m
+              [36m/>[39m
+              [36m<circle[39m
+                [33mcx[39m=[32m"9"[39m
+                [33mcy[39m=[32m"7"[39m
+                [33mr[39m=[32m"4"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas registradas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide lucide-check hidden size-4 sm:block"[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mheight[39m=[32m"24"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-linecap[39m=[32m"round"[39m
+              [33mstroke-linejoin[39m=[32m"round"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [33mwidth[39m=[32m"24"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M20 6 9 17l-5-5"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [0mCuentas activas[0m
+          [36m</dt>[39m
+          [36m<dd[39m
+            [33mclass[39m=[32m"mt-2 text-3xl font-semibold tracking-tight"[39m
+          [36m>[39m
+            [0m1[0m
+          [36m</dd>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"min-w-0 pl-4 sm:pl-8"[39m
+        [36m>[39m
+          [36m<dt[39m
+            [33mclass[39m=[32m"flex items-center gap-2 text-xs text-muted-foreground sm:text-sm"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"lucide luci...
+ ❯ waitForWrapper node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/wait-for.js:163:27
+ ❯ node_modules/.pnpm/@testing-library+dom@10.4.2/node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+ ❯ apps/web/src/features/identity/super-admin.test.tsx:68:18
+     66|   mount(true);
+     67|   expect(
+     68|     await screen.findByRole('checkbox', { name: 'Super administrador' …
+       |                  ^
+     69|   ).toBeVisible();
+     70|   expect(
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  2 failed | 14 passed (16)
+      Tests  3 failed | 104 passed (107)
+   Start at  14:20:18
+   Duration  28.86s (tests 45%, environment 25%, import 21%, setup 7%, transform 2%)
+
+    Isolate  16 workers spawned · ~1.65s startup each (spawn + environment, per file)
+             at least ~7.14s faster with isolate: false — reuses workers across files instead of one per file
+

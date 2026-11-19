@@ -1,0 +1,40 @@
+[WebServer] (node:678343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:678439) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:678552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/appearance.spec.ts:234:1 › los campos reales del calendario distinguen borde y selección del foco en alto contraste (1.6s)
+
+
+  1) [desktop] › tests/e2e/appearance.spec.ts:234:1 › los campos reales del calendario distinguen borde y selección del foco en alto contraste 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 3
+    Received:    1.4780013538859798
+
+      257 |       expect(
+      258 |         (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05),
+    > 259 |       ).toBeGreaterThanOrEqual(3);
+          |         ^
+      260 |     }
+      261 |     await page.emulateMedia({ forcedColors: 'active' });
+      262 |     const days = page
+        at /home/rafael/proyectos/asistencia/tests/e2e/appearance.spec.ts:259:9
+
+    Error Context: test-results/appearance-los-campos-real-3b0fb--del-foco-en-alto-contraste-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/appearance-los-campos-real-3b0fb--del-foco-en-alto-contraste-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/appearance-los-campos-real-3b0fb--del-foco-en-alto-contraste-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/appearance.spec.ts:234:1 › los campos reales del calendario distinguen borde y selección del foco en alto contraste 

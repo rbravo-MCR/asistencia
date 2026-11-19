@@ -1,0 +1,44 @@
+{
+  "build": "pnpm build",
+  "initialAssets": [
+    {
+      "file": "/assets/index-DMGMOl-J.js",
+      "bytes": 499894,
+      "gzip": 135208,
+      "brotli": 114785
+    },
+    {
+      "file": "/assets/rolldown-runtime-XKyaHtl9.js",
+      "bytes": 726,
+      "gzip": 429,
+      "brotli": 382
+    },
+    {
+      "file": "/assets/react-CDb74C0S.js",
+      "bytes": 431268,
+      "gzip": 128503,
+      "brotli": 104289
+    },
+    {
+      "file": "/assets/validation-DqYOb19n.js",
+      "bytes": 74727,
+      "gzip": 20933,
+      "brotli": 18456
+    },
+    {
+      "file": "/assets/index-DqM0DIDg.css",
+      "bytes": 29103,
+      "gzip": 6097,
+      "brotli": 5346
+    }
+  ],
+  "jsInitialGzip": 285073,
+  "cssInitialGzip": 6097,
+  "host": {
+    "os": "linux",
+    "release": "7.0.0-43-generic",
+    "cpu": "Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz",
+    "logicalCpus": 4,
+    "memoryGiB": 15
+  }
+}

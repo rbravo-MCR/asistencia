@@ -1,0 +1,27 @@
+{
+  "productionCaptures": 32,
+  "pngFiles": 36,
+  "measurements": 21,
+  "pageErrors": [],
+  "noGlobalOverflowOnCapturedRoutes": true,
+  "fontLoadedInCaptures": true,
+  "themeBeforeFirstPaint": true,
+  "oneLocalThemeRequestPerMeasurement": true,
+  "fontExpectedIncludingFallback": true,
+  "protectedSourcesUnchanged": true,
+  "numberedGuides": 15,
+  "rootGuidesEqualPackage": true,
+  "same22Routes": true,
+  "viteConfigUnchanged": true,
+  "fontHashesMatch": true,
+  "fixtureCleanup": {
+    "users": 0,
+    "employees": 0,
+    "departments": 0
+  },
+  "temporaryPortsClosed": {
+    "3101": true,
+    "5183": true
+  },
+  "brokenLocalReportLinks": []
+}

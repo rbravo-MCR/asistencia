@@ -1,0 +1,57 @@
+$ pnpm --filter @asistencia/contracts build && playwright test
+$ tsc -p tsconfig.json
+[WebServer] (node:565615) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:565750) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 38 tests using 2 workers
+
+(node:565821) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:565820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (7.1s)
+  ✓   3 [desktop] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (7.2s)
+  ✓   2 [desktop] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (14.3s)
+  ✓   4 [desktop] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (2.3s)
+  ✓   5 [desktop] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (4.3s)
+  ✓   6 [desktop] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (5.0s)
+  ✓   7 [desktop] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (7.0s)
+  ✓   8 [desktop] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (7.5s)
+  ✓   9 [desktop] › tests/e2e/identity-employees.spec.ts:10:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (6.6s)
+  ✓  11 [desktop] › tests/e2e/identity-employees.spec.ts:207:1 › empleado no ve administración ni puede concederse roles mediante la API (3.3s)
+  ✓  10 [desktop] › tests/e2e/identity-employees.spec.ts:56:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (7.9s)
+  ✓  13 [desktop] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (3.0s)
+  ✓  12 [desktop] › tests/e2e/identity-employees.spec.ts:269:1 › edita y elimina empleados desde la web sin cambiar el número interno (5.3s)
+  ✓  14 [desktop] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (9.5s)
+  ✓  15 [desktop] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (15.4s)
+  ✓  16 [desktop] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (14.4s)
+  ✓  17 [desktop] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (10.9s)
+  ✓  18 [desktop] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (4.5s)
+(node:570058) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 [desktop] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (3.8s)
+(node:570268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 [mobile] › tests/e2e/attendance.spec.ts:263:1 › marca home office sin GPS y conserva salida anticipada con motivo pendiente (6.1s)
+  ✓  22 [mobile] › tests/e2e/attendance.spec.ts:490:1 › acepta entrada administrativa con falta tardía justificable y conserva motivo y GPS (4.4s)
+  ✓  23 [mobile] › tests/e2e/base.spec.ts:3:1 › la web confirma API y PostgreSQL reales sin errores de navegador (3.3s)
+  ✓  21 [mobile] › tests/e2e/attendance.spec.ts:376:1 › conserva rechazo presencial, captura motivo y acepta GPS del centro asignado (13.0s)
+  ✓  24 [mobile] › tests/e2e/base.spec.ts:31:1 › navega entre rutas, permite acceso directo y recupera una página 404 (5.5s)
+  ✓  25 [mobile] › tests/e2e/dashboard.spec.ts:14:1 › dashboard y configuración permiten guardar política, recargar y conservar versiones (6.2s)
+  ✓  26 [mobile] › tests/e2e/dashboard.spec.ts:121:1 › empleado y HR ven su alcance y la bienvenida pública permanece disponible (7.0s)
+  ✓  27 [mobile] › tests/e2e/departments.spec.ts:9:1 › crea, edita y elimina departamentos con persistencia tras recargar (6.4s)
+  ✓  28 [mobile] › tests/e2e/identity-employees.spec.ts:10:1 › ingresa con cuenta real, cierra sesión y bloquea acceso privado al recargar (5.2s)
+  ✓  29 [mobile] › tests/e2e/identity-employees.spec.ts:56:1 › crea empleado y jefatura desde la interfaz y conserva ambos al recargar (5.7s)
+  ✓  30 [mobile] › tests/e2e/identity-employees.spec.ts:207:1 › empleado no ve administración ni puede concederse roles mediante la API (2.5s)
+  ✓  32 [mobile] › tests/e2e/official-holidays.spec.ts:10:1 › muestra el calendario oficial 2026–2027 sin duplicar ni añadir festivos empresariales (2.8s)
+  ✓  31 [mobile] › tests/e2e/identity-employees.spec.ts:269:1 › edita y elimina empleados desde la web sin cambiar el número interno (4.7s)
+  ✓  33 [mobile] › tests/e2e/requests.spec.ts:360:1 › jefatura aprueba vacaciones y cancelación definitivamente sin duplicar consumo o devolución (8.7s)
+  ✓  34 [mobile] › tests/e2e/requests.spec.ts:495:1 › permiso conserva evidencia privada, rechaza lectura ajena y guarda rechazo del jefe (12.9s)
+  ✓  35 [mobile] › tests/e2e/requests.spec.ts:567:1 › permiso por horas exige aviso y motivo, permite cambiar goce y conserva condiciones previas (12.9s)
+  ✓  37 [mobile] › tests/e2e/steps10-12.spec.ts:338:1 › comprueba GPS puntual y conserva rechazos sin marcajes (4.0s)
+  ✓  36 [mobile] › tests/e2e/steps10-12.spec.ts:123:1 › publica turno, conserva snapshot y entrega aviso auditable (11.9s)
+  ✓  38 [mobile] › tests/e2e/super-admin.spec.ts:5:1 › superadministrador conserva acceso completo y muestra el rol en cuenta y usuarios (5.2s)
+
+  38 passed (2.4m)

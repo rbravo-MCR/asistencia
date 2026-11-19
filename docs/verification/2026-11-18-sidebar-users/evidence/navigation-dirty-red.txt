@@ -1,0 +1,40 @@
+[WebServer] (node:1038658) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:1038770) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:1038866) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores (5.2s)
+
+
+  1) [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
+
+    TimeoutError: page.waitForEvent: Timeout 1500ms exceeded while waiting for event "dialog"
+    =========================== logs ===========================
+    waiting for event "dialog"
+    ============================================================
+
+      132 |       'Revisión editada',
+      133 |     );
+    > 134 |     const backDecision = page.waitForEvent('dialog', { timeout: 1500 });
+          |                               ^
+      135 |     await page.evaluate(() => history.back());
+      136 |     const backDialog = await backDecision;
+      137 |     expect(backDialog.type()).toBe('confirm');
+        at /home/rafael/proyectos/asistencia/tests/e2e/shell-users.spec.ts:134:31
+
+    Error Context: test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/shell-users-directorio-fil-0e097-de-panel-sin-perder-errores-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › tests/e2e/shell-users.spec.ts:63:1 › directorio filtra datos reales y guarda usuarios desde panel sin perder errores 
