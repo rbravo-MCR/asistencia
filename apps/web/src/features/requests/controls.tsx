@@ -8,6 +8,7 @@ import {
 import { createPortal } from 'react-dom';
 import { useBlocker } from '@tanstack/react-router';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { Button } from '@/components/ui/button';
 import { FormError } from '../identity/form-fields';
 import type { RequestWrite } from './common';
@@ -85,19 +86,14 @@ export function RequestPanel({
   const baseline = useRef<string | null>(null);
   const [actions, setActions] = useState<HTMLDivElement | null>(null);
   const blocked = write.blocked || busy;
-  const close = () => {
-    if (
-      !blocked &&
-      (!dirty ||
-        window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?'))
-    )
-      onClose();
+  const discard = useDiscardConfirm();
+  const close = async () => {
+    if (blocked) return;
+    if (!dirty || (await discard.confirm())) onClose();
   };
   useBlocker({
-    shouldBlockFn: () =>
-      blocked ||
-      (dirty &&
-        !window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?')),
+    shouldBlockFn: async () =>
+      blocked || (dirty && !(await discard.confirm())),
     enableBeforeUnload: dirty || blocked,
     disabled: !dirty && !blocked,
   });
@@ -105,13 +101,14 @@ export function RequestPanel({
     <SidePanel
       open
       onOpenChange={(open) => {
-        if (!open) close();
+        if (!open) void close();
       }}
       title={title}
       description={description}
       {...(initialFocusId ? { initialFocusId } : {})}
       returnFocusId={returnFocusId}
     >
+      {discard.dialog}
       <PanelActionsContext.Provider value={actions}>
         <div
           ref={(node) => {
@@ -136,7 +133,7 @@ export function RequestPanel({
             type="button"
             variant="outline"
             disabled={blocked}
-            onClick={close}
+            onClick={() => void close()}
           >
             Volver al listado
           </Button>

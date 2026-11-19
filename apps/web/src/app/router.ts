@@ -1,4 +1,4 @@
-import { dateRangeSearch } from '@/lib/date-range-search';
+import { attendanceSearch, dateRangeSearch } from '@/lib/date-range-search';
 import { requestIntentSearch } from '@/lib/request-intent';
 import {
   createBrowserHistory,
@@ -101,7 +101,7 @@ export function createAppRouter(
     createRoute({
       getParentRoute: () => rootRoute,
       path: '/asistencia',
-      validateSearch: dateRangeSearch,
+      validateSearch: attendanceSearch,
       component: lazyRouteComponent(
         () => import('@/features/attendance/attendance-pages'),
         'AttendancePage',

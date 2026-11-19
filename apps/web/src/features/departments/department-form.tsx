@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { DepartmentApiError, postDepartment, putDepartment } from './api';
 import { departmentFormSchema, type DepartmentFormValues } from './form-schema';
 
@@ -43,11 +44,10 @@ export function DepartmentForm({
     defaultValues: { name: department?.name ?? '' },
   });
   const saving = isSubmitting || mutation.isPending;
-  const confirmDiscard = () =>
-    !isDirty ||
-    window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?');
+  const discard = useDiscardConfirm();
   useBlocker({
-    shouldBlockFn: () => saving || !confirmDiscard(),
+    shouldBlockFn: async () =>
+      saving || (isDirty && !(await discard.confirm())),
     enableBeforeUnload: isDirty || saving,
     disabled: !isDirty && !saving,
   });
@@ -82,14 +82,15 @@ export function DepartmentForm({
       }
     }
   });
-  const close = () => {
-    if (!saving && confirmDiscard()) onCancel();
+  const close = async () => {
+    if (saving) return;
+    if (!isDirty || (await discard.confirm())) onCancel();
   };
   return (
     <SidePanel
       open
       onOpenChange={(open) => {
-        if (!open) close();
+        if (!open) void close();
       }}
       title={department ? 'Editar departamento' : 'Crear departamento'}
       description="Define el nombre de esta área de la organización."
@@ -97,6 +98,7 @@ export function DepartmentForm({
       returnFocusId="departments-search"
       className="max-w-[480px] [&>div:first-child]:border-border/50 [&>div:first-child]:py-6"
     >
+      {discard.dialog}
       <form
         onSubmit={(event) => void submit(event)}
         noValidate
@@ -172,7 +174,7 @@ export function DepartmentForm({
             variant="ghost"
             className="min-h-11"
             disabled={saving}
-            onClick={close}
+            onClick={() => void close()}
           >
             {department ? 'Cancelar edición' : 'Cancelar'}
           </Button>

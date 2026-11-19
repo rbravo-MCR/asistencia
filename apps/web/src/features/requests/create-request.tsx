@@ -223,7 +223,7 @@ export function CreateRequest({
             id="requestKind"
             name="kind"
             value={kind}
-            className="flex h-10 w-full rounded-md border bg-card px-3"
+            className={selectClass}
             onChange={(e) => {
               setKind(e.target.value);
               setPartial(false);

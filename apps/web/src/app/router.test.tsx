@@ -75,7 +75,7 @@ describe('navegación de la aplicación', () => {
       '/aprobaciones',
     );
     expect(
-      screen.getByRole('link', { name: 'Días disponibles' }),
+      screen.getByRole('link', { name: 'Mis vacaciones' }),
     ).toHaveAttribute('href', '/vacaciones');
     expect(
       screen.getByRole('link', { name: 'Políticas de ausencias' }),

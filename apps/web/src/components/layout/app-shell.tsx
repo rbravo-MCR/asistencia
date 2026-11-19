@@ -1,6 +1,11 @@
 import { useState, type CSSProperties, type ReactNode } from 'react';
 import { Link, useRouterState } from '@tanstack/react-router';
-import type { SessionView } from '@asistencia/contracts';
+import { useQuery } from '@tanstack/react-query';
+import {
+  NotificationListSchema,
+  type SessionView,
+} from '@asistencia/contracts';
+import { request } from '@/lib/api';
 import {
   Bell,
   Menu,
@@ -31,6 +36,15 @@ export function AppShell({
   const path = useRouterState({ select: (state) => state.location.pathname });
   const navigation = navigationFor(session?.permissions);
   const location = navigationLocation(path, navigation);
+  const notifications = useQuery({
+    queryKey: ['notifications'],
+    queryFn: ({ signal }) =>
+      request('/notifications', NotificationListSchema, { signal }),
+    enabled: Boolean(session),
+    retry: false,
+    staleTime: 60_000,
+  });
+  const unread = notifications.data?.unreadCount ?? 0;
   const initials = (session?.user.name ?? 'MCR')
     .split(/\s+/)
     .slice(0, 2)
@@ -102,10 +116,22 @@ export function AppShell({
             <ThemeSelect />
             <Link
               to="/avisos"
-              aria-label="Abrir mis avisos"
-              className="hidden size-11 items-center justify-center rounded-lg hover:bg-navigation-hover sm:flex"
+              aria-label={
+                unread > 0
+                  ? `Abrir mis avisos, ${unread} sin leer`
+                  : 'Abrir mis avisos'
+              }
+              className="relative hidden size-11 items-center justify-center rounded-lg hover:bg-navigation-hover sm:flex"
             >
               <Bell className="size-5" aria-hidden="true" />
+              {unread > 0 && (
+                <span
+                  aria-hidden="true"
+                  className="absolute right-1 top-1 flex min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-bold leading-5 text-primary-foreground"
+                >
+                  {unread > 99 ? '99+' : unread}
+                </span>
+              )}
             </Link>
             <Link
               to="/cuenta"
@@ -180,11 +206,21 @@ export function AppShell({
         ))}
         <button
           onClick={() => setMenuOpen(true)}
-          aria-label="Más secciones"
-          className="flex min-h-12 flex-col items-center justify-center gap-1 rounded-lg text-[11px] text-muted-foreground"
+          aria-label={
+            unread > 0
+              ? `Más secciones, ${unread} avisos sin leer`
+              : 'Más secciones'
+          }
+          className="relative flex min-h-12 flex-col items-center justify-center gap-1 rounded-lg text-[11px] text-muted-foreground"
         >
           <Ellipsis className="size-5" aria-hidden="true" />
           Más
+          {unread > 0 && (
+            <span
+              aria-hidden="true"
+              className="absolute right-3 top-1 size-2 rounded-full bg-primary"
+            />
+          )}
         </button>
       </nav>
     </div>

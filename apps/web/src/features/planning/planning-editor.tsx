@@ -8,6 +8,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { useBlocker } from '@tanstack/react-router';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { hasNativeFormChanges } from '@/lib/native-form-changes';
 
 const CloseEditor = createContext<() => void>(() => {});
@@ -42,16 +43,15 @@ export function PlanningEditor({
   const [dirty, setDirty] = useState(false);
   const submitting = useRef(false);
   const blocked = () => pending || submitting.current;
-  const discard = () =>
-    !dirty ||
-    window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?');
+  const discard = useDiscardConfirm();
   useBlocker({
-    shouldBlockFn: () => blocked() || !discard(),
+    shouldBlockFn: async () =>
+      blocked() || (dirty && !(await discard.confirm())),
     enableBeforeUnload: dirty || pending,
     disabled: !dirty && !pending,
   });
-  const close = () => {
-    if (!blocked() && discard()) onClose();
+  const close = async () => {
+    if (!blocked() && (!dirty || (await discard.confirm()))) onClose();
   };
   return (
     <SidePanel
@@ -61,9 +61,10 @@ export function PlanningEditor({
       title={title}
       description={description}
       onOpenChange={(open) => {
-        if (!open) close();
+        if (!open) void close();
       }}
     >
+      {discard.dialog}
       <div
         className="mcr-scrollbar min-h-0 flex-1 overflow-y-auto p-4 sm:p-6"
         ref={controls}

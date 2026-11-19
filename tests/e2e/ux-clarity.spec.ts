@@ -68,7 +68,7 @@ test('Inicio y navegación explican dónde asignar turnos y administrar o solici
   await expect(
     page
       .getByRole('dialog')
-      .getByRole('link', { name: 'Días disponibles', exact: true }),
+      .getByRole('link', { name: 'Mis vacaciones', exact: true }),
   ).toBeVisible();
   await page.keyboard.press('Escape');
   await expect(

@@ -106,8 +106,8 @@ it('permite navegar con teclado y no intercepta el atajo mientras se escribe', a
 it.each([
   ['calendario', 'Mis horarios', '/calendario'],
   ['horários', 'Mis horarios', '/calendario'],
-  ['vacaciones', 'Días disponibles', '/vacaciones'],
-  ['saldos', 'Días disponibles', '/vacaciones'],
+  ['vacaciones', 'Mis vacaciones', '/vacaciones'],
+  ['saldos', 'Mis vacaciones', '/vacaciones'],
 ])('encuentra %s por tarea sin ampliar permisos', async (query, name, href) => {
   mount();
   await screen.findByRole('heading', { name: 'Mi cuenta' });

@@ -9,6 +9,7 @@ import { request } from '@/lib/api';
 import { Page, panelClass } from '../identity/form-fields';
 import { QueryFeedback } from '../employees/query-feedback';
 import { Button } from '@/components/ui/button';
+import { Skeleton, SkeletonGroup } from '@/components/ui/skeleton';
 import { ArrowUpRight, RefreshCw, Clock3, Bell } from 'lucide-react';
 const labels: Record<string, string> = {
   UPCOMING: 'Por iniciar',
@@ -41,6 +42,11 @@ const labels: Record<string, string> = {
 };
 const label = (s: string) => labels[s] ?? s;
 const linkClass = 'font-medium text-link underline underline-offset-4';
+const timeIn = (value: string, timeZone: string) =>
+  new Intl.DateTimeFormat('es-MX', {
+    timeZone,
+    timeStyle: 'short',
+  }).format(new Date(value));
 function Metric({ title, value }: { title: string; value: number }) {
   return (
     <div className="flex min-w-0 items-center justify-between gap-4 rounded-xl bg-secondary/55 p-4">
@@ -106,6 +112,18 @@ export function Dashboard({ session }: { session: SessionView }) {
     data?.pendingRequests.filter((r) => r.employeeId === session.employeeId) ??
     [];
   const decisions = data?.pendingRequests.filter((r) => r.canDecide) ?? [];
+  const personalShift = data?.personal?.shift ?? null;
+  const personalState = personalShift
+    ? personalShift.authorizedAbsence
+      ? 'Ausencia autorizada'
+      : personalShift.entry && personalShift.exit
+        ? 'Jornada completa'
+        : personalShift.entry
+          ? 'Salida pendiente'
+          : personalShift.phase === 'IN_PROGRESS'
+            ? 'Entrada pendiente'
+            : label(personalShift.phase)
+    : null;
   return (
     <Page
       title={`Hola, ${session.user.name}`}
@@ -123,9 +141,80 @@ export function Dashboard({ session }: { session: SessionView }) {
         </Button>
       }
     >
-      {(query.isPending || query.isError) && <QueryFeedback query={query} />}
+      {query.isPending && <DashboardSkeleton />}
+      {query.isError && <QueryFeedback query={query} />}
       {data && !query.isError && (
         <>
+          {data.personal && (
+            <section
+              className="mcr-dashboard-hero rounded-2xl p-5 sm:p-6"
+              aria-labelledby="dashboard-today"
+            >
+              <div className="flex flex-wrap items-start justify-between gap-5">
+                <div className="min-w-0 space-y-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/60">
+                    Tu jornada de hoy
+                  </p>
+                  <h2
+                    id="dashboard-today"
+                    className="text-2xl font-semibold tracking-tight"
+                  >
+                    {personalShift
+                      ? `${timeIn(personalShift.startsAt, personalShift.timeZone)} – ${timeIn(personalShift.endsAt, personalShift.timeZone)}`
+                      : 'Sin turno publicado'}
+                  </h2>
+                  <p className="text-sm text-white/70">
+                    {data.date} · {data.timeZone}
+                  </p>
+                  {personalShift ? (
+                    <div className="flex flex-wrap items-center gap-2 text-sm">
+                      <span className="rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-xs font-medium">
+                        {personalState}
+                      </span>
+                      <span className="text-white/70">
+                        {personalShift.modality === 'ONSITE'
+                          ? 'Presencial'
+                          : 'Home office'}
+                      </span>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-white/70">
+                      No tienes un turno actual o próximo publicado.
+                    </p>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <Button asChild className="min-h-11">
+                    <Link
+                      to="/asistencia"
+                      {...(personalShift
+                        ? { search: { shift: personalShift.id } }
+                        : {})}
+                    >
+                      Abrir mi jornada
+                      <ArrowUpRight className="size-4" aria-hidden="true" />
+                    </Link>
+                  </Button>
+                  {decisions.length > 0 && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="min-h-11 border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
+                    >
+                      <Link to="/aprobaciones">
+                        Revisar {decisions.length} pendientes
+                      </Link>
+                    </Button>
+                  )}
+                </div>
+              </div>
+              {decisions.length > 0 && (
+                <p className="mt-5 border-t border-white/10 pt-4 text-sm text-white/70">
+                  Hay {decisions.length} solicitudes esperando tu decisión.
+                </p>
+              )}
+            </section>
+          )}
           <section className={panelClass} aria-labelledby="dashboard-tasks">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="min-w-0">
@@ -493,5 +582,18 @@ export function Dashboard({ session }: { session: SessionView }) {
         </>
       )}
     </Page>
+  );
+}
+
+function DashboardSkeleton() {
+  return (
+    <SkeletonGroup label="Cargando tu resumen…" className="space-y-6">
+      <Skeleton className="h-36 w-full rounded-2xl" />
+      <Skeleton className="h-64 w-full rounded-2xl" />
+      <div className="grid gap-6 xl:grid-cols-2">
+        <Skeleton className="h-56 w-full rounded-2xl" />
+        <Skeleton className="h-56 w-full rounded-2xl" />
+      </div>
+    </SkeletonGroup>
   );
 }

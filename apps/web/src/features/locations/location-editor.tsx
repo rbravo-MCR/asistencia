@@ -2,6 +2,7 @@ import { useRef, useState, type ReactNode } from 'react';
 import { useBlocker } from '@tanstack/react-router';
 import { Button } from '@/components/ui/button';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { hasNativeFormChanges } from '@/lib/native-form-changes';
 
 export function LocationEditor({
@@ -23,12 +24,11 @@ export function LocationEditor({
 }) {
   const controls = useRef<HTMLDivElement>(null);
   const [dirty, setDirty] = useState(false);
-  const canLeave = () =>
-    !pending &&
-    (!dirty ||
-      window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?'));
+  const discard = useDiscardConfirm();
+  const canLeave = async () =>
+    !pending && (!dirty || (await discard.confirm()));
   useBlocker({
-    shouldBlockFn: () => !canLeave(),
+    shouldBlockFn: async () => !(await canLeave()),
     enableBeforeUnload: dirty || pending,
     disabled: !dirty && !pending,
   });
@@ -40,9 +40,13 @@ export function LocationEditor({
       title={title}
       description="Los cambios se aplican al guardar y se conservan en el historial."
       onOpenChange={(open) => {
-        if (!open && canLeave()) onClose();
+        if (!open)
+          void (async () => {
+            if (await canLeave()) onClose();
+          })();
       }}
     >
+      {discard.dialog}
       <div
         className="min-h-0 flex-1 overflow-y-auto p-5 sm:p-6"
         ref={controls}
@@ -63,7 +67,9 @@ export function LocationEditor({
             variant="outline"
             disabled={pending}
             onClick={() => {
-              if (canLeave()) onClose();
+              void (async () => {
+                if (await canLeave()) onClose();
+              })();
             }}
           >
             Cancelar

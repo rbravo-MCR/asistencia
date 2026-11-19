@@ -16,6 +16,7 @@ import {
 } from '@asistencia/contracts';
 import { request, ApiError } from '@/lib/api';
 import { Button } from '@/components/ui/button';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { ProtectedPage } from '../identity/protected-page';
 import {
   Page,
@@ -129,21 +130,35 @@ function AttendanceContent({ session }: { session: SessionView }) {
   const [resultIncidents, setResultIncidents] = useState<
     AttendanceIncidentView[]
   >([]);
+  const search = useSearch({ strict: false }) as { shift?: string };
+  const requestedShift = useRef(search.shift);
   const slot = me.data?.items.find((item) => item.assignmentId === selected);
+  useEffect(() => {
+    const id = requestedShift.current;
+    if (!id) return;
+    if (
+      me.data?.items.some(
+        (item) => item.assignmentId === id && item.status === 'PUBLISHED',
+      )
+    ) {
+      setSelected(id);
+      requestedShift.current = undefined;
+    }
+  }, [me.data]);
   const unresolved = [
     ...(me.data?.pendingIncidents ?? []),
     ...resultIncidents,
   ].filter((item) => item.requiresReason);
   const blocked = unresolved.length > 0;
+  const leaveAttempt = useDiscardConfirm({
+    title: '¿Salir con un marcaje sin confirmar?',
+    description:
+      'Si sales ahora, tendrás que revisar el historial antes de crear otro intento.',
+    confirmLabel: 'Salir de todos modos',
+  });
   useBlocker({
-    shouldBlockFn: () =>
-      pending ||
-      Boolean(
-        attempt &&
-        !window.confirm(
-          'Hay un marcaje sin confirmar. Si sales, tendrás que revisar el historial antes de crear otro intento. ¿Quieres salir?',
-        ),
-      ),
+    shouldBlockFn: async () =>
+      pending || Boolean(attempt && !(await leaveAttempt.confirm())),
     enableBeforeUnload: pending || Boolean(attempt),
     disabled: !pending && !attempt,
   });
@@ -201,6 +216,7 @@ function AttendanceContent({ session }: { session: SessionView }) {
       eyebrow="Mi jornada"
       description="Registra tu entrada y salida en el turno asignado. Para turnos presenciales se solicita tu ubicación al marcar."
     >
+      {leaveAttempt.dialog}
       <div className="grid items-start gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)]">
         <section className={panelClass}>
           <div className="flex items-center gap-3">
@@ -480,11 +496,15 @@ function Incident({
   const [reason, setReason] = useState('');
   const submitting = useRef(false);
   const dirty = item.requiresReason && !saved && reason !== '';
+  const discard = useDiscardConfirm({
+    title: '¿Descartar el motivo?',
+    description:
+      'El motivo sin guardar se perderá. La incidencia seguirá pendiente de revisión.',
+    confirmLabel: 'Descartar motivo',
+  });
   useBlocker({
-    shouldBlockFn: () =>
-      pending ||
-      (dirty &&
-        !window.confirm('Tienes un motivo sin guardar. ¿Quieres descartarlo?')),
+    shouldBlockFn: async () =>
+      pending || (dirty && !(await discard.confirm())),
     enableBeforeUnload: !onEditingStateChange && (dirty || pending),
     disabled: Boolean(onEditingStateChange) || (!dirty && !pending),
   });
@@ -497,6 +517,7 @@ function Incident({
   }, [item.id, dirty, pending, onEditingStateChange]);
   return (
     <li className="min-w-0 list-none space-y-3 break-words rounded-xl border border-border/70 bg-card p-4 text-sm leading-6">
+      {discard.dialog}
       <p className="font-semibold">
         {label(item.kind)} ·{' '}
         {item.resolution
@@ -626,12 +647,17 @@ function History({
   );
   const hasPendingDraft = Object.values(drafts).some((draft) => draft.pending);
   const hasDirtyDraft = Object.values(drafts).some((draft) => draft.dirty);
-  const canChangeContext = () =>
+  const discard = useDiscardConfirm({
+    title: '¿Descartar los motivos?',
+    description:
+      'Hay motivos de incidencia sin guardar. Si cambias el período, se perderán.',
+    confirmLabel: 'Descartar motivos',
+  });
+  const canChangeContext = async () =>
     !hasPendingDraft &&
-    (!hasDirtyDraft ||
-      window.confirm('Tienes motivos sin guardar. ¿Quieres descartarlos?'));
+    (!hasDirtyDraft || (await discard.confirm()));
   useBlocker({
-    shouldBlockFn: () => !canChangeContext(),
+    shouldBlockFn: async () => !(await canChangeContext()),
     enableBeforeUnload: hasPendingDraft || hasDirtyDraft,
     disabled: !hasPendingDraft && !hasDirtyDraft,
   });
@@ -650,6 +676,7 @@ function History({
   });
   return (
     <section className={panelClass}>
+      {discard.dialog}
       <h2 className="text-xl font-semibold">
         {incidents ? 'Incidencias en tu alcance' : 'Historial en tu alcance'}
       </h2>
@@ -659,7 +686,7 @@ function History({
       </p>
       <form
         className="flex flex-wrap items-end gap-3 rounded-xl border bg-secondary/30 p-4"
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
           const d = new FormData(e.currentTarget);
           const from = String(d.get('from'));
@@ -669,7 +696,7 @@ function History({
             setError('Selecciona un período de 1 a 93 días.');
             return;
           }
-          if (!canChangeContext()) return;
+          if (!(await canChangeContext())) return;
           setError(null);
           setRange({ from, to });
         }}

@@ -392,18 +392,7 @@ function ShiftsContent({ session }: { session: SessionView }) {
               />
               <div className="flex flex-wrap gap-2">
                 <Save pending={write.isPending} label="Guardar festivo" />
-                {holiday && (
-                  <Button
-                    type="button"
-                    variant="outline"
-                    onClick={() => {
-                      if (window.confirm('¿Descartar los cambios del festivo?'))
-                        setEditor(null);
-                    }}
-                  >
-                    Cancelar
-                  </Button>
-                )}
+                {holiday && <PlanningCancel>Cancelar</PlanningCancel>}
               </div>
             </form>
           </PlanningEditor>

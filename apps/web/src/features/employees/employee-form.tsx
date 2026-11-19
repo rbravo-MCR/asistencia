@@ -11,6 +11,7 @@ import {
 } from '@asistencia/contracts';
 import { request } from '@/lib/api';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Field, FormError, selectClass } from '../identity/form-fields';
@@ -77,20 +78,16 @@ export function EmployeeForm({
   });
   const { isDirty, isSubmitting } = form.formState;
   const saving = useRef(false);
-  const close = () => {
-    if (
-      !saving.current &&
-      !isSubmitting &&
-      (!isDirty ||
-        window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?'))
-    )
-      onDone();
+  const discard = useDiscardConfirm();
+  const close = async () => {
+    if (saving.current || isSubmitting) return;
+    if (!isDirty || (await discard.confirm())) onDone();
   };
   useBlocker({
-    shouldBlockFn: () =>
+    shouldBlockFn: async () =>
       saving.current ||
-      (isDirty &&
-        !window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?')),
+      isSubmitting ||
+      (isDirty && !(await discard.confirm())),
     enableBeforeUnload: isDirty || isSubmitting,
     disabled: !isDirty && !isSubmitting,
   });
@@ -135,13 +132,14 @@ export function EmployeeForm({
     <SidePanel
       open
       onOpenChange={(open) => {
-        if (!open) close();
+        if (!open) void close();
       }}
       title={employee ? 'Editar empleado' : 'Nuevo empleado'}
       description="Datos personales, organización y acceso del empleado."
       initialFocusId="employee-name"
       returnFocusId="employees-search"
     >
+      {discard.dialog}
       <form
         noValidate
         className="flex min-h-0 flex-1 flex-col"
@@ -366,7 +364,7 @@ export function EmployeeForm({
             type="button"
             variant="outline"
             disabled={isSubmitting}
-            onClick={close}
+            onClick={() => void close()}
           >
             Cancelar
           </Button>

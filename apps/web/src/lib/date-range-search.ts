@@ -13,3 +13,18 @@ export function dateRangeSearch(search: Record<string, unknown>): {
   const days = (Date.parse(to) - Date.parse(from)) / 86400000;
   return days >= 0 && days <= 92 ? { from, to } : {};
 }
+
+export function attendanceSearch(search: Record<string, unknown>): {
+  from?: string;
+  to?: string;
+  shift?: string;
+} {
+  const range = dateRangeSearch(search);
+  const shift = search.shift;
+  return {
+    ...range,
+    ...(typeof shift === 'string' && shift.length > 0 && shift.length <= 64
+      ? { shift }
+      : {}),
+  };
+}

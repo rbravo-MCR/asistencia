@@ -7,6 +7,7 @@ import { UserSchema, type UserView } from '@asistencia/contracts';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { SidePanel } from '@/components/ui/side-panel';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { request } from '@/lib/api';
 import { Field, FormError } from './form-fields';
 import {
@@ -46,11 +47,9 @@ export function UserForm({
     },
   });
   const { isDirty, isSubmitting } = form.formState;
-  const confirmDiscard = () =>
-    !isDirty ||
-    window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?');
+  const discard = useDiscardConfirm();
   useBlocker({
-    shouldBlockFn: () => !confirmDiscard(),
+    shouldBlockFn: async () => isDirty && !(await discard.confirm()),
     enableBeforeUnload: isDirty && !isSubmitting,
     disabled: !isDirty || isSubmitting,
   });
@@ -76,18 +75,22 @@ export function UserForm({
       });
     }
   });
+  const close = async () => {
+    if (isSubmitting) return;
+    if (!isDirty || (await discard.confirm())) onDone();
+  };
   return (
     <SidePanel
       open
       initialFocusId="user-name"
       returnFocusId="users-search"
       onOpenChange={(open) => {
-        if (open || isSubmitting) return;
-        if (confirmDiscard()) onDone();
+        if (!open) void close();
       }}
       title={user ? 'Editar usuario' : 'Crear usuario'}
       description="Identidad, roles globales y acceso a la plataforma."
     >
+      {discard.dialog}
       <form
         noValidate
         className="flex min-h-0 flex-1 flex-col"
@@ -181,9 +184,7 @@ export function UserForm({
             type="button"
             variant="outline"
             disabled={isSubmitting}
-            onClick={() => {
-              if (confirmDiscard()) onDone();
-            }}
+            onClick={() => void close()}
           >
             {user ? 'Cancelar edición' : 'Cancelar'}
           </Button>

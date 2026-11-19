@@ -3,6 +3,7 @@ import { useBlocker } from '@tanstack/react-router';
 import { Plus, Network, Search } from 'lucide-react';
 import { SidePanel } from '@/components/ui/side-panel';
 import { ConfirmAction } from '@/components/patterns/confirm-action';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { InlineNotice } from '@/components/patterns/inline-notice';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { useForm, useWatch } from 'react-hook-form';
@@ -303,20 +304,16 @@ function AssignmentForm({
   const errors = form.formState.errors;
   const { isDirty, isSubmitting } = form.formState;
   const saving = useRef(false);
-  const close = () => {
-    if (
-      !saving.current &&
-      !isSubmitting &&
-      (!isDirty ||
-        window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?'))
-    )
-      onDone();
+  const discard = useDiscardConfirm();
+  const close = async () => {
+    if (saving.current || isSubmitting) return;
+    if (!isDirty || (await discard.confirm())) onDone();
   };
   useBlocker({
-    shouldBlockFn: () =>
+    shouldBlockFn: async () =>
       saving.current ||
-      (isDirty &&
-        !window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?')),
+      isSubmitting ||
+      (isDirty && !(await discard.confirm())),
     enableBeforeUnload: isDirty || isSubmitting,
     disabled: !isDirty && !isSubmitting,
   });
@@ -355,9 +352,10 @@ function AssignmentForm({
       initialFocusId="assignment-kind"
       returnFocusId="assignments-search"
       onOpenChange={(open) => {
-        if (!open) close();
+        if (!open) void close();
       }}
     >
+      {discard.dialog}
       <form
         noValidate
         className="flex min-h-0 flex-1 flex-col"
@@ -473,7 +471,7 @@ function AssignmentForm({
             variant="outline"
             className="min-h-11"
             disabled={isSubmitting}
-            onClick={close}
+            onClick={() => void close()}
           >
             Cancelar
           </Button>

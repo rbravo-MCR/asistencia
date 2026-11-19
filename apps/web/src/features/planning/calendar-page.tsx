@@ -15,9 +15,10 @@ import {
 } from '@asistencia/contracts';
 import { request } from '@/lib/api';
 import { Button } from '@/components/ui/button';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { Input } from '@/components/ui/input';
 import { ProtectedPage } from '../identity/protected-page';
-import { Page, panelClass, Field } from '../identity/form-fields';
+import { Page, panelClass, Field, selectClass } from '../identity/form-fields';
 import { QueryFeedback } from '../employees/query-feedback';
 import { TextField, SelectField, Save, WriteFeedback } from './controls';
 const statusLabels = {
@@ -46,6 +47,12 @@ function CalendarContent({ session }: { session: SessionView }) {
       `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}`,
   );
   const [editorOpen, setEditorOpen] = useState(false);
+  const discardEdit = useDiscardConfirm({
+    title: '¿Descartar la edición?',
+    description:
+      'Se perderán los cambios no guardados de este borrador. El borrador guardado no se modifica.',
+    confirmLabel: 'Descartar edición',
+  });
   const [preview, setPreview] = useState({
     employeeId: '',
     templateId: '',
@@ -196,6 +203,7 @@ function CalendarContent({ session }: { session: SessionView }) {
           : 'Consulta tus jornadas, guardias y festivos. Cada fecha corresponde al inicio del turno, en la zona horaria indicada.'
       }
     >
+      {discardEdit.dialog}
       {manager && (
         <section
           className="rounded-xl border bg-card px-4 py-3 text-sm"
@@ -262,7 +270,7 @@ function CalendarContent({ session }: { session: SessionView }) {
           </label>
           <select
             id="employee-filter"
-            className="h-10 w-full rounded-md border bg-card px-3"
+            className={selectClass}
             value={employeeFilter}
             onChange={(e) => setEmployeeFilter(e.target.value)}
           >
@@ -777,7 +785,7 @@ function CalendarContent({ session }: { session: SessionView }) {
                       !authorizations.isSuccess ||
                       !locations.isSuccess
                     }
-                    className="h-10 w-full rounded-md border bg-card px-3"
+                    className={selectClass}
                   >
                     <option value="">
                       {isOnsite
@@ -895,8 +903,10 @@ function CalendarContent({ session }: { session: SessionView }) {
                     type="button"
                     variant="outline"
                     onClick={() => {
-                      if (window.confirm('¿Descartar la edición del borrador?'))
-                        setEditorOpen(false);
+                      void (async () => {
+                        if (await discardEdit.confirm())
+                          setEditorOpen(false);
+                      })();
                     }}
                   >
                     Descartar edición

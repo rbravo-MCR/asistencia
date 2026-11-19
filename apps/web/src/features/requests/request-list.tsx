@@ -2,10 +2,23 @@ import { useRef, useState } from 'react';
 import { useBlocker } from '@tanstack/react-router';
 import type { LeaveRequestView, SessionView } from '@asistencia/contracts';
 import { Button } from '@/components/ui/button';
+import {
+  StatusBadge,
+  type StatusTone,
+} from '@/components/patterns/status-badge';
+import { useDiscardConfirm } from '@/components/patterns/use-discard-confirm';
 import { panelClass, FormError } from '../identity/form-fields';
 import { label, instant, type RequestWrite } from './common';
 import { ReasonField } from './controls';
 import { requestDraftSnapshot } from './draft';
+
+function statusTone(status: LeaveRequestView['status']): StatusTone {
+  if (status === 'PENDING_HEAD' || status === 'PENDING_DIRECTOR')
+    return 'warning';
+  if (status === 'APPROVED') return 'success';
+  if (status === 'REJECTED') return 'danger';
+  return 'neutral';
+}
 
 export function RequestList({
   items,
@@ -46,11 +59,10 @@ function RequestCard({
   const [error, setError] = useState<string | null>(null);
   const [dirty, setDirty] = useState(false);
   const baseline = useRef<string | null>(null);
+  const discard = useDiscardConfirm();
   useBlocker({
-    shouldBlockFn: () =>
-      write.blocked ||
-      (dirty &&
-        !window.confirm('Tienes cambios sin guardar. ¿Quieres descartarlos?')),
+    shouldBlockFn: async () =>
+      write.blocked || (dirty && !(await discard.confirm())),
     enableBeforeUnload: dirty || write.blocked,
     disabled: !dirty && !write.blocked,
   });
@@ -70,6 +82,7 @@ function RequestCard({
       }}
       onResetCapture={() => setDirty(false)}
     >
+      {discard.dialog}
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
@@ -80,9 +93,12 @@ function RequestCard({
             {item.fromDate} – {item.toDate}
           </p>
         </div>
-        <span className="max-w-full rounded-full border bg-secondary px-3 py-1.5 text-sm font-medium">
+        <StatusBadge
+          tone={statusTone(item.status)}
+          className="max-w-full"
+        >
           {label(item.status)}
-        </span>
+        </StatusBadge>
       </div>
       <p className="text-sm text-muted-foreground">
         {item.approvalFlow === 'HEAD_ONLY'

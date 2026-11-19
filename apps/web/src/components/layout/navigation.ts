@@ -104,7 +104,7 @@ const groups: NavigationGroup[] = [
       { to: '/aprobaciones', label: 'Aprobaciones', icon: CheckCheck },
       {
         to: '/vacaciones',
-        label: 'Días disponibles',
+        label: 'Mis vacaciones',
         icon: Umbrella,
         description: 'Consulta períodos, saldos y movimientos de vacaciones.',
         keywords: ['vacaciones', 'saldo', 'saldos', 'días'],
